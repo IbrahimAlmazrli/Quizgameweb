@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity name="Microsoft.SqlServer.PipelineXML" version="16.0.0.0" publicKeyToken="89845dcd8080cc91" processorArchitecture="msil" />
+  <clrClass clsid="{4C4FEFA1-8093-4329-86F0-69DA026F2184}" progid="Microsoft.SqlServer.Dts.Pipeline.XmlParser.IDTSPersistenceComponentImpl" threadingModel="Both" name="Microsoft.SqlServer.Dts.Pipeline.XmlParser.IDTSPersistenceComponentImpl" runtimeVersion="v4.0.30319" />
+  <clrClass clsid="{AB0E67D1-E6B0-38E1-A5A3-495709199673}" progid="Microsoft.SqlServer.Dts.Pipeline.XmlParser.IDTSSerializerImpl100" threadingModel="Both" name="Microsoft.SqlServer.Dts.Pipeline.XmlParser.IDTSSerializerImpl100" runtimeVersion="v4.0.30319" />
+  <file name="Microsoft.SqlServer.PipelineXML.dll" hashalg="SHA1" />
+</assembly>

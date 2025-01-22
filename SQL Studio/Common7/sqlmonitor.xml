@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--Monitor modules definition-->
+<MonitorModules>
+	<_locDefinition>
+		<_locDefault _loc="locNone" />
+	</_locDefinition>
+	<MonitorModule>
+		<Name>Replication Monitor</Name>
+		<Assembly>ReplicationMonitor.dll</Assembly>
+		<StreamName>Microsoft.SqlServer.Management.UI.ReplicationMonitor.xml</StreamName>
+	</MonitorModule>
+	<MonitorModule>
+		<Name>DBMMonitor</Name>
+		<Assembly>DBMMonitor.dll</Assembly>
+		<StreamName>Microsoft.SqlServer.Management.UI.DBMMonitor.xml</StreamName>
+	</MonitorModule>
+</MonitorModules>

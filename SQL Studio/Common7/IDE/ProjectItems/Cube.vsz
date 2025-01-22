@@ -1,0 +1,8 @@
+VSWIZARD 7.0
+Wizard={66085AC0-8AD8-4698-A3DE-302CD6D5B776}
+Param="EngineAssemblyName=Microsoft.DataWarehouse.AS"
+Param="Engine=Microsoft.DataWarehouse.Wizards.WizardEngineBase"
+Param="InitializerAssemblyName=Microsoft.DataWarehouse.AS"
+Param="Initializer=Microsoft.DataWarehouse.Wizards.WizardInitializer"
+Param="UIAssemblyName=Microsoft.AnalysisServices.Wizards.AS"
+Param="UI=Microsoft.AnalysisServices.Wizards.CubeWizardForm"

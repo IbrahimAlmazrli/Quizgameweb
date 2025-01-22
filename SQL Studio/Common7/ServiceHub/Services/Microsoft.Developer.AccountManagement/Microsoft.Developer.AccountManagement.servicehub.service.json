@@ -1,0 +1,8 @@
+﻿{
+  "entryPoint": {
+    "assemblyPath": "Microsoft.Developer.AccountManagement.dll",
+    "fullClassName": "Microsoft.Developer.AccountManagement.AccountsRoamingServiceHubService",
+    "appBasePath": "../../../"
+  },
+  "host": "desktopClr.x86"
+}

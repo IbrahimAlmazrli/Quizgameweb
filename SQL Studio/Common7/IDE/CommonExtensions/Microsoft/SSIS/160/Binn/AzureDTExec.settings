@@ -1,0 +1,18 @@
+﻿{
+  "tenantId": "",
+  "applicationId": "",
+  "authenticationKey": "",
+  "subscriptionId": "",
+  "resourceGroup": "",
+  "dataFactory": "",
+  "irName": "",
+  "pipelineNameHashStrLen": "",
+  "packageAccessDomain": "",
+  "packageAccessUserName": "",
+  "packageAccessPassword": "",
+  "logPath": "",
+  "logLevel": "",
+  "logAccessDomain": "",
+  "logAccessUserName": "",
+  "logAccessPassword": ""
+}

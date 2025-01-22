@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity name="Microsoft.SqlServer.ManagedDTS" version="16.0.0.0" publicKeyToken="89845dcd8080cc91" processorArchitecture="msil" />
+  <clrClass clsid="{CD372532-7A13-40CE-B890-FCE74489333D}" progid="Microsoft.SqlServer.Dts.Runtime.DTSManagedXmlSerializationHelper" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.DTSManagedXmlSerializationHelper" runtimeVersion="v4.0.30319" />
+  <clrClass clsid="{8FF7E58F-9137-4172-B72B-0D6964B92C30}" progid="Microsoft.SqlServer.Dts.Runtime.ManagedHelper" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.ManagedHelper" runtimeVersion="v4.0.30319" />
+  <clrClass clsid="{3524C947-5017-452B-97B5-42D9BCC2B44D}" progid="Microsoft.SqlServer.Dts.Runtime.ManagedHelper+ManagedPropertyHelper" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.ManagedHelper+ManagedPropertyHelper" runtimeVersion="v4.0.30319" />
+  <clrClass clsid="{B7212976-CF95-4751-9361-7DFC2FCAA488}" progid="Microsoft.SqlServer.Dts.Runtime.ManagerSerializer" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.ManagerSerializer" runtimeVersion="v4.0.30319" />
+  <clrClass clsid="{99DA35D1-1294-4B64-83D1-A45BB8CD50A7}" progid="Microsoft.SqlServer.Dts.Runtime.ManagedWrapper" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.ManagedWrapper" runtimeVersion="v4.0.30319" />
+  <clrClass clsid="{6D457933-2546-4897-9ED4-22250501217B}" progid="Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper" runtimeVersion="v4.0.30319" />
+  <clrClass clsid="{078F8152-E705-3A6B-A1CA-F8F1E22959DB}" progid="Microsoft.SqlServer.Dts.Runtime.Project" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.Project" runtimeVersion="v4.0.30319" />
+  <clrClass clsid="{833C737C-AFB5-370F-91FB-27A2C7B8127F}" progid="Microsoft.SqlServer.Dts.Runtime.Interop.ManagedParameterWrapper" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.Interop.ManagedParameterWrapper" runtimeVersion="v4.0.30319" />
+  <clrClass clsid="{79822108-E9B6-470E-9E35-984626B480D5}" progid="Microsoft.SqlServer.Dts.Runtime.Interop.ProjectAccessor" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.Interop.ProjectAccessor" runtimeVersion="v4.0.30319" />
+  <clrClass clsid="{EE08F530-0894-3BD7-838A-35E83FA92580}" progid="Microsoft.SqlServer.Dts.Runtime.ProjectVariablesWrapper" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.ProjectVariablesWrapper" runtimeVersion="v4.0.30319" />
+  <file name="Microsoft.SqlServer.ManagedDTS.dll" hashalg="SHA1" />
+</assembly>

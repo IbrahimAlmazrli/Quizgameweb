@@ -1,0 +1,31 @@
+<event_sessions xmlns="http://schemas.microsoft.com/sqlserver/2008/07/extendedeventconfig">
+  <event_session name="lock_counter_final" maxMemory="4" eventRetentionMode="allowSingleEventLoss" trackCausality="true" dispatchLatency="30" maxEventSize="0" memoryPartitionMode="none">
+    <templateCategory>
+      <!-- _locID_text="templateCategory" _locComment = "" -->Sperren und Blockierungen</templateCategory>
+    <templateName>
+      <!-- _locID_text = "templateName" _locComment = "" -->Anzahl Abfragesperren</templateName>
+    <templateDescription>
+      <!-- _locID_text = "templateDescription" _locComment = "" -->Diese Vorlage zählt die Anzahl der Abfragesperren, die von jeder Abfrage auf der Grundlage des query_hash-Werts abgerufen werden. Mithilfe dieser Vorlage können Sie die sperrintensivsten Abfragen ermitteln, um sie zu überprüfen und zu optimieren.</templateDescription>
+    <event package="sqlserver" name="lock_acquired">
+      <action package="sqlserver" name="query_hash"/>
+      <predicate>
+        <and>
+          <leaf>
+            <comparator name="greater_than_uint64" package="package0"></comparator>
+            <event name="lock_acquired" package="sqlserver" field="database_id"></event>
+            <value>4</value>
+          </leaf>
+          <leaf>
+            <comparator name="equal_boolean" package="package0"></comparator>
+            <global name="is_system" package="sqlserver"></global>
+            <value>FALSE</value>
+          </leaf>
+        </and>
+      </predicate>
+    </event>
+    <target package="package0" name="histogram">
+      <parameter name="filtering_event_name" value="sqlserver.lock_acquired"/>
+      <parameter name="source" value="sqlserver.query_hash"/>
+    </target>
+  </event_session>
+</event_sessions>

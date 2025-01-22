@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns="http://tempuri.org/TracePersistence.xsd" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/TracePersistence.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:annotation>
+		<xs:documentation>
+		The following schema for Microsoft SQL Server "Yukon" Beta describes 
+		input and output from the "Profiler" tool in XML format.  
+
+		Microsoft does not make any representation or warranty regarding the 
+		schema or any product or item developed based on the schema. The schema 
+		is provided to you on an AS IS basis.  Microsoft disclaims all express, 
+		implied and statutory warranties, including but not limited to the implied 
+		warranties of merchantability, fitness for a particular purpose, and freedom 
+		from infringement. Without limiting the generality of the foregoing, 
+		Microsoft does not make any warranty of any kind that any item developed 
+		based on the schema, or any portion of the schema, will not infringe any 
+		copyright, patent, trade secret, or other intellectual property right of any 
+		person or entity in any country. It is your responsibility to seek licenses 
+		for such intellectual property rights where appropriate.
+
+		MICROSOFT SHALL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND ARISING OUT OF OR 
+		IN CONNECTION WITH THE USE OF THE SCHEMA, INCLUDING WITHOUT LIMITATION, ANY 
+		DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL (INCLUDING ANY LOST PROFITS), 
+		PUNITIVE OR SPECIAL DAMAGES, WHETHER OR NOT MICROSOFT HAS BEEN ADVISED OF 
+		SUCH DAMAGES. 
+		(c) Microsoft Corporation. All rights reserved.
+  
+        </xs:documentation>
+	</xs:annotation>
+	<xs:annotation>
+		<xs:appinfo>Profiler XML Schema</xs:appinfo>
+		<xs:documentation>
+			XML Schema for Profiler input/output 
+		</xs:documentation>
+	</xs:annotation>
+	<!-- 
+   *****************************************
+   **  
+   **  This is the Root of the schema 
+   **  hierarchy
+   **  
+   **
+   *****************************************
+   -->
+	<xs:element name="TraceData">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Header" type="Header" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="Events" type="Events" minOccurs="1" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!-- 
+   *****************************************
+   **  
+   **  Header of the document
+   **
+   *****************************************
+   -->
+	<xs:complexType name="Header">
+		<xs:sequence>
+			<xs:element name="TraceProvider" minOccurs="1" maxOccurs="1">
+				<xs:complexType>
+					<xs:attribute name="name" type="xs:string" use="required" />
+					<xs:attribute name="MajorVersion" type="xs:unsignedByte" use="required" />
+					<xs:attribute name="MinorVersion" type="xs:unsignedByte" use="required" />
+					<xs:attribute name="BuildNumber" type="xs:unsignedShort" use="required" />
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ServerInformation" minOccurs="1" maxOccurs="1">
+				<xs:complexType>
+					<xs:attribute name="name" type="xs:string" use="required" />
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ProfilerUI">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="GroupedColumns" type="ColumnsList"  minOccurs="0" maxOccurs="1"/>
+						<xs:element name="OrderedColumns"  type="ColumnsList"  minOccurs="0" maxOccurs="1"/>
+						<xs:element name="TracedEvents">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element maxOccurs="unbounded" name="Event">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element minOccurs="0" maxOccurs="unbounded" name="EventColumn">
+													<xs:complexType>
+														<xs:attribute name="id" type="xs:unsignedByte" use="required" />
+													</xs:complexType>
+												</xs:element>
+											</xs:sequence>
+											<xs:attribute name="id" type="xs:unsignedByte" use="required" />
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- 
+   *****************************************
+   **  
+   **  ColumnList Type
+   **
+   *****************************************
+   -->
+	<xs:complexType name="ColumnsList">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" name="ID" type="xs:unsignedByte" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- 
+   *****************************************
+   **  
+   **  Events Type is a sequence of Event
+   **
+   *****************************************
+   -->
+	<xs:complexType name="Events">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" name="Event" type="Event"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- 
+   *****************************************
+   **  
+   **  Event has id and is a sequence of 
+   **  columns
+   **
+   *****************************************
+   -->
+	<xs:complexType name="Event">
+		<xs:sequence>
+			<xs:element minOccurs="0" maxOccurs="unbounded" name="Column" type="Column"></xs:element>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:unsignedShort" use="required" />
+		<xs:attribute name="name" type="xs:string" use="optional" />
+	</xs:complexType>
+	<!-- 
+   *****************************************
+   **  
+   **  Columns has data 
+   **
+   *****************************************
+   -->
+	<xs:complexType name="Column">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="id" type="xs:unsignedShort" use="required" />
+				<xs:attribute name="name" type="xs:string" use="optional" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+</xs:schema>
+		

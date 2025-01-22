@@ -1,0 +1,7 @@
+﻿{
+  "entryPoint": {
+    "constructorFunction": "TypeScriptLintingService",
+    "scriptPath": "./typescriptlinting.all.js"
+  },
+  "host": "node.x86"
+}

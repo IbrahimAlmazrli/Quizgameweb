@@ -1,0 +1,9 @@
+﻿{
+  "entryPoint": {
+    "assemblyPath": "Microsoft.Developer.Settings.dll",
+    "fullClassName": "Microsoft.Developer.Settings.ServiceHubEntryPoint",
+    "appBasePath": "../../../"
+  },
+  "host": "desktopClr.x86",
+  "hostId": "SettingsHost"
+}

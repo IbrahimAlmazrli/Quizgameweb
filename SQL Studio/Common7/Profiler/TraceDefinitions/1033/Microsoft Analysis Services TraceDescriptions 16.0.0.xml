@@ -1,0 +1,809 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventColumnDescriptions xmlns="http://tempuri.org/xmlfile.xsd">
+  <_locDefinition>
+    <_locDefault _loc="locNone" />
+    <_locTag _loc="locData">DESCRIPTION</_locTag>
+    <_locTag _loc="locData">BESTPRACTICE</_locTag>
+  </_locDefinition>
+  <EVENTCATEGORIESLIST>
+    <EVENTCATEGORY>
+      <NAME>Command Events</NAME>
+      <DESCRIPTION>Collection of events for commands.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Discover Events</NAME>
+      <DESCRIPTION>Collection of events for discover requests.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Discover Server State Events</NAME>
+      <DESCRIPTION>Collection of events for server state discovers.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Errors and Warnings</NAME>
+      <DESCRIPTION>Collection of events for server errors.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>File Load and Save</NAME>
+      <DESCRIPTION>Collection of events for file load and save operations reporting.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Job Graph Events</NAME>
+      <DESCRIPTION>Collection of events related to database processing job dependencies</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Locks</NAME>
+      <DESCRIPTION>Collection of lock related events.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>M Data Provider Events</NAME>
+      <DESCRIPTION>Collection of events collected from the M Data Provider</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Notification Events</NAME>
+      <DESCRIPTION>Collection of notification events.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Progress Reports</NAME>
+      <DESCRIPTION>Collection of events for progress reporting.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Queries Events</NAME>
+      <DESCRIPTION>Collection of events for queries.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Query Processing</NAME>
+      <DESCRIPTION>Collection of key events during the process of a query execution.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Resource Governance</NAME>
+      <DESCRIPTION>Collection of events for resource governance.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Security Audit</NAME>
+      <DESCRIPTION>Collection of database audit event classes.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Session Events</NAME>
+      <DESCRIPTION>Collection of session events.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENTCATEGORY>
+  </EVENTCATEGORIESLIST>
+  <EVENTLIST>
+    <!--Audit Login-->
+    <EVENT>
+      <ID>1</ID>
+      <DESCRIPTION>Collects all new connection events since the trace was started, such as when a client requests a connection to a server running an instance of SQL Server.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Audit Logout-->
+    <EVENT>
+      <ID>2</ID>
+      <DESCRIPTION>Collects all new disconnect events since the trace was started, such as when a client issues a disconnect command.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Audit Server Starts And Stops-->
+    <EVENT>
+      <ID>4</ID>
+      <DESCRIPTION>Records service shut down, start, and pause activities.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Progress Report Begin-->
+    <EVENT>
+      <ID>5</ID>
+      <DESCRIPTION>Progress report begin.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Progress Report End-->
+    <EVENT>
+      <ID>6</ID>
+      <DESCRIPTION>Progress report end.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Progress Report Current-->
+    <EVENT>
+      <ID>7</ID>
+      <DESCRIPTION>Progress report current.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Progress Report Error-->
+    <EVENT>
+      <ID>8</ID>
+      <DESCRIPTION>Progress report error.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Query Begin-->
+    <EVENT>
+      <ID>9</ID>
+      <DESCRIPTION>Query begin.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Query End-->
+    <EVENT>
+      <ID>10</ID>
+      <DESCRIPTION>Query end.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Query Subcube-->
+    <EVENT>
+      <ID>11</ID>
+      <DESCRIPTION>Query subcube, for Usage Based Optimization.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Query Subcube Verbose-->
+    <EVENT>
+      <ID>12</ID>
+      <DESCRIPTION>Query subcube with detailed information. This event may have a negative impact on performance when turned on.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Command Begin-->
+    <EVENT>
+      <ID>15</ID>
+      <DESCRIPTION>Command begin.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Command End-->
+    <EVENT>
+      <ID>16</ID>
+      <DESCRIPTION>Command end.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Error-->
+    <EVENT>
+      <ID>17</ID>
+      <DESCRIPTION>Server error.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Audit Object Permission Event-->
+    <EVENT>
+      <ID>18</ID>
+      <DESCRIPTION>Records object permission changes.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Audit Admin Operations Event-->
+    <EVENT>
+      <ID>19</ID>
+      <DESCRIPTION>Records server backup/restore/synchronize/attach/detach/imageload/imagesave.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Server State Discover Begin-->
+    <EVENT>
+      <ID>33</ID>
+      <DESCRIPTION>Start of Server State Discover.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Server State Discover Data-->
+    <EVENT>
+      <ID>34</ID>
+      <DESCRIPTION>Contents of the Server State Discover Response.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Server State Discover End-->
+    <EVENT>
+      <ID>35</ID>
+      <DESCRIPTION>End of Server State Discover.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Discover Begin-->
+    <EVENT>
+      <ID>36</ID>
+      <DESCRIPTION>Start of Discover Request.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Discover End-->
+    <EVENT>
+      <ID>38</ID>
+      <DESCRIPTION>End of Discover Request.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Notification-->
+    <EVENT>
+      <ID>39</ID>
+      <DESCRIPTION>Notification event.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--User Defined-->
+    <EVENT>
+      <ID>40</ID>
+      <DESCRIPTION>User defined Event.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Existing Connection-->
+    <EVENT>
+      <ID>41</ID>
+      <DESCRIPTION>Existing user connection.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Existing Session-->
+    <EVENT>
+      <ID>42</ID>
+      <DESCRIPTION>Existing session.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Session Initialize-->
+    <EVENT>
+      <ID>43</ID>
+      <DESCRIPTION>Session Initialize.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Deadlock-->
+    <EVENT>
+      <ID>50</ID>
+      <DESCRIPTION>Metadata locks deadlock.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Lock Timeout-->
+    <EVENT>
+      <ID>51</ID>
+      <DESCRIPTION>Metadata lock timeout.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Lock Acquired-->
+    <EVENT>
+      <ID>52</ID>
+      <DESCRIPTION>The locks were acquired by the transaction</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Lock Released-->
+    <EVENT>
+      <ID>53</ID>
+      <DESCRIPTION>The locks were released by the transaction</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Lock Waiting-->
+    <EVENT>
+      <ID>54</ID>
+      <DESCRIPTION>The locks are held by another transaction and therefore this transaction is blocking until the locks are released</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Get Data From Aggregation-->
+    <EVENT>
+      <ID>60</ID>
+      <DESCRIPTION>Answer query by getting data from aggregation. This event may have a negative impact on performance when turned on.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Get Data From Cache-->
+    <EVENT>
+      <ID>61</ID>
+      <DESCRIPTION>Answer query by getting data from one of the caches. This event may have a negative impact on performance when turned on.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Query Cube Begin-->
+    <EVENT>
+      <ID>70</ID>
+      <DESCRIPTION>Query cube begin.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Query Cube End-->
+    <EVENT>
+      <ID>71</ID>
+      <DESCRIPTION>Query cube end.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Calculate Non Empty Begin-->
+    <EVENT>
+      <ID>72</ID>
+      <DESCRIPTION>Calculate non empty begin.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Calculate Non Empty Current-->
+    <EVENT>
+      <ID>73</ID>
+      <DESCRIPTION>Calculate non empty current.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Calculate Non Empty End-->
+    <EVENT>
+      <ID>74</ID>
+      <DESCRIPTION>Calculate non empty end.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Serialize Results Begin-->
+    <EVENT>
+      <ID>75</ID>
+      <DESCRIPTION>Serialize results begin.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Serialize Results Current-->
+    <EVENT>
+      <ID>76</ID>
+      <DESCRIPTION>Serialize results current.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Serialize Results End-->
+    <EVENT>
+      <ID>77</ID>
+      <DESCRIPTION>Serialize results end.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Execute MDX Script Begin-->
+    <EVENT>
+      <ID>78</ID>
+      <DESCRIPTION>Execute MDX script begin.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Execute MDX Script Current-->
+    <EVENT>
+      <ID>79</ID>
+      <DESCRIPTION>Execute MDX script current. Deprecated.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Execute MDX Script End-->
+    <EVENT>
+      <ID>80</ID>
+      <DESCRIPTION>Execute MDX script end.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Query Dimension-->
+    <EVENT>
+      <ID>81</ID>
+      <DESCRIPTION>Query dimension.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--VertiPaq SE Query Begin-->
+    <EVENT>
+      <ID>82</ID>
+      <DESCRIPTION>VertiPaq SE Query</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--VertiPaq SE Query End-->
+    <EVENT>
+      <ID>83</ID>
+      <DESCRIPTION>VertiPaq SE Query</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Resource Usage-->
+    <EVENT>
+      <ID>84</ID>
+      <DESCRIPTION>Reports reads, writes, cpu usage after end of commands and queries.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--VertiPaq SE Query Cache Match-->
+    <EVENT>
+      <ID>85</ID>
+      <DESCRIPTION>VertiPaq SE Query Cache Use</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--VertiPaq SE Query Cache Miss-->
+    <EVENT>
+      <ID>86</ID>
+      <DESCRIPTION>VertiPaq SE Query Cache Miss</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--File Load Begin-->
+    <EVENT>
+      <ID>90</ID>
+      <DESCRIPTION>File Load Begin.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--File Load End-->
+    <EVENT>
+      <ID>91</ID>
+      <DESCRIPTION>File Load End.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--File Save Begin-->
+    <EVENT>
+      <ID>92</ID>
+      <DESCRIPTION>File Save Begin.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--File Save End-->
+    <EVENT>
+      <ID>93</ID>
+      <DESCRIPTION>File Save End</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--PageOut Begin-->
+    <EVENT>
+      <ID>94</ID>
+      <DESCRIPTION>PageOut Begin.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--PageOut End-->
+    <EVENT>
+      <ID>95</ID>
+      <DESCRIPTION>PageOut End</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--PageIn Begin-->
+    <EVENT>
+      <ID>96</ID>
+      <DESCRIPTION>PageIn Begin.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--PageIn End-->
+    <EVENT>
+      <ID>97</ID>
+      <DESCRIPTION>PageIn End</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--DirectQuery Begin-->
+    <EVENT>
+      <ID>98</ID>
+      <DESCRIPTION>DirectQuery Begin.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--DirectQuery End-->
+    <EVENT>
+      <ID>99</ID>
+      <DESCRIPTION>DirectQuery End.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Calculation Evaluation-->
+    <EVENT>
+      <ID>110</ID>
+      <DESCRIPTION>Information about the evaluation of calculations. This event will have a negative impact on performance when turned on.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Calculation Evaluation Detailed Information-->
+    <EVENT>
+      <ID>111</ID>
+      <DESCRIPTION>Detailed information about the evaluation of calculations. This event will have a negative impact on performance when turned on.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--DAX Query Plan-->
+    <EVENT>
+      <ID>112</ID>
+      <DESCRIPTION>DAX logical/physical plan tree for VertiPaq and DirectQuery modes.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--WLGroup CPU Throttling-->
+    <EVENT>
+      <ID>113</ID>
+      <DESCRIPTION>Workload Group is throttled on CPU usage</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--WLGroup Exceeds Memory Limit-->
+    <EVENT>
+      <ID>114</ID>
+      <DESCRIPTION>Workload group exceeds the memory limit</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--WLGroup Exceeds Processing Limit-->
+    <EVENT>
+      <ID>115</ID>
+      <DESCRIPTION>Workload group exceeds the processing limit</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--DAX Extension Execution Begin-->
+    <EVENT>
+      <ID>120</ID>
+      <DESCRIPTION>DAX extension function execution begin event.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--DAX Extension Execution End-->
+    <EVENT>
+      <ID>121</ID>
+      <DESCRIPTION>DAX extension function execution end event.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--DAX Extension Trace Error-->
+    <EVENT>
+      <ID>122</ID>
+      <DESCRIPTION>DAX extension function error trace event directly traced by extension authors.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--DAX Extension Trace Info-->
+    <EVENT>
+      <ID>123</ID>
+      <DESCRIPTION>DAX extension function informational/telemetry trace event directly traced by extension authors.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--DAX Extension Trace Verbose-->
+    <EVENT>
+      <ID>124</ID>
+      <DESCRIPTION>DAX extension function verbose trace event directly traced by extension authors.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Execute MDX Script Error-->
+    <EVENT>
+      <ID>126</ID>
+      <DESCRIPTION>An error occurred during MDX script execution.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Execute Source Query-->
+    <EVENT>
+      <ID>130</ID>
+      <DESCRIPTION>Collection of all queries that are executed against the data source</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Aggregate Table Rewrite Query-->
+    <EVENT>
+      <ID>131</ID>
+      <DESCRIPTION>A query was rewritten according to available aggregate tables.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Aggregate Table Rewrite Info-->
+    <EVENT>
+      <ID>132</ID>
+      <DESCRIPTION>Information about aggregation table matching.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--DAX Query Shape-->
+    <EVENT>
+      <ID>133</ID>
+      <DESCRIPTION>Information about DAX query shape.</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+    <!--Job Graph-->
+    <EVENT>
+      <ID>134</ID>
+      <DESCRIPTION>Job graph related events</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+  </EVENTLIST>
+  <COLUMNLIST>
+    <!--EventClass-->
+    <COLUMN>
+      <ID>0</ID>
+      <DESCRIPTION>Event Class is used to categorize events.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--EventSubclass-->
+    <COLUMN>
+      <ID>1</ID>
+      <DESCRIPTION>Event Subclass provides additional information about each event class.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--CurrentTime-->
+    <COLUMN>
+      <ID>2</ID>
+      <DESCRIPTION>Time at which the event started, when available. For filtering, expected formats are 'YYYY-MM-DD' and 'YYYY-MM-DD HH:MM:SS'.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--StartTime-->
+    <COLUMN>
+      <ID>3</ID>
+      <DESCRIPTION>Time at which the event started, when available. For filtering, expected formats are 'YYYY-MM-DD' and 'YYYY-MM-DD HH:MM:SS'.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--EndTime-->
+    <COLUMN>
+      <ID>4</ID>
+      <DESCRIPTION>Time at which the event ended. This column is not populated for starting event classes, such as SQL:BatchStarting or SP:Starting. For filtering, expected formats are 'YYYY-MM-DD' and 'YYYY-MM-DD HH:MM:SS'.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--Duration-->
+    <COLUMN>
+      <ID>5</ID>
+      <DESCRIPTION>Amount of time (in milliseconds) taken by the event.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--CPUTime-->
+    <COLUMN>
+      <ID>6</ID>
+      <DESCRIPTION>Amount of CPU time (in milliseconds) used by the event.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--JobID-->
+    <COLUMN>
+      <ID>7</ID>
+      <DESCRIPTION>Job ID for progress.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--SessionType-->
+    <COLUMN>
+      <ID>8</ID>
+      <DESCRIPTION>Session type (what entity caused the operation).</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--ProgressTotal-->
+    <COLUMN>
+      <ID>9</ID>
+      <DESCRIPTION>Progress total.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--IntegerData-->
+    <COLUMN>
+      <ID>10</ID>
+      <DESCRIPTION>Integer data.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--ObjectID-->
+    <COLUMN>
+      <ID>11</ID>
+      <DESCRIPTION>Object ID (note this is a string).</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--ObjectType-->
+    <COLUMN>
+      <ID>12</ID>
+      <DESCRIPTION>Object type.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--ObjectName-->
+    <COLUMN>
+      <ID>13</ID>
+      <DESCRIPTION>Object name.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--ObjectPath-->
+    <COLUMN>
+      <ID>14</ID>
+      <DESCRIPTION>Object path.  A comma-separated list of parents, starting with the object's parent.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--ObjectReference-->
+    <COLUMN>
+      <ID>15</ID>
+      <DESCRIPTION>Object reference.  Encoded as XML for all parents, using tags to describe the object.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--Severity-->
+    <COLUMN>
+      <ID>22</ID>
+      <DESCRIPTION>Severity level of an exception.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--Success-->
+    <COLUMN>
+      <ID>23</ID>
+      <DESCRIPTION>1 = success. 0 = failure (for example, a 1 means success of a permissions check and a 0 means a failure of that check).</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--Error-->
+    <COLUMN>
+      <ID>24</ID>
+      <DESCRIPTION>Error number of a given event.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--ConnectionID-->
+    <COLUMN>
+      <ID>25</ID>
+      <DESCRIPTION>Unique connection ID.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--DatabaseName-->
+    <COLUMN>
+      <ID>28</ID>
+      <DESCRIPTION>Name of the database in which the statement of the user is running.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--NTUserName-->
+    <COLUMN>
+      <ID>32</ID>
+      <DESCRIPTION>Windows user name.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--NTDomainName-->
+    <COLUMN>
+      <ID>33</ID>
+      <DESCRIPTION>Windows domain to which the user belongs.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--ClientHostName-->
+    <COLUMN>
+      <ID>35</ID>
+      <DESCRIPTION>Name of the computer on which the client is running. This data column is populated if the host name is provided by the client.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--ClientProcessID-->
+    <COLUMN>
+      <ID>36</ID>
+      <DESCRIPTION>The process ID of the client application.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--ApplicationName-->
+    <COLUMN>
+      <ID>37</ID>
+      <DESCRIPTION>Name of the client application that created the connection to the server. This column is populated with the values passed by the application rather than the displayed name of the program.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--SessionID-->
+    <COLUMN>
+      <ID>39</ID>
+      <DESCRIPTION>Session GUID.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--NTCanonicalUserName-->
+    <COLUMN>
+      <ID>40</ID>
+      <DESCRIPTION>User name in canonical form.  For example, engineering.microsoft.com/software/someone.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--SPID-->
+    <COLUMN>
+      <ID>41</ID>
+      <DESCRIPTION>Server process ID.  This uniquely identifies a user session. This directly corresponds to the session GUID used by XML/A.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--TextData-->
+    <COLUMN>
+      <ID>42</ID>
+      <DESCRIPTION>Text data associated with the event.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--ServerName-->
+    <COLUMN>
+      <ID>43</ID>
+      <DESCRIPTION>Name of the server producing the event.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--RequestParameters-->
+    <COLUMN>
+      <ID>44</ID>
+      <DESCRIPTION>Parameters for parameterized queries and commands.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--RequestProperties-->
+    <COLUMN>
+      <ID>45</ID>
+      <DESCRIPTION>XMLA request properties.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--ActivityID-->
+    <COLUMN>
+      <ID>46</ID>
+      <DESCRIPTION>The activity ID is used to track the request(s) from the same operation.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--RequestID-->
+    <COLUMN>
+      <ID>47</ID>
+      <DESCRIPTION>The request ID is used to track a request.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--CalculationExpression-->
+    <COLUMN>
+      <ID>48</ID>
+      <DESCRIPTION>Expression being evaluated when error occurred.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--ErrorType-->
+    <COLUMN>
+      <ID>49</ID>
+      <DESCRIPTION>Error Type: 0 = unknown, 1 = user, 2 = system.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--FunctionName-->
+    <COLUMN>
+      <ID>50</ID>
+      <DESCRIPTION>Name of the Dax extension function being executed.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--UserObjectID-->
+    <COLUMN>
+      <ID>51</ID>
+      <DESCRIPTION>User Object ID.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--ApplicationContext-->
+    <COLUMN>
+      <ID>52</ID>
+      <DESCRIPTION>The value of the ApplicationContext XMLA property as provided by external applications to assist with end-to-end correlation of user activities.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--DatabaseFriendlyName-->
+    <COLUMN>
+      <ID>54</ID>
+      <DESCRIPTION>User defined name of the database in which the statement of the user is running.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--Identity-->
+    <COLUMN>
+      <ID>55</ID>
+      <DESCRIPTION>Identity information of current user</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--BinaryData-->
+    <COLUMN>
+      <ID>56</ID>
+      <DESCRIPTION>ProfilerAdded column</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+  </COLUMNLIST>
+</EventColumnDescriptions>

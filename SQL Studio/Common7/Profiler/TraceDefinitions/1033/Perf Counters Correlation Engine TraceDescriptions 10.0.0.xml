@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EventColumnDescriptions xmlns="http://tempuri.org/xmlfile.xsd">
+  <_locDefinition>
+    <_locDefault _loc="locNone" />
+    <_locTag _loc="locData">DESCRIPTION</_locTag>
+    <_locTag _loc="locData">BESTPRACTICE</_locTag>
+  </_locDefinition>
+  <EVENTCATEGORIESLIST>
+    <EVENTCATEGORY>
+      <NAME>Main</NAME>
+      <DESCRIPTION>All Perf Counters Correlation Engine events</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENTCATEGORY>
+  </EVENTCATEGORIESLIST>
+  <EVENTLIST>
+    <!--Performace Counter Data Event-->
+    <EVENT>
+      <ID>64507</ID>
+      <DESCRIPTION>Performace Counter Data Event</DESCRIPTION>
+      <BESTPRACTICE />
+    </EVENT>
+  </EVENTLIST>
+  <COLUMNLIST>
+    <!--TextData-->
+    <COLUMN>
+      <ID>1</ID>
+      <DESCRIPTION>Text value dependent on the event class captured in the trace.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--StartTime-->
+    <COLUMN>
+      <ID>14</ID>
+      <DESCRIPTION>Time at which the event started, when available.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--EndTime-->
+    <COLUMN>
+      <ID>15</ID>
+      <DESCRIPTION>Time at which the event ended.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--EventClass-->
+    <COLUMN>
+      <ID>27</ID>
+      <DESCRIPTION>Event class name.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+    <!--TimePoint-->
+    <COLUMN>
+      <ID>64492</ID>
+      <DESCRIPTION>Number of seconds from the beginning of the trace.</DESCRIPTION>
+      <BESTPRACTICE />
+    </COLUMN>
+  </COLUMNLIST>
+</EventColumnDescriptions>

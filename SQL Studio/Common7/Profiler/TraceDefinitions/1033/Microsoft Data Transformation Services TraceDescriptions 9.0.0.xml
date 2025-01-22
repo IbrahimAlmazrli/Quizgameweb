@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EventColumnDescriptions xmlns="http://tempuri.org/xmlfile.xsd">
+    <_locDefinition>
+    	<_locDefault _loc="locNone" /> 
+    	<_locTag _loc="locData">DESCRIPTION</_locTag> 
+        <_locTag _loc="locData">BESTPRACTICE</_locTag> 
+    </_locDefinition>
+    <EVENTCATEGORIESLIST>
+        <EVENTCATEGORY>
+            <NAME>Execution</NAME>
+            <DESCRIPTION>Collection of package execution event classes.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENTCATEGORY>
+     </EVENTCATEGORIESLIST>
+    <EVENTLIST>
+        <EVENT>
+            <ID>1</ID>
+            <DESCRIPTION>Collects all PreExecute events since the trace was started, such as one generated for prior to execution of tasks, etc.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>2</ID>
+            <DESCRIPTION>Collects all PostExecute events since the trace was started, such as one generated for prior to execution of tasks, etc.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>3</ID>
+            <DESCRIPTION>Collects all PreValidate events since the trace was started, such as one generated for prior to execution of tasks, etc.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>4</ID>
+            <DESCRIPTION>Collects all PostValidate events since the trace was started, such as one generated for prior to execution of tasks, etc.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>5</ID>
+            <DESCRIPTION>Collects all Warning events since the trace was started, such as one generated for prior to execution of tasks, etc.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>6</ID>
+            <DESCRIPTION>Collects all Error events since the trace was started, such as one generated for prior to execution of tasks, etc.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>7</ID>
+            <DESCRIPTION>Collects all TaskFaield events since the trace was started, such as one generated for prior to execution of tasks, etc.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>8</ID>
+            <DESCRIPTION>Collects all Progress events since the trace was started, such as one generated for prior to execution of tasks, etc.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>9</ID>
+            <DESCRIPTION>Collects all QueryCancel events since the trace was started, such as one generated for prior to execution of tasks, etc.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>10</ID>
+            <DESCRIPTION>Collects all ExecStatusChanged events since the trace was started, such as one generated for prior to execution of tasks, etc.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>11</ID>
+            <DESCRIPTION>Collects all VariableValueChanged events since the trace was started, such as one generated for prior to execution of tasks, etc.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>12</ID>
+            <DESCRIPTION>Collects all CustomEvent events since the trace was started, such as one generated for prior to execution of tasks, etc.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>13</ID>
+            <DESCRIPTION>Collects all User events since the trace was started, such as one generated for prior to execution of tasks, etc.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+    </EVENTLIST>
+    <COLUMNLIST>
+		<COLUMN>
+			<ID>1</ID>
+			<DESCRIPTION>Class of this event</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>
+		<COLUMN>
+			<ID>26</ID>
+			<DESCRIPTION>Computer that generated this event</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>
+		<COLUMN>
+			<ID>50</ID>
+			<DESCRIPTION>User-specified event name</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>
+		<COLUMN>
+			<ID>51</ID>
+			<DESCRIPTION>Identity of the user that caused this event</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>
+		<COLUMN>
+			<ID>52</ID>
+			<DESCRIPTION>Name of the source of this event</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>		
+		<COLUMN>
+			<ID>53</ID>
+			<DESCRIPTION>Globally unique identifier of the source of this event</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>		
+		<COLUMN>
+			<ID>54</ID>
+			<DESCRIPTION>Globally unique identifier of a particular package execution</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>		
+		<COLUMN>
+			<ID>55</ID>
+			<DESCRIPTION>Start time of this event</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>		
+		<COLUMN>
+			<ID>56</ID>
+			<DESCRIPTION>End time of this event</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>		
+		<COLUMN>
+			<ID>57</ID>
+			<DESCRIPTION>Data code associated with this event</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>		
+		<COLUMN>
+			<ID>58</ID>
+			<DESCRIPTION>Data bytes associated with this event</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>		
+		<COLUMN>
+			<ID>59</ID>
+			<DESCRIPTION>Message associated with this event</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>		
+    </COLUMNLIST>
+</EventColumnDescriptions>

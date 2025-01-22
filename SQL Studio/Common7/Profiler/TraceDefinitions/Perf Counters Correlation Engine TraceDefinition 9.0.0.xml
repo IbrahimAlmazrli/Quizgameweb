@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?> 
+<TRACEDEFINITION>
+	<_locDefinition>
+		<_locDefault _loc="locNone" /> 
+		<_locTag _loc="locData">DESCRIPTION</_locTag> 
+	</_locDefinition>
+	<TRACEPROVIDER>
+		<NAME>Perf Counters Correlation Engine</NAME>
+		<VERSION>
+			<MAJOR>9</MAJOR>
+			<MINOR>0</MINOR>
+			<BUILDNUMBER>0</BUILDNUMBER>
+		</VERSION>
+		<TYPE>Invalid Type</TYPE>
+	</TRACEPROVIDER>
+	<EVENTCATEGORYLIST>
+		<EVENTCATEGORY>
+			<NAME>Main</NAME>
+			<TYPE>1</TYPE>
+            <DESCRIPTION>All Perf Counters Correlation Engine events</DESCRIPTION>
+			<EVENTLIST>
+				<EVENT>
+					<ID>64507</ID>
+					<NAME>Performace Counter Data Event</NAME>
+					<DESCRIPTION>Performace Counter Data Event</DESCRIPTION>
+					<EVENTCOLUMNLIST>
+						<EVENTCOLUMN>
+							<ID>1</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>14</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>15</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>64492</ID>
+						</EVENTCOLUMN>
+					</EVENTCOLUMNLIST>
+				</EVENT>
+			</EVENTLIST>
+		</EVENTCATEGORY>
+	</EVENTCATEGORYLIST>
+	<COLUMNLIST>
+		<COLUMN>
+			<ID>1</ID>
+			<TYPE>9</TYPE>
+			<NAME>TextData</NAME>
+			<DESCRIPTION>Text value dependent on the event class captured in the trace.</DESCRIPTION>
+			<FILTERABLE>true</FILTERABLE>
+			<REPEATABLE>false</REPEATABLE>
+			<REPEATEDBASE>false</REPEATEDBASE>
+		</COLUMN>
+		<COLUMN>
+			<ID>14</ID>
+			<TYPE>6</TYPE>
+			<NAME>StartTime</NAME>
+			<DESCRIPTION>Time at which the event started, when available.</DESCRIPTION>
+			<FILTERABLE>true</FILTERABLE>
+			<REPEATABLE>false</REPEATABLE>
+			<REPEATEDBASE>false</REPEATEDBASE>
+		</COLUMN>
+		<COLUMN>
+			<ID>15</ID>
+			<TYPE>6</TYPE>
+			<NAME>EndTime</NAME>
+			<DESCRIPTION>Time at which the event ended.</DESCRIPTION>
+			<FILTERABLE>true</FILTERABLE>
+			<REPEATABLE>false</REPEATABLE>
+			<REPEATEDBASE>false</REPEATEDBASE>
+		</COLUMN>
+        <COLUMN>
+           <ID>27</ID>
+           <TYPE>8</TYPE>
+           <NAME>EventClass</NAME>
+           <DESCRIPTION>Event class name.</DESCRIPTION>
+           <FILTERABLE>false</FILTERABLE>
+           <REPEATABLE>true</REPEATABLE>
+           <REPEATEDBASE>false</REPEATEDBASE>
+        </COLUMN>
+        <COLUMN>
+           <ID>64492</ID>
+           <TYPE>1</TYPE>
+           <NAME>TimePoint</NAME>
+           <DESCRIPTION>Number of seconds from the beginning of the trace.</DESCRIPTION>
+           <FILTERABLE>false</FILTERABLE>
+           <REPEATABLE>true</REPEATABLE>
+           <REPEATEDBASE>false</REPEATEDBASE>
+        </COLUMN>
+	</COLUMNLIST>
+</TRACEDEFINITION>

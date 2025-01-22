@@ -1,0 +1,31 @@
+<Extensions xmlns="http://www.microsoft.com/SqlServer/Dts/Extensions.xsd">
+  <Tasks>
+    <Task Identifier="HadoopFileSystemTask" Model=".NET">
+      <CreationName>Microsoft.SqlServer.IntegrationService.HadoopTasks.Tasks.HadoopFileSystemTask, Microsoft.SqlServer.IntegrationService.HadoopTasks, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</CreationName>
+    </Task>
+    <Task Identifier="HadoopHiveTask" Model=".NET">
+      <CreationName>Microsoft.SqlServer.IntegrationService.HadoopTasks.Tasks.HadoopHiveTask, Microsoft.SqlServer.IntegrationService.HadoopTasks, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</CreationName>
+    </Task>
+    <Task Identifier="HadoopPigTask" Model=".NET">
+      <CreationName>Microsoft.SqlServer.IntegrationService.HadoopTasks.Tasks.HadoopPigTask, Microsoft.SqlServer.IntegrationService.HadoopTasks, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</CreationName>
+    </Task>
+  </Tasks>
+  <PipelineComponents>
+    <PipelineComponent Identifier="HdfsSource" Model=".NET">
+      <CreationName>Microsoft.SqlServer.IntegrationService.HadoopComponents.Source.HdfsSource, Microsoft.SqlServer.IntegrationService.HadoopComponents, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</CreationName>
+    </PipelineComponent>
+    <PipelineComponent Identifier="HdfsDest" Model=".NET">
+      <CreationName>Microsoft.SqlServer.IntegrationService.HadoopComponents.Destination.HdfsDest, Microsoft.SqlServer.IntegrationService.HadoopComponents, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</CreationName>
+    </PipelineComponent>
+  </PipelineComponents>
+  <ConnectionManagers>
+    <ConnectionManager Identifier="Hadoop" Model=".NET">
+      <CreationName>Microsoft.SqlServer.IntegrationService.HadoopConnections.HadoopConnMgr, Microsoft.SqlServer.IntegrationService.HadoopConnections, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</CreationName>
+    </ConnectionManager>
+  </ConnectionManagers>
+  <Enumerators>
+    <Enumerator Identifier="ForEachHdfsEnumerator" Model=".NET">
+      <CreationName>Microsoft.SqlServer.IntegrationService.HadoopEnumerators.ForEachHdfsEnumerator, Microsoft.SqlServer.IntegrationService.HadoopEnumerators, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</CreationName>
+    </Enumerator>
+  </Enumerators>
+</Extensions>

@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EventColumnDescriptions xmlns="http://tempuri.org/xmlfile.xsd">
+	<_locDefinition>
+		<_locDefault _loc="locNone"/>
+		<_locTag _loc="locData">DESCRIPTION</_locTag>
+		<_locTag _loc="locData">BESTPRACTICE</_locTag>
+	</_locDefinition>
+	<EVENTCATEGORIESLIST>
+		<EVENTCATEGORY>
+			<NAME>Command Events</NAME>
+			<DESCRIPTION>Sammlung von Ereignissen für Befehle.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENTCATEGORY>
+		<EVENTCATEGORY>
+			<NAME>Discover Events</NAME>
+			<DESCRIPTION>Sammlung von Ereignissen für Ermittlungsanforderungen.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENTCATEGORY>
+		<EVENTCATEGORY>
+			<NAME>Discover Server State Events</NAME>
+			<DESCRIPTION>Sammlung von Ereignissen für die Serverstatusermittlung.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENTCATEGORY>
+		<EVENTCATEGORY>
+			<NAME>Errors and Warnings</NAME>
+			<DESCRIPTION>Sammlung von Ereignissen für Serverfehler.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENTCATEGORY>
+		<EVENTCATEGORY>
+			<NAME>Notification Events</NAME>
+			<DESCRIPTION>Sammlung von Benachrichtigungsereignissen.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENTCATEGORY>
+		<EVENTCATEGORY>
+			<NAME>Progress Reports</NAME>
+			<DESCRIPTION>Sammlung von Ereignissen für die Statusberichterstellung.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENTCATEGORY>
+		<EVENTCATEGORY>
+			<NAME>Queries Events</NAME>
+			<DESCRIPTION>Sammlung von Ereignissen für Abfragen.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Query Processing</NAME>
+      <DESCRIPTION>Sammlung von Ereignissen für eine Abfrageausführung.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+			<NAME>Security Audit</NAME>
+			<DESCRIPTION>Sammlung von Ereignisklassen der Datenbanküberwachung.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENTCATEGORY>
+		<EVENTCATEGORY>
+			<NAME>Session Events</NAME>
+			<DESCRIPTION>Sammlung von Sitzungsereignissen.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENTCATEGORY>
+	</EVENTCATEGORIESLIST>
+	<EVENTLIST>
+		<!--Audit Login-->
+		<EVENT>
+			<ID>1</ID>
+			<DESCRIPTION>Listet alle neuen Verbindungsereignisse auf, die seit dem Start der Ablaufverfolgung aufgetreten sind, z. B. wenn ein Client eine Verbindung mit einem Server anfordert, auf dem eine Instanz von SQL Server ausgeführt wird.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Audit Logout-->
+		<EVENT>
+			<ID>2</ID>
+			<DESCRIPTION>Listet alle neuen Ereignisse zum Trennen einer Verbindung auf, die seit dem Start der Ablaufverfolgung aufgetreten sind, z. B. wenn ein Client einen Befehl zum Trennen der Verbindung ausgibt.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Audit Server Starts And Stops-->
+		<EVENT>
+			<ID>4</ID>
+			<DESCRIPTION>Zeichnet das Herunterfahren, Starten und Anhalten des Diensts auf.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Progress Report Begin-->
+		<EVENT>
+			<ID>5</ID>
+			<DESCRIPTION>Fortschrittsberichtsbeginn</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Progress Report End-->
+		<EVENT>
+			<ID>6</ID>
+			<DESCRIPTION>Fortschrittsberichtsende</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Progress Report Current-->
+		<EVENT>
+			<ID>7</ID>
+			<DESCRIPTION>Fortschrittsbericht aktuell.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Progress Report Error-->
+		<EVENT>
+			<ID>8</ID>
+			<DESCRIPTION>Fortschrittsberichtsfehler</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Query Begin-->
+		<EVENT>
+			<ID>9</ID>
+			<DESCRIPTION>Abfrage - Anfang</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Query End-->
+		<EVENT>
+			<ID>10</ID>
+			<DESCRIPTION>Abfrage - Ende</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Query Subcube-->
+		<EVENT>
+			<ID>11</ID>
+			<DESCRIPTION>Fragt den Teilcube ab, für verwendungsbasierte Optimierung.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Query Subcube Verbose-->
+		<EVENT>
+			<ID>12</ID>
+			<DESCRIPTION>Teilcube mit detaillierten Informationen abfragen. Dieses Ereignis kann sich bei Aktivierung negativ auf die Leistung auswirken.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Command Begin-->
+		<EVENT>
+			<ID>15</ID>
+			<DESCRIPTION>Befehlsbeginn</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Command End-->
+		<EVENT>
+			<ID>16</ID>
+			<DESCRIPTION>Befehlsende</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Error-->
+		<EVENT>
+			<ID>17</ID>
+			<DESCRIPTION>Serverfehler</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Audit Object Permission Event-->
+		<EVENT>
+			<ID>18</ID>
+			<DESCRIPTION>Zeichnet Änderungen der Objektberechtigungen auf.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Audit Backup/Restore Event-->
+		<EVENT>
+			<ID>19</ID>
+			<DESCRIPTION>Zeichnet die Sicherung/Wiederherstellung des Servers auf.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Server State Discover Begin-->
+		<EVENT>
+			<ID>33</ID>
+			<DESCRIPTION>Beginn der Serverstatusermittlung.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Server State Discover Data-->
+		<EVENT>
+			<ID>34</ID>
+			<DESCRIPTION>Inhalt der Serverstatusermittlungs-Antwort.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Server State Discover End-->
+		<EVENT>
+			<ID>35</ID>
+			<DESCRIPTION>Ende der Serverstatusermittlung.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Discover Begin-->
+		<EVENT>
+			<ID>36</ID>
+			<DESCRIPTION>Beginn der Ermittlungsanforderung.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Discover End-->
+		<EVENT>
+			<ID>38</ID>
+			<DESCRIPTION>Ende der Ermittlungsanforderung.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Notification-->
+		<EVENT>
+			<ID>39</ID>
+			<DESCRIPTION>Benachrichtigungsereignis</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--User Defined-->
+		<EVENT>
+			<ID>40</ID>
+			<DESCRIPTION>Vorhandene Benutzerverbindung.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Existing Connection-->
+		<EVENT>
+			<ID>41</ID>
+			<DESCRIPTION>Teilcube mit detaillierten Informationen abfragen. Dieses Ereignis kann sich bei Aktivierung negativ auf die Leistung auswirken.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Existing Session-->
+		<EVENT>
+			<ID>42</ID>
+			<DESCRIPTION>Vorhandene Sitzung</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+		<!--Session Initialize-->
+		<EVENT>
+			<ID>43</ID>
+			<DESCRIPTION>Sitzungsinitialisierung</DESCRIPTION>
+			<BESTPRACTICE/>
+		</EVENT>
+    <!--Get Data From Aggregation-->
+    <EVENT>
+      <ID>60</ID>
+      <DESCRIPTION>Abfrage durch Abrufen von Daten aus der Aggregation beantworten. Dieses Ereignis kann sich bei Aktivierung negativ auf die Leistung auswirken.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Get Data From Cache-->
+    <EVENT>
+      <ID>61</ID>
+      <DESCRIPTION>Abfrage durch Abrufen von Daten aus einem der Caches beantworten. Dieses Ereignis kann sich bei Aktivierung negativ auf die Leistung auswirken.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Query Cube Begin-->
+    <EVENT>
+      <ID>70</ID>
+      <DESCRIPTION>Cubeabfrage - Anfang.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Query Cube End-->
+    <EVENT>
+      <ID>71</ID>
+      <DESCRIPTION>Cubeabfrage - Ende.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Calculate Non Empty Begin-->
+    <EVENT>
+      <ID>72</ID>
+      <DESCRIPTION>Berechnung nicht leerer Elemente - Anfang.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Calculate Non Empty Current-->
+    <EVENT>
+      <ID>73</ID>
+      <DESCRIPTION>Berechnung nicht leerer Elemente - aktuell.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Calculate Non Empty End-->
+    <EVENT>
+      <ID>74</ID>
+      <DESCRIPTION>Berechnung nicht leerer Elemente - Ende.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Serialize Results Begin-->
+    <EVENT>
+      <ID>75</ID>
+      <DESCRIPTION>Ergebnisserialisierung - Anfang.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Serialize Results Current-->
+    <EVENT>
+      <ID>76</ID>
+      <DESCRIPTION>Ergebnisserialisierung - aktuell.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Serialize Results End-->
+    <EVENT>
+      <ID>77</ID>
+      <DESCRIPTION>Ergebnisserialisierung - Ende.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Execute MDX Script Begin-->
+    <EVENT>
+      <ID>78</ID>
+      <DESCRIPTION>MDX-Skriptausführung - Anfang.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Execute MDX Script Current-->
+    <EVENT>
+      <ID>79</ID>
+      <DESCRIPTION>MDX-Skriptausführung - aktuell.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Execute MDX Script End-->
+    <EVENT>
+      <ID>80</ID>
+      <DESCRIPTION>MDX-Skriptausführung - Ende.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Query Dimension-->
+      <EVENT>
+        <ID>81</ID>
+        <DESCRIPTION>Dimension abfragen.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+  </EVENTLIST>
+	<COLUMNLIST>
+		<!--EventClass-->
+		<COLUMN>
+			<ID>0</ID>
+			<DESCRIPTION>Mithilfe der Ereignisklasse werden Ereignisse kategorisiert.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--EventSubclass-->
+		<COLUMN>
+			<ID>1</ID>
+			<DESCRIPTION>Die Ereignisunterklasse stellt zusätzliche Informationen zu jeder Ereignisklasse bereit.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--CurrentTime-->
+		<COLUMN>
+			<ID>2</ID>
+			<DESCRIPTION>Der Zeitpunkt, zu dem das Ereignis begonnen hat, falls verfügbar. Beim Filtern werden die Formate "YYYY-MM-DD" und "YYYY-MM-DD HH:MM:SS" erwartet.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--StartTime-->
+		<COLUMN>
+			<ID>3</ID>
+			<DESCRIPTION>Der Zeitpunkt, zu dem das Ereignis begonnen hat, falls verfügbar. Beim Filtern werden die Formate "YYYY-MM-DD" und "YYYY-MM-DD HH:MM:SS" erwartet.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--EndTime-->
+		<COLUMN>
+			<ID>4</ID>
+			<DESCRIPTION>Der Zeitpunkt, zu dem das Ereignis beendet wurde. Diese Spalte wird für Startereignisklassen, wie z. B. "SQL:BatchStarting" oder "SP:Starting", nicht aufgefüllt. Beim Filtern werden die Formate "YYYY-MM-DD" und "YYYY-MM-DD HH:MM:SS" erwartet.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--Duration-->
+		<COLUMN>
+			<ID>5</ID>
+			<DESCRIPTION>Zeit (in Millisekunden), die für das Ereignis benötigt wurde.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--CPUTime-->
+		<COLUMN>
+			<ID>6</ID>
+			<DESCRIPTION>CPU-Zeit (in Millisekunden), die vom Ereignis verwendet wurde.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--JobID-->
+		<COLUMN>
+			<ID>7</ID>
+			<DESCRIPTION>Auftrags-ID für den Fortschritt.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--SessionType-->
+		<COLUMN>
+			<ID>8</ID>
+			<DESCRIPTION>Sitzungstyp (die Entität, die den Vorgang ausgelöst hat).</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--ProgressTotal-->
+		<COLUMN>
+			<ID>9</ID>
+			<DESCRIPTION>Gesamtfortschritt</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--IntegerData-->
+		<COLUMN>
+			<ID>10</ID>
+			<DESCRIPTION>Ganzzahlige Daten.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--ObjectID-->
+		<COLUMN>
+			<ID>11</ID>
+			<DESCRIPTION>Objekt-ID (dies ist eine Zeichenfolge).</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--ObjectType-->
+		<COLUMN>
+			<ID>12</ID>
+			<DESCRIPTION>Objekttyp</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--ObjectName-->
+		<COLUMN>
+			<ID>13</ID>
+			<DESCRIPTION>Objektname</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--ObjectPath-->
+		<COLUMN>
+			<ID>14</ID>
+			<DESCRIPTION>Objektpfad. Eine durch Trennzeichen getrennte Liste übergeordneter Elemente, beginnend mit dem übergeordneten Element des Objekts.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--ObjectReference-->
+		<COLUMN>
+			<ID>15</ID>
+			<DESCRIPTION>Objektverweis. Dieser ist für alle übergeordneten Elemente als XML codiert und enthält Tags zur Objektbeschreibung.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--Severity-->
+		<COLUMN>
+			<ID>22</ID>
+			<DESCRIPTION>Schweregrad einer Ausnahme.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--Success-->
+		<COLUMN>
+			<ID>23</ID>
+			<DESCRIPTION>1 = Erfolg. 0 = Fehler (z. B. gibt der Wert "1" den Erfolg einer Berechtigungsüberprüfung und "0" einen Fehler bei dieser Überprüfung an).</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--Error-->
+		<COLUMN>
+			<ID>24</ID>
+			<DESCRIPTION>Fehlernummer eines bestimmten Ereignisses.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--ConnectionID-->
+		<COLUMN>
+			<ID>25</ID>
+			<DESCRIPTION>Eindeutige Verbindungs-ID.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--DatabaseName-->
+		<COLUMN>
+			<ID>28</ID>
+			<DESCRIPTION>Name der Datenbank, in der die Anweisung des Benutzers ausgeführt wird.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--NTUserName-->
+		<COLUMN>
+			<ID>32</ID>
+			<DESCRIPTION>Windows-Benutzername</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--NTDomainName-->
+		<COLUMN>
+			<ID>33</ID>
+			<DESCRIPTION>Windows-Domäne, zu der der Benutzer gehört.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--ClientHostName-->
+		<COLUMN>
+			<ID>35</ID>
+			<DESCRIPTION>Der Name des Computers, auf dem der Client ausgeführt wird. Diese Datenspalte wird aufgefüllt, wenn der Hostname vom Client bereitgestellt wird.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--ClientProcessID-->
+		<COLUMN>
+			<ID>36</ID>
+			<DESCRIPTION>Prozess-ID der Clientanwendung.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--ApplicationName-->
+		<COLUMN>
+			<ID>37</ID>
+			<DESCRIPTION>Der Name der Clientanwendung, die die Verbindung mit dem Server hergestellt hat. Diese Spalte wird mit den von der Anwendung übergebenen Werten und nicht mit dem angezeigten Programmnamen aufgefüllt.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--SessionID-->
+		<COLUMN>
+			<ID>39</ID>
+			<DESCRIPTION>Sitzungs-GUID</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--NTCanonicalUserName-->
+		<COLUMN>
+			<ID>40</ID>
+			<DESCRIPTION>Der Benutzername im kanonischen Format. Beispielsweise "engineering.microsoft.com/software/jemand".</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--SPID-->
+		<COLUMN>
+			<ID>41</ID>
+			<DESCRIPTION>Serverprozess-ID. Hiermit wird eine Benutzersitzung eindeutig identifiziert. Dies entspricht direkt der Sitzungs-GUID, die von XMLA verwendet wird.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--TextData-->
+		<COLUMN>
+			<ID>42</ID>
+			<DESCRIPTION>Textdaten für das Ereignis.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--ServerName-->
+		<COLUMN>
+			<ID>43</ID>
+			<DESCRIPTION>Name des Servers, der das Ereignis generiert.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--RequestParameters-->
+		<COLUMN>
+			<ID>44</ID>
+			<DESCRIPTION>Parameter für parametrisierte Abfragen und Befehle.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--RequestProperties-->
+		<COLUMN>
+			<ID>45</ID>
+			<DESCRIPTION>XMLA-Anforderungseigenschaften</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+		<!--BinaryData-->
+		<COLUMN>
+			<ID>46</ID>
+			<DESCRIPTION>Binärwert, der von der Ereignisklasse abhängt, die in der Ablaufverfolgung aufgezeichnet wurde.</DESCRIPTION>
+			<BESTPRACTICE/>
+		</COLUMN>
+	</COLUMNLIST>
+</EventColumnDescriptions>

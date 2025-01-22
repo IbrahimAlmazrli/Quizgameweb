@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mappings xmlns="http://www.microsoft.com/SqlServer/Dts/UpgradeMapping.xsd">
+  <!-- Extensions -->
+  <ExtensionMapping tag="HadoopFileSystemTask"
+                    oldAssemblyStrongName="Microsoft.SqlServer.IntegrationService.HadoopTasks.Tasks.HadoopFileSystemTask, Microsoft.SqlServer.IntegrationService.HadoopTasks, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+                    newAssemblyStrongName="Microsoft.SqlServer.IntegrationService.HadoopTasks.Tasks.HadoopFileSystemTask, Microsoft.SqlServer.IntegrationService.HadoopTasks, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+  <ExtensionMapping tag="HadoopHiveTask"
+                    oldAssemblyStrongName="Microsoft.SqlServer.IntegrationService.HadoopTasks.Tasks.HadoopHiveTask, Microsoft.SqlServer.IntegrationService.HadoopTasks, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+                    newAssemblyStrongName="Microsoft.SqlServer.IntegrationService.HadoopTasks.Tasks.HadoopHiveTask, Microsoft.SqlServer.IntegrationService.HadoopTasks, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+  <ExtensionMapping tag="HadoopPigTask"
+                    oldAssemblyStrongName="Microsoft.SqlServer.IntegrationService.HadoopTasks.Tasks.HadoopPigTask, Microsoft.SqlServer.IntegrationService.HadoopTasks, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+                    newAssemblyStrongName="Microsoft.SqlServer.IntegrationService.HadoopTasks.Tasks.HadoopPigTask, Microsoft.SqlServer.IntegrationService.HadoopTasks, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+  <ExtensionMapping tag="HdfsSource"
+                    oldAssemblyStrongName="Microsoft.SqlServer.IntegrationService.HadoopComponents.Source.HdfsSource, Microsoft.SqlServer.IntegrationService.HadoopComponents, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+                    newAssemblyStrongName="Microsoft.SqlServer.IntegrationService.HadoopComponents.Source.HdfsSource, Microsoft.SqlServer.IntegrationService.HadoopComponents, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+  <ExtensionMapping tag="HdfsDest"
+                    oldAssemblyStrongName="Microsoft.SqlServer.IntegrationService.HadoopComponents.Destination.HdfsDest, Microsoft.SqlServer.IntegrationService.HadoopComponents, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+                    newAssemblyStrongName="Microsoft.SqlServer.IntegrationService.HadoopComponents.Destination.HdfsDest, Microsoft.SqlServer.IntegrationService.HadoopComponents, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+  <ExtensionMapping tag="ForEachHdfsEnumerator"
+                    oldAssemblyStrongName="Microsoft.SqlServer.IntegrationService.HadoopEnumerators.ForEachHdfsEnumerator, Microsoft.SqlServer.IntegrationService.HadoopEnumerators, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+                    newAssemblyStrongName="Microsoft.SqlServer.IntegrationService.HadoopEnumerators.ForEachHdfsEnumerator, Microsoft.SqlServer.IntegrationService.HadoopEnumerators, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+</Mappings>

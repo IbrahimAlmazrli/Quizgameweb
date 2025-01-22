@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity name="Microsoft.DataTransformationServices.VsIntegration" version="16.0.0.0" publicKeyToken="89845dcd8080cc91" processorArchitecture="msil" />
+  <clrClass clsid="{78F4D154-DD69-3619-A6A6-4E5203663E2F}" progid="Microsoft.DataTransformationServices.Project.ComponentModel.NodePropertyObject" threadingModel="Both" name="Microsoft.DataTransformationServices.Project.ComponentModel.NodePropertyObject" runtimeVersion="v4.0.30319" />
+  <clrClass clsid="{ECF92C51-7A9A-4D25-88F9-C4B76EB0C2A1}" progid="Microsoft.DataTransformationServices.Project.DebugEngine.DebugEngine" threadingModel="Both" name="Microsoft.DataTransformationServices.Project.DebugEngine.DebugEngine" runtimeVersion="v4.0.30319" />
+  <clrClass clsid="{850B6165-9FDF-444A-A28B-3A0033E1F71C}" progid="Microsoft.DataTransformationServices.Project.ProjectCommonPropertyPage" threadingModel="Both" name="Microsoft.DataTransformationServices.Project.ProjectCommonPropertyPage" runtimeVersion="v4.0.30319" />
+  <clrClass clsid="{64B2CC4D-9FB9-4952-B955-5D3EF23C42AE}" progid="Microsoft.DataTransformationServices.Project.DataTransformationsDeploymentUtilityPropertyPage" threadingModel="Both" name="Microsoft.DataTransformationServices.Project.DataTransformationsDeploymentUtilityPropertyPage" runtimeVersion="v4.0.30319" />
+  <clrClass clsid="{D444BA52-E31A-4AC6-9807-BC432E2FE7A6}" progid="Microsoft.DataTransformationServices.Project.DataTransformationsProjectDeploymentPropertyPage" threadingModel="Both" name="Microsoft.DataTransformationServices.Project.DataTransformationsProjectDeploymentPropertyPage" runtimeVersion="v4.0.30319" />
+  <clrClass clsid="{33163866-67FE-40C1-A12F-F2C33BC02EC5}" progid="Microsoft.DataTransformationServices.Project.DataTransformationsBuildPropertyPage" threadingModel="Both" name="Microsoft.DataTransformationServices.Project.DataTransformationsBuildPropertyPage" runtimeVersion="v4.0.30319" />
+  <clrClass clsid="{186FDEA5-8531-4C0C-B2EC-20CAA8C99E5D}" progid="Microsoft.DataTransformationServices.Project.DtsGeneralPropertyPage" threadingModel="Both" name="Microsoft.DataTransformationServices.Project.DtsGeneralPropertyPage" runtimeVersion="v4.0.30319" />
+  <file name="Microsoft.DataTransformationServices.VsIntegration.dll" hashalg="SHA1" />
+</assembly>

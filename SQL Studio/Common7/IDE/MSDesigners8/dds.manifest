@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity type="win32" name="MSDesigners8\dds" processorArchitecture="X86" version="1.0.0.0"></assemblyIdentity>
+  <file name="msdds.dll" hashalg="SHA1">
+    <comClass clsid="{77D2C91E-7779-11D8-9070-00065B840D9C}" description="Microsoft DDS Polyline Control 80" threadingModel="Apartment" progid="MSDDS.Polyline.080.1">
+      <progid>MSDDS.Polyline.080</progid>
+    </comClass>
+    <comClass clsid="{77D2C926-7779-11D8-9070-00065B840D9C}" tlbid="{c795d2f0-7776-11d8-9070-00065B840D9C}" description="Microsoft DDS Icon Control 80" threadingModel="Apartment" progid="MSDDS.Icon.080.1">
+      <progid>MSDDS.Icon.080</progid>
+    </comClass>
+    <comClass clsid="{77D2C923-7779-11D8-9070-00065B840D9C}" tlbid="{c795d2f0-7776-11d8-9070-00065B840D9C}" description="Microsoft DDS Text Control 80" threadingModel="Apartment" progid="MSDDS.Text.080.1">
+      <progid>MSDDS.Text.080</progid>
+    </comClass>
+    <comClass clsid="{C795D2FE-7776-11D8-9070-00065B840D9C}" tlbid="{c795d2f0-7776-11d8-9070-00065b840d9c}" description="Microsoft DDS 80" progid="MSDDS.Diagram.080.1">
+      <progid>MSDDS.Diagram.080</progid>
+    </comClass>
+    <comClass clsid="{77D2C902-7779-11D8-9070-00065B840D9C}" tlbid="{c795d2f0-7776-11d8-9070-00065b840d9c}" description="Microsoft DDS Generic 80 Class" threadingModel="Apartment" progid="MSDDS.Generic.080.1">
+      <progid>MSDDS.Generic.080</progid>
+    </comClass>
+    <comClass clsid="{77D2C908-7779-11D8-9070-00065B840D9C}" tlbid="{c795d2f0-7776-11d8-9070-00065B840D9C}" description="Microsoft DDS Picture Shape Control 80" threadingModel="Apartment" progid="MSDDS.PictureShape.080.1">
+      <progid>MSDDS.PictureShape.080</progid>
+    </comClass>
+    <comClass clsid="{77D2C905-7779-11D8-9070-00065B840D9C}" tlbid="{c795d2f0-7776-11d8-9070-00065B840D9C}" description="Microsoft DDS Library Shape Control 80" threadingModel="Apartment" progid="MSDDS.LibraryShape.080.1">
+      <progid>MSDDS.LibraryShape.080</progid>
+    </comClass>
+
+    <typelib tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" version="2.0" helpdir=""></typelib>
+  </file>
+  <file name="msddslm.dll" hashalg="SHA1">
+    <comClass clsid="{77D2C915-7779-11D8-9070-00065B840D9C}" tlbid="{77d2c909-7779-11d8-9070-00065b840d9c}" description="Microsoft DDS Layout Manager 80" progid="MSDDS.LayoutManager.080.1">
+      <progid>MSDDS.LayoutManager.080</progid>
+    </comClass>
+    <comClass clsid="{77D2C916-7779-11D8-9070-00065B840D9C}" tlbid="{77d2c909-7779-11d8-9070-00065b840d9c}" description="Microsoft DDS Rectilinear Layout 80" progid="MSDDS.Rectilinear.080" />
+    <comClass clsid="{77D2C917-7779-11D8-9070-00065B840D9C}" tlbid="{77d2c909-7779-11d8-9070-00065b840d9c}" description="Microsoft DDS Oblique LineRoute 80" progid="MSDDS.Oblique.080" />
+
+    <typelib tlbid="{77d2c909-7779-11d8-9070-00065b840d9c}" version="2.0" helpdir=""></typelib>
+  </file>
+  <file name="msddsf.dll" hashalg="SHA1">
+    <comClass clsid="{77D2C92E-7779-11D8-9070-00065B840D9C}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}" description="Microsoft DDS Form 2.0" threadingModel="Apartment" progid="MSDDS.Form.080.1">
+      <progid>MSDDS.Form.080</progid>
+    </comClass>
+    <comClass clsid="{77D2C92D-7779-11D8-9070-00065B840D9C}" description="Microsoft DDSform 080 2.1 FontNew" threadingModel="Apartment" />
+    <comClass clsid="{77D2C931-7779-11D8-9070-00055B840D9C}" description="Microsoft DDSform 080 2.1 FormPackage" threadingModel="Apartment" />
+    <comClass clsid="{D1E5C5AF-21FB-11D9-ADCD-00065B840D9C}" description="Microsoft DDSform 080 2.1 Font" threadingModel="Apartment" />
+
+    <comClass clsid="{D1E5C5B4-21FB-11D9-ADCD-00065B840D9C}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}"></comClass>
+    <comClass clsid="{D1E5C5B5-21FB-11D9-ADCD-00065B840D9C}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}"></comClass>
+    <comClass clsid="{D1E5C5B6-21FB-11D9-ADCD-00065B840D9C}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}"></comClass>
+    <comClass clsid="{D1E5C5B7-21FB-11D9-ADCD-00065B840D9C}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}"></comClass>
+    <comClass clsid="{D1E5C5B8-21FB-11D9-ADCD-00065B840D9C}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}"></comClass>
+    <comClass clsid="{1C3B4210-F441-11CE-B9EA-00AA006B1A69}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}"></comClass>
+    <comClass clsid="{909E0AE0-16DC-11CE-9E98-00AA00574A4F}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}"></comClass>
+    <comClass clsid="{C62A69F0-16DC-11CE-9E98-00AA00574A4F}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}"></comClass>
+    <comClass clsid="{6E182020-F460-11CE-9BCD-00AA00608E01}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}"></comClass>
+
+    <typelib tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}" version="2.0" helpdir=""></typelib>
+  </file>
+    <comInterfaceExternalProxyStub name="IDdsPoints" iid="{77D2C90A-7779-11D8-9070-00065B840D9C}" tlbid="{77D2C909-7779-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsExtendedProperty" iid="{77D2C90B-7779-11D8-9070-00065B840D9C}" tlbid="{77D2C909-7779-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsExtendedProperties" iid="{77D2C90C-7779-11D8-9070-00065B840D9C}" tlbid="{77D2C909-7779-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsLayoutObjects" iid="{77D2C90D-7779-11D8-9070-00065B840D9C}" tlbid="{77D2C909-7779-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsLayoutObject" iid="{77D2C90E-7779-11D8-9070-00065B840D9C}" tlbid="{77D2C909-7779-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsLayoutShape" iid="{77D2C90F-7779-11D8-9070-00065B840D9C}" tlbid="{77D2C909-7779-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsLayoutConnector" iid="{77D2C910-7779-11D8-9070-00065B840D9C}" tlbid="{77D2C909-7779-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsLayoutManager" iid="{77D2C911-7779-11D8-9070-00065B840D9C}" tlbid="{77D2C909-7779-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsLayout" iid="{77D2C912-7779-11D8-9070-00065B840D9C}" tlbid="{77D2C909-7779-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsLineRoute" iid="{77D2C913-7779-11D8-9070-00065B840D9C}" tlbid="{77D2C909-7779-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="_IDdsLayoutManagerEvents" iid="{77D2C914-7779-11D8-9070-00065B840D9C}" tlbid="{77D2C909-7779-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}" />
+
+    <comInterfaceExternalProxyStub name="IDdsGeneric" iid="{77D2C900-7779-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="_IDdsGenericEvents" iid="{77D2C901-7779-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsLibraryShape" iid="{77D2C903-7779-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="_IDdsLibraryShapeEvents" iid="{77D2C904-7779-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsPictureShape" iid="{77D2C906-7779-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="_IDdsPictureShapeEvents" iid="{77D2C907-7779-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsPolylineCustomEndTypeShape" iid="{77D2C918-7779-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsPolylineCustomEndType" iid="{77D2C919-7779-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsPolylineAdornment" iid="{77D2C91A-7779-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsPolylineAdornments" iid="{77D2C91B-7779-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsPolyline" iid="{77D2C91C-7779-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsPolylineEx" iid="{77D2C91D-7779-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsText" iid="{77D2C921-7779-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="_IDdsTextEvents" iid="{77D2C922-7779-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsIcon" iid="{77D2C924-7779-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="_IDdsIconEvents" iid="{77D2C925-7779-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsDiagramObject" iid="{C795D2F1-7776-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsDiagramShape" iid="{C795D2F3-7776-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsDiagramConnectorControl" iid="{C795D2F4-7776-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsDiagramConnector" iid="{C795D2F5-7776-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsCompositeManager" iid="{C795D2F6-7776-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsDiagramObjects" iid="{C795D2F7-7776-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IDdsDiagram" iid="{C795D2FB-7776-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="_IDdsDiagramEvents" iid="{C795D2FD-7776-11D8-9070-00065B840D9C}" tlbid="{C795D2F0-7776-11D8-9070-00065B840D9C}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}" />
+
+    <comInterfaceExternalProxyStub name="IDataAutoWrapper" iid="{77D2C92E-7779-11D8-9070-00065B840D9C}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IReturnInteger" iid="{77D2C92F-7779-11D8-9070-00065B840D9C}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IReturnBoolean" iid="{77D2C930-7779-11D8-9070-00065B840D9C}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IReturnString" iid="{77D2C931-7779-11D8-9070-00065B840D9C}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IReturnSingle" iid="{77D2C932-7779-11D8-9070-00065B840D9C}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IReturnEffect" iid="{77D2C933-7779-11D8-9070-00065B840D9C}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="ControlEvents" iid="{77D2C934-7779-11D8-9070-00065B840D9C}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="_UserForm" iid="{D1E5C5AB-21FB-11D9-ADCD-00065B840D9C}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="FormEvents" iid="{D1E5C5AC-21FB-11D9-ADCD-00065B840D9C}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="OptionFrameEvents" iid="{D1E5C5AD-21FB-11D9-ADCD-00065B840D9C}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IControl" iid="{D1E5C5C0-21FB-11D9-ADCD-00065B840D9C}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="Controls" iid="{D1E5C5C1-21FB-11D9-ADCD-00065B840D9C}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    <comInterfaceExternalProxyStub name="IOptionFrame" iid="{D1E5C5C2-21FB-11D9-ADCD-00065B840D9C}" tlbid="{D1E5C5AE-21FB-11D9-ADCD-00065B840D9C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+</assembly>

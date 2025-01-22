@@ -1,0 +1,120 @@
+[$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{F7DFDEDF-253B-4AF1-9A96-F8D49A7F26CB}]
+"name"="Microsoft.VisualStudio.JSLS"
+"codeBase"="$PackageFolder$\Microsoft.VisualStudio.JSLS.dll"
+"publicKeyToken"="b03f5f7f11d50a3a"
+"culture"="neutral"
+"version"="15.0.0.0"
+[$RootKey$\Packages\{d62c17c6-44b3-4e5d-b0aa-1c5536e979d9}]
+@="Microsoft.VisualStudio.JSLS.JavaScriptLanguageServicePackage, Microsoft.VisualStudio.JSLS, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"InprocServer32"="$WinDir$\system32\MSCOREE.DLL"
+"Class"="Microsoft.VisualStudio.JSLS.JavaScriptLanguageServicePackage"
+"CodeBase"="$PackageFolder$\Microsoft.VisualStudio.JSLS.dll"
+[$RootKey$\Services\{71d61d27-9011-4b17-9469-d20f798fb5c0}]
+@="{d62c17c6-44b3-4e5d-b0aa-1c5536e979d9}"
+"Name"="JavaScriptLanguageService"
+[$RootKey$\Services\{AE7DB14E-E0F4-428E-B81F-E8FD06D64993}]
+@="{d62c17c6-44b3-4e5d-b0aa-1c5536e979d9}"
+"Name"="ResJSON"
+[$RootKey$\Menus]
+"{d62c17c6-44b3-4e5d-b0aa-1c5536e979d9}"=", Menus.ctmenu,1"
+[$RootKey$\Languages\File Extensions\.js]
+@="{71d61d27-9011-4b17-9469-d20f798fb5c0}"
+[$RootKey$\Languages\File Extensions\.resjson]
+@="{AE7DB14E-E0F4-428E-B81F-E8FD06D64993}"
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; Note: 1) The LangResID is a hex value that corresponds to the int key (1010) found in the VSPackage.resx for the "JavaScript (Legacy)" entry in tools options.
+;;       2) The Package guid specifies the VSPackage.resx that corresponds to this entry.
+;;       3) NotALanguage is used to suppress the legacy JavaScript settings from showing up under Tools | Options | Text Editor.  Customers that have a need to 
+;;          restore these legacy settings can change the value to 00000000 and run devenv /updateConfiguration from an admin developer cmd prompt.
+;;
+[$RootKey$\Languages\Language Services\JavaScript]
+@="{71d61d27-9011-4b17-9469-d20f798fb5c0}"
+"Package"="{d62c17c6-44b3-4e5d-b0aa-1c5536e979d9}"
+"LangResID"=dword:000003f2
+"NotALanguage"=dword:00000001
+"ShowCompletion"=dword:00000001
+"ShowSmartIndent"=dword:00000001
+"RequestStockColors"=dword:00000001
+"DefaultToInsertSpaces"=dword:00000001
+"ShowDropdownBarOption"=dword:00000001
+"ShowBraceCompletion"=dword:00000001
+[$RootKey$\Languages\Language Services\ResJSON]
+@="{AE7DB14E-E0F4-428E-B81F-E8FD06D64993}"
+"Package"="{d62c17c6-44b3-4e5d-b0aa-1c5536e979d9}"
+"LangResID"=dword:00000064
+"ShowCompletion"=dword:00000000
+"ShowSmartIndent"=dword:00000000
+"RequestStockColors"=dword:00000001
+"DefaultToInsertSpaces"=dword:00000001
+"ShowDropdownBarOption"=dword:00000000
+"EnableAdvancedMembersOption"=dword:00000000
+[$RootKey$\Editors\{8B382828-6202-11d1-8870-0000F87579D2}\Extensions]
+"js"=dword:00000026
+"resjson"=dword:00000050
+[$RootKey$\Languages\Language Services\JavaScript\EditorToolsOptions]
+[$RootKey$\Languages\Language Services\JavaScript\EditorToolsOptions\Formatting]
+@="#1000"
+"Package"="{D62C17C6-44B3-4E5D-B0AA-1C5536E979D9}"
+[$RootKey$\Languages\Language Services\JavaScript\EditorToolsOptions\Formatting\General]
+@="#1002"
+"Package"="{D62C17C6-44B3-4E5D-B0AA-1C5536E979D9}"
+"Page"="{99ba1482-fdc0-4777-bec3-7f1204f5c59f}"
+"Keywords"="#1014"
+[$RootKey$\Languages\Language Services\JavaScript\EditorToolsOptions\Formatting\New Lines]
+@="#1003"
+"Package"="{D62C17C6-44B3-4E5D-B0AA-1C5536E979D9}"
+"Page"="{4b93c103-6bf2-48d8-a265-6089b98be6f8}"
+"Keywords"="#1011"
+[$RootKey$\Languages\Language Services\JavaScript\EditorToolsOptions\Formatting\Spacing]
+@="#1004"
+"Package"="{D62C17C6-44B3-4E5D-B0AA-1C5536E979D9}"
+"Page"="{79ebebed-a314-425a-8984-d979746969a4}"
+"Keywords"="#1015"
+[$RootKey$\Languages\Language Services\JavaScript\EditorToolsOptions\Intellisense]
+@="#1001"
+"Package"="{D62C17C6-44B3-4E5D-B0AA-1C5536E979D9}"
+[$RootKey$\Languages\Language Services\JavaScript\EditorToolsOptions\Intellisense\General]
+@="#1005"
+"Package"="{D62C17C6-44B3-4E5D-B0AA-1C5536E979D9}"
+"Page"="{4ddae6ca-e6fa-4bfc-a66e-04d2effdb6f8}"
+"Keywords"="#1012"
+[$RootKey$\Languages\Language Services\JavaScript\EditorToolsOptions\Intellisense\References]
+@="#1006"
+"Package"="{D62C17C6-44B3-4E5D-B0AA-1C5536E979D9}"
+"Page"="{316bdfef-e239-4ad5-90f4-ead958ad21ec}"
+"Keywords"="#1013"
+[$RootKey$\AutomationProperties\TextEditor\JavaScript Specific]
+"Description"="#1007"
+"Name"="JavaScript Specific"
+"Package"="{D62C17C6-44B3-4E5D-B0AA-1C5536E979D9}"
+"ProfileSave"=dword:00000001
+"ResourcePackage"="{D62C17C6-44B3-4E5D-B0AA-1C5536E979D9}"
+"VSSettingsMigration"=dword:00000002
+@="#1008"
+[$RootKey$\AutomationProperties\TextEditor\JavaScript]
+"Description"="#1009"
+"Name"="JavaScript"
+"Package"="{F5E7E720-1401-11D1-883B-0000F87579D2}"
+"ProfileSave"=dword:00000001
+"ResourcePackage"="{D62C17C6-44B3-4E5D-B0AA-1C5536E979D9}"
+"VSSettingsMigration"=dword:00000001
+@="#1010"
+[$RootKey$\AutomationProperties\TextEditor\JavaScript\PropertyMigrationExclusions]
+"ShowNavigationBar"="11.0"
+[$RootKey$\AutomationProperties\TextEditor\ResJSON Resource]
+"Description"="#1017"
+"Name"="ResJSON"
+"Package"="{F5E7E720-1401-11D1-883B-0000F87579D2}"
+"ProfileSave"=dword:00000001
+"ResourcePackage"="{D62C17C6-44B3-4E5D-B0AA-1C5536E979D9}"
+"VSSettingsMigration"=dword:00000001
+@="#100"
+[$RootKey$\Debugger\DynamicScriptDocumentEditor\Script]
+"LanguageServiceId"="{71d61d27-9011-4b17-9469-d20f798fb5c0}"
+; "EditorType" is not specified explicitly, the default value of CLSID_TextEditorFactory will be used
+[$RootKey$\InstalledProducts\JavaScriptLanguageServicePackage]
+@="#1018"
+"Package"="{D62C17C6-44B3-4E5D-B0AA-1C5536E979D9}"
+"ProductDetails"="#1019"
+"PID"="2.0"

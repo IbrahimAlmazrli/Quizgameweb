@@ -1,0 +1,64 @@
+﻿<!--<Window x:Class="Übungsaufgabe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Übungsaufgabe"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        --><!--<CheckBox x:Name="myCheckbox" Content="My Checkbox" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <CheckBox.Style>
+                <Style TargetType="{x:Type CheckBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=myCheckbox, Path=IsChecked}" Value="True">
+                            <Setter Property="Foreground" Value="Green"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=myCheckbox, Path=IsChecked}" Value="False">
+                            <Setter Property="Foreground" Value="Red"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </CheckBox.Style>
+        </CheckBox>--><!--
+        <TextBlock x:Name="textBlock" Text="tet"/>
+
+        <StackPanel>
+           
+            <StackPanel.Style>
+                    <Style TargetType="StackPanel">
+                        <Setter Property="ToolTip" Value="Tooltip when text is not empty"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=textBlock, Path=Text}" Value="">
+                                <Setter Property="ToolTip" Value="Tooltip when text is  empty"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </StackPanel.Style>
+        
+        </StackPanel>
+    </Grid>
+
+   
+
+    
+</Window>-->
+<Window x:Class="Übungsaufgabe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Checkbox Example" Height="200" Width="300">
+    <TextBox 
+       TextWrapping="NoWrap"
+       Text="test"
+       Focusable="False" 
+       BorderBrush="Transparent"
+       BorderThickness="0"
+       HorizontalAlignment="Stretch"
+       VerticalAlignment="Center"
+       Foreground="Gray" 
+       Margin="0,0,2,0" 
+        
+        IsReadOnly="True"
+   />
+
+</Window>

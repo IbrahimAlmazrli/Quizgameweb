@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <dependency>
+    <dependentAssembly>
+      <assemblyIdentity type="win32" name="CommonExtensions\Microsoft\SSIS\160\SSIS" processorArchitecture="X86" version="1.0.0.0"></assemblyIdentity>
+    </dependentAssembly>
+  </dependency>
+  <dependency optional="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft.SqlServer.ManagedDTS" version="16.0.0.0" publicKeyToken="89845dcd8080cc91" processorArchitecture="msil"></assemblyIdentity>
+    </dependentAssembly>
+  </dependency>
+  <dependency optional="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft.SqlServer.PackageFormatUpdate" version="16.0.0.0" publicKeyToken="89845dcd8080cc91" processorArchitecture="msil"></assemblyIdentity>
+    </dependentAssembly>
+  </dependency>
+  <dependency optional="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft.SqlServer.PipelineHost" version="16.0.0.0" publicKeyToken="89845dcd8080cc91" processorArchitecture="msil"></assemblyIdentity>
+    </dependentAssembly>
+  </dependency>
+  <dependency optional="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft.SqlServer.PipelineXML" version="16.0.0.0" publicKeyToken="89845dcd8080cc91" processorArchitecture="msil"></assemblyIdentity>
+    </dependentAssembly>
+  </dependency>
+  <dependency optional="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft.DataTransformationServices.VsIntegration" version="16.0.0.0" publicKeyToken="89845dcd8080cc91" processorArchitecture="msil"></assemblyIdentity>
+    </dependentAssembly>
+  </dependency>
+</assembly>

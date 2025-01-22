@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+<_locDefinition xmlns="urn:locstudio">
+    <_locDefault _loc="locNone"/>
+    <_locTag _loc="locData">Title</_locTag>
+    <_locTag _loc="locData">Description</_locTag>
+    <_locTag _loc="locData">Author</_locTag>
+    <_locTag _loc="locData">ToolTip</_locTag>
+</_locDefinition>
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Tabellenfunktion mit mehreren Anweisungen erstellen</Title>
+                        <Shortcut></Shortcut>
+			<Description>Erstellt eine Tabellenfunktion mit mehreren Anweisungen.</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+                                <Literal>
+                                	<ID>SchemaName</ID>
+                                	<ToolTip>Name des Schemas</ToolTip>
+                                	<Default>dbo</Default>
+                                </Literal>
+                                <Literal>
+                                	<ID>FunctionName</ID>
+                                	<ToolTip>Name der Funktion</ToolTip>
+                                	<Default>FunctionName</Default>
+                                </Literal>
+                                <Literal>
+                                	<ID>Param1</ID>
+                                	<ToolTip>Name des INPUT-Parameters</ToolTip>
+                                	<Default>param1</Default>
+                                </Literal>
+                                <Literal>
+                                	<ID>Datatype_Param1</ID>
+                                	<ToolTip>Datentyp des INPUT-Parameters</ToolTip>
+                                	<Default>int</Default>
+                                </Literal>
+                                <Literal>
+                                	<ID>Param2</ID>
+                                	<ToolTip>Name des INPUT-Parameters</ToolTip>
+                                	<Default>param2</Default>
+                                </Literal>
+                                <Literal>
+                                	<ID>Datatype_Param2</ID>
+                                	<ToolTip>Datentyp des INPUT-Parameters</ToolTip>
+                                	<Default>char(5)</Default>
+                                </Literal>
+                                <Literal>
+                                	<ID>Column1</ID>
+                                	<ToolTip>Name der Spalte</ToolTip>
+                                	<Default>c1</Default>
+                                </Literal>
+                                <Literal>
+                                	<ID>Datatype_Column1</ID>
+                                	<ToolTip>Datentyp der Spalte</ToolTip>
+                                	<Default>int</Default>
+                                </Literal>
+                                <Literal>
+                                	<ID>Column2</ID>
+                                	<ToolTip>Name der Spalte</ToolTip>
+                                	<Default>c2</Default>
+                                </Literal>
+                                <Literal>
+                                	<ID>Datatype_Column2</ID>
+                                	<ToolTip>Datentyp der Spalte</ToolTip>
+                                	<Default>char(5)</Default>
+                                </Literal>
+                                <Literal>
+                                	<ID>TableName</ID>
+                                	<ToolTip>Name der Tabelle</ToolTip>
+                                	<Default>SampleTable</Default>
+                                </Literal>
+                                <Literal>
+                                	<ID>TableVarName</ID>
+                                	<ToolTip>Name der von der Funktion zurückgegebenen Tabellenvariablen</ToolTip>
+                                	<Default>returntable</Default>
+                                </Literal>
+			</Declarations>
+			<Code Language="SQL"><![CDATA[
+CREATE FUNCTION [$SchemaName$].[$FunctionName$]
+(
+    @$Param1$ $Datatype_Param1$,
+    @$Param2$ $Datatype_Param2$
+)
+RETURNS @$TableVarName$ TABLE 
+(
+	[$Column1$] $Datatype_Column1$,
+	[$Column2$] $Datatype_Column2$
+)
+AS
+BEGIN
+    INSERT @$TableVarName$
+    SELECT @$Param1$, @$Param2$
+    RETURN 
+END
+]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

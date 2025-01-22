@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity name="Microsoft.SqlServer.PackageFormatUpdate" version="16.0.0.0" publicKeyToken="89845dcd8080cc91" processorArchitecture="msil" />
+  <clrClass clsid="{B7A609FB-4783-4120-A936-34311291D725}" progid="Microsoft.SqlServer.Dts.Runtime.PackageFormatUpdate.VersionUpdate" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.PackageFormatUpdate.VersionUpdate" runtimeVersion="v4.0.30319" />
+  <file name="Microsoft.SqlServer.PackageFormatUpdate.dll" hashalg="SHA1" />
+</assembly>

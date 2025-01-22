@@ -1,0 +1,6 @@
+VSWIZARD 7.0
+Wizard={66085AC0-8AD8-4698-A3DE-302CD6D5B776}
+Param="EngineAssemblyName=Microsoft.DataTransformationServices.Wizards"
+Param="Engine=Microsoft.DataTransformationServices.Wizards.DtsWizard"
+Param="InitializerAssemblyName=Microsoft.DataTransformationServices.Wizards"
+Param="Initializer=Microsoft.DataTransformationServices.Wizards.WizardCompleteInitializer"

@@ -1,0 +1,1601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EventColumnDescriptions xmlns="http://tempuri.org/xmlfile.xsd">
+  <_locDefinition>
+    <_locDefault _loc="locNone"/>
+    <_locTag _loc="locData">DESCRIPTION</_locTag>
+    <_locTag _loc="locData">BESTPRACTICE</_locTag>
+  </_locDefinition>
+  <EVENTCATEGORIESLIST>
+    <EVENTCATEGORY>
+      <NAME>Broker</NAME>
+      <DESCRIPTION>Schließt Ereignisklassen ein, die von Service Broker erstellt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>CLR</NAME>
+      <DESCRIPTION>Schließt Ereignisklassen ein, die erstellt werden, weil .Net CLR-Objekte (Common Language Runtime) in SQL Server ausgeführt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Cursors</NAME>
+      <DESCRIPTION>Schließt Ereignisklassen ein, die durch Cursorvorgänge erstellt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Database</NAME>
+      <DESCRIPTION>Schließt Ereignisklassen ein, die erstellt werden, wenn Daten- oder Protokolldateien automatisch vergrößert oder verkleinert werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Deprecation</NAME>
+      <DESCRIPTION>Schließt Ereignisse ein, die sich auf veraltete Objekte beziehen.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Errors and Warnings</NAME>
+      <DESCRIPTION>Schließt Ereignisklassen ein, die erstellt werden, wenn ein SQL Server-Fehler oder eine SQL Server-Warnung zurückgegeben wird (beispielsweise ein Fehler während des Kompilierens einer gespeicherten Prozedur oder eine Ausnahme in SQL Server).</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Full text</NAME>
+      <DESCRIPTION>Schließt Ereignisklassen ein, die erstellt werden, wenn eine Volltextsuche gestartet, unterbrochen oder beendet wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Locks</NAME>
+      <DESCRIPTION>Schließt Ereignisklassen ein, die erstellt werden, wenn eine Sperre eingerichtet, abgebrochen oder freigegeben oder eine andere Aktion für die Sperre ausgeführt wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Objects</NAME>
+      <DESCRIPTION>Schließt Ereignisklassen ein, die erstellt werden, wenn ein Datenbankobjekt erstellt, gelöscht oder geändert wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>OLEDB</NAME>
+      <DESCRIPTION>Schließt Ereignisklassen ein, die durch OLE DB-Aufrufe erstellt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Performance</NAME>
+      <DESCRIPTION>Schließt Ereignisklassen ein, die erstellt werden, wenn SQL-DML-Operatoren (SQL Data Manipulation Language) ausgeführt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Progress Report</NAME>
+      <DESCRIPTION>Schließt die Progress Report: Online Index Operation-Ereignisklasse ein.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Query Notifications</NAME>
+      <DESCRIPTION>Schließt Ereignisklassen ein, die durch das Verarbeiten von Abfragebenachrichtigungen erstellt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Scans</NAME>
+      <DESCRIPTION>Schließt Ereignisklassen ein, die erstellt werden, wenn Tabellen und Indizes gescannt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Security Audit</NAME>
+      <DESCRIPTION>Schließt Ereignisklassen ein, die zum Überwachen der Serveraktivitäten verwendet werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Server</NAME>
+      <DESCRIPTION>Schließt allgemeine Serverereignisse ein.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Sessions</NAME>
+      <DESCRIPTION>Schließt Ereignisklassen für Serversitzungen ein.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Stored Procedures</NAME>
+      <DESCRIPTION>Schließt Ereignisklassen ein, die durch das Ausführen von gespeicherten Prozeduren erstellt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>Transactions</NAME>
+      <DESCRIPTION>Schließt Ereignisklassen ein, die durch das Ausführen von Microsoft Distributed Transaction Coordinator-Transaktionen oder durch Schreiben in das Transaktionsprotokoll erstellt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>TSQL</NAME>
+      <DESCRIPTION>Schließt Ereignisklassen ein, die durch das Ausführen von Transact-SQL-Anweisungen erstellt werden, die vom Client an eine Instanz von SQL Server übergeben wurden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+    <EVENTCATEGORY>
+      <NAME>User configurable</NAME>
+      <DESCRIPTION>Schließt Ereignisklassen ein, die Sie definieren können.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENTCATEGORY>
+  </EVENTCATEGORIESLIST>
+  <EVENTLIST>
+    <!--RPC:Completed-->
+    <EVENT>
+      <ID>10</ID>
+      <DESCRIPTION>Tritt auf, wenn ein Remoteprozeduraufruf abgeschlossen wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--RPC:Starting-->
+    <EVENT>
+      <ID>11</ID>
+      <DESCRIPTION>Tritt auf, wenn ein Remoteprozeduraufruf gestartet wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--SQL:BatchCompleted-->
+    <EVENT>
+      <ID>12</ID>
+      <DESCRIPTION>Tritt auf, wenn die Transact-SQL-Anweisung abgeschlossen wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--SQL:BatchStarting-->
+    <EVENT>
+      <ID>13</ID>
+      <DESCRIPTION>Tritt auf, wenn ein Transact-SQL-Batch gestartet wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Login-->
+    <EVENT>
+      <ID>14</ID>
+      <DESCRIPTION>Listet alle neuen Verbindungsereignisse auf, die seit dem Start der Ablaufverfolgung aufgetreten sind, z. B. wenn ein Client eine Verbindung mit einem Server anfordert, auf dem eine Instanz von SQL Server ausgeführt wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Logout-->
+    <EVENT>
+      <ID>15</ID>
+      <DESCRIPTION>Listet alle neuen Ereignisse zum Trennen einer Verbindung auf, die seit dem Start der Ablaufverfolgung aufgetreten sind, z. B. wenn ein Client einen Befehl zum Trennen der Verbindung ausgibt.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Attention-->
+    <EVENT>
+      <ID>16</ID>
+      <DESCRIPTION>Listet alle Anforderungsereignisse auf, wie z. B. Clientinterruptanforderungen oder das Unterbrechen einer Clientverbindung.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--ExistingConnection-->
+    <EVENT>
+      <ID>17</ID>
+      <DESCRIPTION>Zeigt Eigenschaften vorhandener Benutzerverbindungen an, wenn die Ablaufverfolgung gestartet wurde. Der Server löst ein ExistingConnection-Ereignis pro Benutzerverbindung aus. </DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Server Starts And Stops-->
+    <EVENT>
+      <ID>18</ID>
+      <DESCRIPTION>Zeichnet das Herunterfahren, Starten und Anhalten des Diensts auf.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--DTCTransaction-->
+    <EVENT>
+      <ID>19</ID>
+      <DESCRIPTION>Führt eine Nachverfolgung von MS DTC-koordinierten Transaktionen zwischen zwei oder mehr Datenbanken aus.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Login Failed-->
+    <EVENT>
+      <ID>20</ID>
+      <DESCRIPTION>Zeigt an, dass beim Anmeldeversuch eines Clients bei SQL Server ein Fehler aufgetreten ist.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--EventLog-->
+    <EVENT>
+      <ID>21</ID>
+      <DESCRIPTION>Zeigt Ereignisse an, die in das Windows-Anwendungsereignisprotokoll geschrieben wurden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--ErrorLog-->
+    <EVENT>
+      <ID>22</ID>
+      <DESCRIPTION>Zeigt an, dass Fehlerereignisse in das SQL Server-Fehlerprotokoll geschrieben wurden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Lock:Released-->
+    <EVENT>
+      <ID>23</ID>
+      <DESCRIPTION>Zeigt an, dass eine Sperre einer Ressource (z. B. eine Datenseite) freigegeben wurde.\r\nMit der Lock:Acquired- und der Lock:Released-Ereignisklasse kann Folgendes überwacht werden: Wann Objekte gesperrt sind, der für die jeweilige Sperre verwendete Typ und wie lange die Sperren beibehalten wurden. Sperren, die für lange Zeiträume beibehalten werden, können Konflikte verursachen und sollten untersucht werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Lock:Acquired-->
+    <EVENT>
+      <ID>24</ID>
+      <DESCRIPTION>Zeigt an, dass eine Ressource (z. B. eine Datenseite) mit einer Sperre belegt wurde.\r\nMit der Lock:Acquired- und der Lock:Released-Ereignisklasse kann Folgendes überwacht werden: Wann Objekte gesperrt sind, der für die jeweilige Sperre verwendete Typ und wie lange die Sperren beibehalten wurden. Sperren, die für lange Zeiträume beibehalten werden, können Konflikte verursachen und sollten untersucht werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Lock:Deadlock-->
+    <EVENT>
+      <ID>25</ID>
+      <DESCRIPTION>Zeigt an, dass sich zwei gleichzeitige Transaktionen gegenseitig blockiert haben, indem versucht wurde, inkompatible Sperren auf Ressourcen zu erhalten, die sich im Besitz der jeweils anderen Transaktion befinden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Lock:Cancel-->
+    <EVENT>
+      <ID>26</ID>
+      <DESCRIPTION>Zeigt an, dass der Erhalt einer Sperre für eine Ressource abgebrochen wurde (z. B. aufgrund eines Deadlocks).</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Lock:Timeout-->
+    <EVENT>
+      <ID>27</ID>
+      <DESCRIPTION>Zeigt an, dass für die Anforderung einer Sperre für eine Ressource, z. B. eine Seite, ein Timeout aufgetreten ist, da eine andere Transaktion eine blockierende Sperre für die angeforderte Ressource aufrechterhält.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Degree of Parallelism (7.0 Insert)-->
+    <EVENT>
+      <ID>28</ID>
+      <DESCRIPTION>Beschreibt den Grad an Parallelität, der der SQL-Anweisung zugewiesen ist.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Exception-->
+    <EVENT>
+      <ID>33</ID>
+      <DESCRIPTION>Zeigt an, dass eine Ausnahme in SQL Server aufgetreten ist.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--SP:CacheMiss-->
+    <EVENT>
+      <ID>34</ID>
+      <DESCRIPTION>Zeigt an, dass die gespeicherte Prozedur nicht im Prozedurcache gefunden wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--SP:CacheInsert-->
+    <EVENT>
+      <ID>35</ID>
+      <DESCRIPTION>Zeigt an, dass ein Element in den Prozedurcache eingefügt wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--SP:CacheRemove-->
+    <EVENT>
+      <ID>36</ID>
+      <DESCRIPTION>Zeigt an, dass ein Element aus dem Prozedurcache entfernt wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--SP:Recompile-->
+    <EVENT>
+      <ID>37</ID>
+      <DESCRIPTION>Zeigt an, dass die gespeicherte Prozedur erneut kompiliert wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--SP:CacheHit-->
+    <EVENT>
+      <ID>38</ID>
+      <DESCRIPTION>Zeigt an, dass eine Prozedur im Cache gefunden wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Deprecated-->
+    <EVENT>
+      <ID>39</ID>
+      <DESCRIPTION>Zeigt den Kontext des lokalen Status für die auszuführende Prozedur an.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--SQL:StmtStarting-->
+    <EVENT>
+      <ID>40</ID>
+      <DESCRIPTION>Tritt auf, wenn die Transact-SQL-Anweisung gestartet wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--SQL:StmtCompleted-->
+    <EVENT>
+      <ID>41</ID>
+      <DESCRIPTION>Tritt auf, wenn die Transact-SQL-Anweisung abgeschlossen wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--SP:Starting-->
+    <EVENT>
+      <ID>42</ID>
+      <DESCRIPTION>Zeigt an, dass die gespeicherte Prozedur gestartet wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--SP:Completed-->
+    <EVENT>
+      <ID>43</ID>
+      <DESCRIPTION>Zeigt an, dass die gespeicherte Prozedur abgeschlossen wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--SP:StmtStarting-->
+    <EVENT>
+      <ID>44</ID>
+      <DESCRIPTION>Zeigt an, dass eine Transact-SQL-Anweisung in einer gespeicherten Prozedur gestartet wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--SP:StmtCompleted-->
+    <EVENT>
+      <ID>45</ID>
+      <DESCRIPTION>Zeigt an, dass eine Transact-SQL-Anweisung in einer gespeicherten Prozedur abgeschlossen wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Object:Created-->
+    <EVENT>
+      <ID>46</ID>
+      <DESCRIPTION>Zeigt an, dass ein Objekt erstellt wurde, z. B. durch die Anweisung CREATE INDEX, CREATE TABLE oder CREATE DATABASE.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Object:Deleted-->
+    <EVENT>
+      <ID>47</ID>
+      <DESCRIPTION>Zeigt an, dass ein Objekt gelöscht wurde, z. B. durch die Anweisung DROP INDEX oder DROP TABLE.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--SQLTransaction-->
+    <EVENT>
+      <ID>50</ID>
+      <DESCRIPTION>Führt eine Nachverfolgung von BEGIN TRANSACTION-, COMMIT TRANSACTION-, SAVE TRANSACTION- und ROLLBACK TRANSACTION-Anweisungen aus.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Scan:Started-->
+    <EVENT>
+      <ID>51</ID>
+      <DESCRIPTION>Zeigt an, dass ein Tabellen- oder Indexscan gestartet wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Scan:Stopped-->
+    <EVENT>
+      <ID>52</ID>
+      <DESCRIPTION>Zeigt an, dass ein Tabellen- oder Indexscan beendet wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--CursorOpen-->
+    <EVENT>
+      <ID>53</ID>
+      <DESCRIPTION>Zeigt an, wann ein Cursor für eine Transact-SQL-Anweisung geöffnet wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--TransactionLog-->
+    <EVENT>
+      <ID>54</ID>
+      <DESCRIPTION>Führt eine Nachverfolgung aus, wenn Transaktionen in das Transaktionsprotokoll geschrieben werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Hash Warning-->
+    <EVENT>
+      <ID>55</ID>
+      <DESCRIPTION>Tritt auf, wenn während eines Hashvorgangs eine Hashrekursion oder eine Beendigung des Hashings (Hashabbruch) auftritt.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Auto Stats-->
+    <EVENT>
+      <ID>58</ID>
+      <DESCRIPTION>Listet die Ereignisse auf, die dem automatischen Erstellen und Aktualisieren von Statistiken zugeordnet sind.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Lock:Deadlock Chain-->
+    <EVENT>
+      <ID>59</ID>
+      <DESCRIPTION>Wird für jedes Ereignis erstellt, das zum Deadlock führt.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Lock:Escalation-->
+    <EVENT>
+      <ID>60</ID>
+      <DESCRIPTION>Eine differenziertere Sperre wurde in eine gröbere Sperre konvertiert.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--OLEDB Errors-->
+    <EVENT>
+      <ID>61</ID>
+      <DESCRIPTION>Zeigt an, dass ein OLE DB-Fehler aufgetreten ist.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Execution Warnings-->
+    <EVENT>
+      <ID>67</ID>
+      <DESCRIPTION>Zeigt alle Warnungen an, die während der Ausführung einer SQL Server-Anweisung oder einer gespeicherten Prozedur aufgetreten sind.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Showplan Text (Unencoded)-->
+    <EVENT>
+      <ID>68</ID>
+      <DESCRIPTION>Zeigt die Planstruktur der SQL-Anweisung an, die zurzeit ausgeführt wird. Die Showplan Text (Unencoded)-Ereignisklasse unterscheidet sich von der Showplan Text-Ereignisklasse nur dadurch, dass die Ereignisinformationen als Text und nicht als binäre Daten formatiert sind.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Sort Warnings-->
+    <EVENT>
+      <ID>69</ID>
+      <DESCRIPTION>Zeigt Sortiervorgänge an, für die der Arbeitsspeicher nicht ausreicht. Sortiervorgänge, die Indexerstellungen betreffen, sind nicht eingeschlossen, sondern nur Sortiervorgänge in einer Abfrage (z. B. eine ORDER BY-Klausel in einer SELECT-Anweisung).</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--CursorPrepare-->
+    <EVENT>
+      <ID>70</ID>
+      <DESCRIPTION>Tritt auf, wenn die Microsoft SQL Server-Datenbank-Engine eine mit einem Cursor verknüpfte SELECT-Anweisung zu einem Ausführungsplan kompiliert, den Cursor aber nicht erstellt.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Prepare SQL-->
+    <EVENT>
+      <ID>71</ID>
+      <DESCRIPTION>Zeigt an, dass die Verwendung mindestens einer SQL-Anweisung durch ODBC, OLE DB oder die DB-Library vorbereitet wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Exec Prepared SQL-->
+    <EVENT>
+      <ID>72</ID>
+      <DESCRIPTION>Zeigt an, dass mindestens eine vorbereitete Transact-SQL-Anweisung von SqlClient, ODBC, OLE DB oder DB-Library ausgeführt wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Unprepare SQL-->
+    <EVENT>
+      <ID>73</ID>
+      <DESCRIPTION>Zeigt an, dass SqlClient, ODBC, OLE DB oder DB-Library mindestens eine vorbereitete Transact-SQL-Anweisung gelöscht hat. </DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--CursorExecute-->
+    <EVENT>
+      <ID>74</ID>
+      <DESCRIPTION>Tritt auf, wenn die Microsoft SQL Server-Datenbank-Engine einen Cursor aus dem Ausführungsplan erstellt und auffüllt, der von einem cursorvorbereitenden Ereignis erstellt wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--CursorRecompile-->
+    <EVENT>
+      <ID>75</ID>
+      <DESCRIPTION>Tritt auf, wenn die Microsoft SQL Server-Datenbank-Engine einen Transact-SQL-Cursor wegen einer Schemaänderung erneut kompiliert.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--CursorImplicitConversion-->
+    <EVENT>
+      <ID>76</ID>
+      <DESCRIPTION>Tritt auf, wenn die Microsoft SQL Server-Datenbank-Engine eine Transact-SQL-Anweisung ausführt, die von Servercursorn, die den geforderten Typ haben, nicht unterstützt wird. Die SQL Server-Datenbank-Engine gibt einen Fehler zurück, in dem mitgeteilt wird, dass der Cursortyp geändert wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--CursorUnprepare-->
+    <EVENT>
+      <ID>77</ID>
+      <DESCRIPTION>Tritt auf, wenn die Microsoft SQL Server-Datenbank-Engine einen Ausführungsplan verwirft.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--CursorClose-->
+    <EVENT>
+      <ID>78</ID>
+      <DESCRIPTION>Tritt auf, wenn die Microsoft SQL Server-Datenbank-Engine geschlossen wird und einen Cursor freigibt.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Missing Column Statistics-->
+    <EVENT>
+      <ID>79</ID>
+      <DESCRIPTION>Zeigt an, dass Spaltenstatistiken fehlen, die vom Abfrageoptimierer hätten verwendet werden können. Dies kann zur Folge haben, dass der Optimierer einen weniger effizienten Abfrageplan auswählt als eigentlich zu erwarten war. Dieses Ereignis wird nur ausgelöst, wenn die Option zum automatischen Erstellen von Statistiken deaktiviert ist.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Missing Join Predicate-->
+    <EVENT>
+      <ID>80</ID>
+      <DESCRIPTION>Zeigt an, dass ein Prädikat, das zwei Tabellen verknüpft, nicht vorhanden ist. Dies kann dazu führen, dass die Ausführung von Abfragen sehr viel Zeit in Anspruch nimmt oder Ergebnisse ungenau sind. Dieses Ereignis wird nur erstellt, wenn beide Seiten der Joinanweisung mehrere Zeilen zurückgeben.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Server Memory Change-->
+    <EVENT>
+      <ID>81</ID>
+      <DESCRIPTION>Zeigt an, dass die Speicherauslastung von SQL Server um mehr als 1 MB oder 5 % des maximal zulässigen Serverarbeitsspeichers (je nachdem, welcher Wert größer ist) steigt oder sinkt.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--UserConfigurable:0-->
+    <EVENT>
+      <ID>82</ID>
+      <DESCRIPTION>Wird zum Überwachen benutzerdefinierter Ereignisse verwendet, die nicht von den Ereignissen überwacht werden können, die vom System in anderen Ereigniskategorien bereitgestellt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--UserConfigurable:1-->
+    <EVENT>
+      <ID>83</ID>
+      <DESCRIPTION>Wird zum Überwachen benutzerdefinierter Ereignisse verwendet, die nicht von den Ereignissen überwacht werden können, die vom System in anderen Ereigniskategorien bereitgestellt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--UserConfigurable:2-->
+    <EVENT>
+      <ID>84</ID>
+      <DESCRIPTION>Wird zum Überwachen benutzerdefinierter Ereignisse verwendet, die nicht von den Ereignissen überwacht werden können, die vom System in anderen Ereigniskategorien bereitgestellt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--UserConfigurable:3-->
+    <EVENT>
+      <ID>85</ID>
+      <DESCRIPTION>Wird zum Überwachen benutzerdefinierter Ereignisse verwendet, die nicht von den Ereignissen überwacht werden können, die vom System in anderen Ereigniskategorien bereitgestellt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--UserConfigurable:4-->
+    <EVENT>
+      <ID>86</ID>
+      <DESCRIPTION>Wird zum Überwachen benutzerdefinierter Ereignisse verwendet, die nicht von den Ereignissen überwacht werden können, die vom System in anderen Ereigniskategorien bereitgestellt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--UserConfigurable:5-->
+    <EVENT>
+      <ID>87</ID>
+      <DESCRIPTION>Wird zum Überwachen benutzerdefinierter Ereignisse verwendet, die nicht von den Ereignissen überwacht werden können, die vom System in anderen Ereigniskategorien bereitgestellt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--UserConfigurable:6-->
+    <EVENT>
+      <ID>88</ID>
+      <DESCRIPTION>Wird zum Überwachen benutzerdefinierter Ereignisse verwendet, die nicht von den Ereignissen überwacht werden können, die vom System in anderen Ereigniskategorien bereitgestellt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--UserConfigurable:7-->
+    <EVENT>
+      <ID>89</ID>
+      <DESCRIPTION>Wird zum Überwachen benutzerdefinierter Ereignisse verwendet, die nicht von den Ereignissen überwacht werden können, die vom System in anderen Ereigniskategorien bereitgestellt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--UserConfigurable:8-->
+    <EVENT>
+      <ID>90</ID>
+      <DESCRIPTION>Wird zum Überwachen benutzerdefinierter Ereignisse verwendet, die nicht von den Ereignissen überwacht werden können, die vom System in anderen Ereigniskategorien bereitgestellt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--UserConfigurable:9-->
+    <EVENT>
+      <ID>91</ID>
+      <DESCRIPTION>Wird zum Überwachen benutzerdefinierter Ereignisse verwendet, die nicht von den Ereignissen überwacht werden können, die vom System in anderen Ereigniskategorien bereitgestellt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Data File Auto Grow-->
+    <EVENT>
+      <ID>92</ID>
+      <DESCRIPTION>Zeigt an, dass die Datendatei automatisch vergrößert wurde. Dieses Ereignis wird nicht ausgelöst, wenn die Datendatei explizit durch die ALTER DATABASE-Anweisung vergrößert wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Log File Auto Grow-->
+    <EVENT>
+      <ID>93</ID>
+      <DESCRIPTION>Zeigt an, dass die Protokolldatei automatisch vergrößert wird. Dieses Ereignis wird nicht ausgelöst, wenn die Protokolldatei explizit durch die ALTER DATABASE-Anweisung vergrößert wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Data File Auto Shrink-->
+    <EVENT>
+      <ID>94</ID>
+      <DESCRIPTION>Zeigt an, dass die Datendatei verkleinert wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Log File Auto Shrink-->
+    <EVENT>
+      <ID>95</ID>
+      <DESCRIPTION>Zeigt an, dass die Protokolldatei verkleinert wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Showplan Text-->
+    <EVENT>
+      <ID>96</ID>
+      <DESCRIPTION>Zeigt die Abfrageplanstruktur der SQL-Anweisung an, die gerade ausgeführt wird. Schließen Sie die Showplan Text-Ereignisklasse ein, um die Showplanoperatoren für SQL Server 2000 oder SQL Server 7.0 zu identifizieren. Diese Ereignisklasse gilt auch für SQL Server 2005 oder höher, wobei die eingeschlossenen Informationen eine Teilmenge der Informationen sind, die in "Showplan All", "Showplan XML Statistics Profile" oder "Showplan XML" verfügbar sind.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Showplan All-->
+    <EVENT>
+      <ID>97</ID>
+      <DESCRIPTION>Zeigt den Abfrageplan mit vollständigen Kompilierzeitdetails (einschließlich Kostenschätzung und Spaltenlisten) der SQL-Anweisung an, die zurzeit ausgeführt wird. Wenn die Showplan All-Ereignisklasse in eine Ablaufverfolgung eingeschlossen ist, muss die BinaryData-Datenspalte ausgewählt sein. Ist dies nicht der Fall, werden die Informationen zu dieser Ereignisklasse nicht in der Ablaufverfolgung angezeigt.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Showplan Statistics Profile-->
+    <EVENT>
+      <ID>98</ID>
+      <DESCRIPTION>Zeigt den Abfrageplan mit vollständigen Laufzeitdetails (einschließlich der tatsächlichen Anzahl von Zeilen, die an jeden Vorgang übergeben werden) der SQL-Anweisung an, die ausgeführt wurde. Wenn die Showplan Statistics Profile-Ereignisklasse in eine Ablaufverfolgung eingeschlossen ist, muss die BinaryData-Datenspalte ausgewählt sein. Ist dies nicht der Fall, werden die Informationen zu dieser Ereignisklasse nicht in der Ablaufverfolgung angezeigt.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--RPC Output Parameter-->
+    <EVENT>
+      <ID>100</ID>
+      <DESCRIPTION>Informationen zu Ausgabeparametern eines zuvor ausgeführten Remoteprozeduraufrufs.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Database Scope GDR Event-->
+    <EVENT>
+      <ID>102</ID>
+      <DESCRIPTION>Zeichnet Ereignisse für GRANT-, DENY- und REVOKE-Anweisungsberechtigungen auf.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Schema Object GDR Event-->
+    <EVENT>
+      <ID>103</ID>
+      <DESCRIPTION>Zeichnet Ereignisse für GRANT-, DENY- und REVOKE-Objektberechtigungen auf.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Addlogin Event-->
+    <EVENT>
+      <ID>104</ID>
+      <DESCRIPTION>Zeichnet Aktionen zum Hinzufügen und Löschen von SQL Server-Anmeldungen für "sp_addlogin" und "sp_droplogin" auf.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Login GDR Event-->
+    <EVENT>
+      <ID>105</ID>
+      <DESCRIPTION>Zeichnet Aktionen zum Erteilen, Aufheben und Verweigern von Windows-Kontoanmeldungsrechten für "sp_grantlogin", "sp_revokelogin" und "sp_denylogin" auf.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Login Change Property Event-->
+    <EVENT>
+      <ID>106</ID>
+      <DESCRIPTION>Zeichnet Änderungen an der Anmeldungseigenschaft, außer Kennwörtern, für "sp_defaultdb" und "sp_defaultlanguage" auf.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Login Change Password Event-->
+    <EVENT>
+      <ID>107</ID>
+      <DESCRIPTION>Zeichnet Kennwortänderungen der SQL Server-Anmeldungen auf. Kennwörter werden nicht aufgezeichnet.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Add Login to Server Role Event-->
+    <EVENT>
+      <ID>108</ID>
+      <DESCRIPTION>Zeichnet das Hinzufügen oder Entfernen von Anmeldungen zu bzw. aus einer festen Serverrolle für "sp_addsrvrolemember" und "sp_dropsrvrolemember" auf.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Add DB User Event-->
+    <EVENT>
+      <ID>109</ID>
+      <DESCRIPTION>Zeichnet das Hinzufügen und Entfernen von Datenbankbenutzern auf (Windows oder SQL Server).</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Add Member to DB Role Event-->
+    <EVENT>
+      <ID>110</ID>
+      <DESCRIPTION>Zeichnet das Hinzufügen und Entfernen von Mitgliedern zu bzw. aus einer Datenbankrolle (fest oder benutzerdefiniert) für "sp_addrolemember" und "sp_droprolemember" auf.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Add Role Event-->
+    <EVENT>
+      <ID>111</ID>
+      <DESCRIPTION>Zeichnet Aktionen zum Hinzufügen oder Löschen von Datenbankrollen für "sp_addrole" und "sp_droprole" auf.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit App Role Change Password Event-->
+    <EVENT>
+      <ID>112</ID>
+      <DESCRIPTION>Zeichnet Änderungen am Kennwort einer Anwendung auf.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Statement Permission Event-->
+    <EVENT>
+      <ID>113</ID>
+      <DESCRIPTION>Zeichnet die Verwendung von Anweisungsberechtigungen auf.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Schema Object Access Event-->
+    <EVENT>
+      <ID>114</ID>
+      <DESCRIPTION>Zeichnet die erfolgreiche oder erfolglose Verwendung von Objektberechtigungen auf.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Backup/Restore Event-->
+    <EVENT>
+      <ID>115</ID>
+      <DESCRIPTION>Zeichnet BACKUP- und RESTORE-Ereignisse auf.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit DBCC Event-->
+    <EVENT>
+      <ID>116</ID>
+      <DESCRIPTION>Zeichnet ausgegebene DBCC-Befehle auf.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Change Audit Event-->
+    <EVENT>
+      <ID>117</ID>
+      <DESCRIPTION>Zeichnet AUDIT-Änderungen auf.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Object Derived Permission Event-->
+    <EVENT>
+      <ID>118</ID>
+      <DESCRIPTION>Zeichnet auf, wenn ein CREATE-, ALTER- oder DROP-Befehl für das angegebene Objekt ausgegeben wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--OLEDB Call Event-->
+    <EVENT>
+      <ID>119</ID>
+      <DESCRIPTION>Zeigt Aufrufe des OLE DB-Anbieters an, die von SQL Server für verteilte Abfragen und remote gespeicherte Prozeduren ausgegeben wurden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--OLEDB QueryInterface Event-->
+    <EVENT>
+      <ID>120</ID>
+      <DESCRIPTION>Zeigt OLE DB-Aufrufe von "IUnknown::QueryInterface" an, die von SQL Server für verteilte Abfragen und remote gespeicherte Prozeduren ausgegeben wurden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--OLEDB DataRead Event-->
+    <EVENT>
+      <ID>121</ID>
+      <DESCRIPTION>Zeigt OLE DB-Aufrufe von "IRowset::GetData" an, die von SQL Server zum Abrufen von Zeilendaten für verteilte Abfragen und remote gespeicherte Prozeduren ausgegeben wurden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Showplan XML-->
+    <EVENT>
+      <ID>122</ID>
+      <DESCRIPTION>Tritt auf, wenn SQL Server eine SQL-Anweisung ausführt. Schließen Sie die Showplan XML-Ereignisklasse ein, um die Showplanoperatoren zu identifizieren. Die Ereignisklasse speichert jedes Ereignis als definiertes XML-Dokument.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--SQL:FullTextQuery-->
+    <EVENT>
+      <ID>123</ID>
+      <DESCRIPTION>Zeigt Leistungsinformationen zu einzelnen Volltextabfragen an, einschließlich der Abfrage, der Anzahl von zurückgegebenen Zeilen und der Dauer der Abfrage.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Broker:Conversation-->
+    <EVENT>
+      <ID>124</ID>
+      <DESCRIPTION>Gibt den Fortschritt einer Service Broker-Konversation an.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Deprecation Announcement-->
+    <EVENT>
+      <ID>125</ID>
+      <DESCRIPTION>Tritt auf, wenn Sie eine Funktion verwenden, die aus zukünftigen Versionen von SQL Server, aber nicht aus der nächsten Hauptversion von SQL Server entfernt wird. Damit Ihre Anwendungen möglichst langlebig sind, sollten Sie keine Funktionen verwenden, die die Deprecation Announcement- oder die Deprecation Final Support-Ereignisklasse auslösen.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Deprecation Final Support-->
+    <EVENT>
+      <ID>126</ID>
+      <DESCRIPTION>Tritt auf, wenn Sie eine Funktion verwenden, die aus der nächsten Hauptversion von SQL Server entfernt wird. Damit Ihre Anwendungen möglichst langlebig sind, sollten Sie keine Funktionen verwenden, die die Deprecation Announcement- oder die Deprecation Final Support-Ereignisklasse auslösen.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Exchange Spill Event-->
+    <EVENT>
+      <ID>127</ID>
+      <DESCRIPTION>Die Exchange Spill-Ereignisklasse gibt an, dass Kommunikationspuffer in einem parallelen Abfrageplan temporär in die tempdb-Datenbank geschrieben wurden. Dies tritt nur selten auf und nur dann, wenn ein Abfrageplan mehrere Bereichsscans enthält.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Database Management Event-->
+    <EVENT>
+      <ID>128</ID>
+      <DESCRIPTION>Tritt auf, wenn eine Datenbank erstellt, geändert oder gelöscht wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Database Object Management Event-->
+    <EVENT>
+      <ID>129</ID>
+      <DESCRIPTION>Tritt auf, wenn eine CREATE-, ALTER- oder DROP-Anweisung für Datenbankobjekte (z. B. Schemas) ausgeführt wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Database Principal Management Event-->
+    <EVENT>
+      <ID>130</ID>
+      <DESCRIPTION>Tritt auf, wenn Prinzipale (z. B. Benutzer) in einer Datenbank erstellt oder geändert bzw. aus einer Datenbank gelöscht werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Schema Object Management Event-->
+    <EVENT>
+      <ID>131</ID>
+      <DESCRIPTION>Tritt auf, wenn eine CREATE-, ALTER- oder DROP-Anweisung für Schemaobjekte (z. B. Tabellen oder Sichten) ausgeführt wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Server Principal Impersonation Event-->
+    <EVENT>
+      <ID>132</ID>
+      <DESCRIPTION>Tritt auf, wenn es einen Identitätswechsel im Serverbereich gibt (z. B. bei EXECUTE AS LOGIN).</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Database Principal Impersonation Event-->
+    <EVENT>
+      <ID>133</ID>
+      <DESCRIPTION>Tritt auf, wenn im Datenbankbereich ein Identitätswechsel auftritt (z. B. EXECUTE AS USER oder SETUSER).</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Server Object Take Ownership Event-->
+    <EVENT>
+      <ID>134</ID>
+      <DESCRIPTION>Tritt auf, wenn im Serverbereich der Besitzer für Objekte geändert wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Database Object Take Ownership Event-->
+    <EVENT>
+      <ID>135</ID>
+      <DESCRIPTION>Tritt auf, wenn im Datenbankbereich (z. B. Assembly) der Besitzer für Objekte geändert wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Broker:Conversation Group-->
+    <EVENT>
+      <ID>136</ID>
+      <DESCRIPTION>Tritt auf, wenn Service Broker eine neue Konversationsgruppe erstellt oder eine vorhandene Konversationsgruppe löscht.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Blocked process report-->
+    <EVENT>
+      <ID>137</ID>
+      <DESCRIPTION>Zeigt an, dass ein Task länger als die angegebene Zeitspanne blockiert wurde. Diese Ereignisklasse schließt keine Systemtasks oder Tasks ein, die auf Ressourcen warten, für die keine Deadlocks erkannt werden können. Sie können die Häufigkeit der Berichterstellung mit dem Befehl "sp_configure" konfigurieren, indem Sie die Option für blockierte Prozessschwellenwerte konfigurieren.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Broker:Connection-->
+    <EVENT>
+      <ID>138</ID>
+      <DESCRIPTION>Gibt den Status einer Transportverbindung an, die von Service Broker verwaltet wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Broker:Forwarded Message Sent-->
+    <EVENT>
+      <ID>139</ID>
+      <DESCRIPTION>Tritt auf, wenn Service Broker eine Nachricht weiterleitet.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Broker:Forwarded Message Dropped-->
+    <EVENT>
+      <ID>140</ID>
+      <DESCRIPTION>Tritt auf, wenn Service Broker eine Nachricht löscht, die eigentlich weitergeleitet werden sollte.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Broker:Message Classify-->
+    <EVENT>
+      <ID>141</ID>
+      <DESCRIPTION>Tritt auf, wenn Service Broker das Routing für eine Nachricht bestimmt. Eine Nachricht kann für lokale, Remote- oder verzögerte Übermittlung klassifiziert werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Broker:Transmission-->
+    <EVENT>
+      <ID>142</ID>
+      <DESCRIPTION>Zeigt an, dass auf der Transportebene von Service Broker Fehler aufgetreten sind. Die Fehlernummer und die Statuswerte kennzeichnen die Fehlerquelle.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Broker:Queue Disabled-->
+    <EVENT>
+      <ID>143</ID>
+      <DESCRIPTION>Zeigt an, dass eine nicht verarbeitbare Nachricht erkannt wurde, weil in einer Service Broker-Warteschlange fünf Transaktionsrollbacks direkt nacheinander aufgetreten sind. Das Ereignis enthält die Datenbank-ID und die Warteschlangen-ID der Warteschlange, die die nicht verarbeitbare Nachricht enthält.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Broker:Mirrored Route State Changed-->
+    <EVENT>
+      <ID>144</ID>
+      <DESCRIPTION>Tritt auf, wenn der Status einer aktiven, gespiegelten Route (z. B. einer Route, die eine Spiegelungsadresse enthält, welche zurzeit von mindestens einer Konversation, die Nachrichten übermittelt, verwendet wird) sich ändert. Dies spiegelt die Statusänderung von einer der Verbindungen wider, die von der gespiegelten Route verwendet werden. Dieses Ereignis enthält auch den Status der Verbindungen (z. B. primär verbunden, verbunden als Spiegel, Verbindung getrennt aufgrund von Transportproblemen).</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Showplan XML Statistics Profile-->
+    <EVENT>
+      <ID>146</ID>
+      <DESCRIPTION>Tritt auf, wenn SQL Server eine SQL-Anweisung ausführt. Schließen Sie die Showplan XML Statistics Profile-Ereignisklasse ein, um die Showplanoperatoren für SQL Server zu identifizieren.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Deadlock graph-->
+    <EVENT>
+      <ID>148</ID>
+      <DESCRIPTION>Tritt gleichzeitig mit der Lock:Deadlock-Ereignisklasse auf. Die Deadlock Graph-Ereignisklasse bietet eine XML-Beschreibung des Deadlocks.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Broker:Remote Message Acknowledgement-->
+    <EVENT>
+      <ID>149</ID>
+      <DESCRIPTION>Zeigt an, wann eine Bestätigung empfangen wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Trace File Close-->
+    <EVENT>
+      <ID>150</ID>
+      <DESCRIPTION>Zeigt an, dass im Verlauf des Rollbacks eine Ablaufverfolgungsdatei geschlossen wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+	<!--Database Mirroring Connection-->
+    <EVENT>
+      <ID>151</ID>
+      <DESCRIPTION>Gibt an, ob ein verbundener Zustand zwischen dem Prinzipal, Spiegel oder Zeugen in einer Datenbank-Spiegelungspartnerschaft geändert wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Change Database Owner-->
+    <EVENT>
+      <ID>152</ID>
+      <DESCRIPTION>Tritt auf, wenn die Berechtigungen zum Ändern des Besitzers einer Datenbank überprüft werden. Diese Überprüfung erfolgt, wenn der Besitzer einer Datenbank mit der ALTER AUTHORIZATION-Anweisung geändert wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Schema Object Take Ownership Event-->
+    <EVENT>
+      <ID>153</ID>
+      <DESCRIPTION>Tritt auf, wenn die Berechtigungen zum Ändern des Besitzers eines Schemaobjekts (z. B. eine Tabelle, Prozedur oder Funktion) überprüft werden. Diese Überprüfung erfolgt, wenn die ALTER AUTHORIZATION-Anweisung dazu verwendet wird, einem Objekt einen Besitzer zuzuweisen.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+	<!-- Audit Database Mirroring Login Event-->
+    <EVENT>
+      <ID>154</ID>
+      <DESCRIPTION>Gibt Überwachungsmeldungen zur Transportsicherheit bei der Datenbankspiegelung an.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--FT:Crawl Started-->
+    <EVENT>
+      <ID>155</ID>
+      <DESCRIPTION>Zeigt an, dass eine Volltextdurchforstung (Auffüllung) gestartet wurde. Mit dieser Ereignisklasse können Sie überprüfen, ob eine Durchforstungsanforderung tatsächlich von Arbeitstasks abgerufen wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--FT:Crawl Stopped-->
+    <EVENT>
+      <ID>156</ID>
+      <DESCRIPTION>Zeigt an, dass eine Volltextdurchforstung (Auffüllung) beendet wurde. Die Beendigung kann aus einem erfolgreichen Abschließen des Durchforstens oder aus einem schwerwiegenden Fehler erfolgen.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--FT:Crawl Aborted-->
+    <EVENT>
+      <ID>157</ID>
+      <DESCRIPTION>Zeigt eine Ausnahme während einer Volltextdurchforstung an. Der Fehler führt normalerweise dazu, dass die Volltextdurchforstung beendet wird. Ausführlichere Fehlerinformationen finden Sie im Windows-Ereignisprotokoll oder im Durchforstungsprotokoll.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Broker Conversation-->
+    <EVENT>
+      <ID>158</ID>
+      <DESCRIPTION>Zeichnet sowohl erfolgreiche als auch nicht erfolgreiche Konversationen auf.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Broker Login-->
+    <EVENT>
+      <ID>159</ID>
+      <DESCRIPTION>Zeichnet sowohl erfolgreiche als auch nicht erfolgreiche Anmeldungen an einem angrenzenden Broker auf.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Broker:Message Undeliverable-->
+    <EVENT>
+      <ID>160</ID>
+      <DESCRIPTION>Tritt auf, wenn Service Broker eine empfangene Nachricht nicht beibehalten kann, die an einen Dienst in dieser Instanz weitergeleitet werden sollte. Nachrichten, die weitergeleitet werden sollten, finden Sie in der Broker:Forwarded Message Dropped-Ereignisklasse.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Broker:Corrupted Message-->
+    <EVENT>
+      <ID>161</ID>
+      <DESCRIPTION>Tritt auf, wenn Service Broker eine beschädigte Nachricht empfängt.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--User Error Message-->
+    <EVENT>
+      <ID>162</ID>
+      <DESCRIPTION>Zeigt die Fehlermeldung an, die der Benutzer bei einem Fehler oder einer Ausnahme sieht. Der Text der Fehlermeldung wird im TextData-Feld angezeigt.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Broker:Activation-->
+    <EVENT>
+      <ID>163</ID>
+      <DESCRIPTION>Tritt auf, wenn eine Warteschlangenüberwachung eine gespeicherte Aktivierungsprozedur startet oder eine QUEUE_ACTIVATION-Benachrichtigung sendet oder wenn eine gespeicherte Aktivierungsprozedur, die von einer Warteschlangenüberwachung gestartet wurde, beendet wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Object:Altered-->
+    <EVENT>
+      <ID>164</ID>
+      <DESCRIPTION>Zeigt an, dass ein Objekt geändert wurde (z. B. durch eine ALTER INDEX-, ALTER TABLE- oder ALTER DATABASE-Anweisung). Jeder DDL-Vorgang löst zwei vollständige Ereignisse aus: eines für die Anfangsphase und ein zweites für die Commit- oder Rollbackphase.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Performance statistics-->
+    <EVENT>
+      <ID>165</ID>
+      <DESCRIPTION>Zeigt an, dass ein kompilierter Plan das erste Mal zwischengespeichert, erneut kompiliert oder aus dem Plancache gelöscht wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--SQL:StmtRecompile-->
+    <EVENT>
+      <ID>166</ID>
+		<DESCRIPTION>Tritt auf, wenn eine Anweisung in einem Batch (einschließlich gespeicherter Prozeduren) erneut kompiliert wird. Dieses Ereignis sollte ab SQL Server 2005 statt "SP:Recompile" für die Ablaufverfolgung erneuter Kompilierungen auf Anweisungsebene verwendet werden.</DESCRIPTION>
+		<BESTPRACTICE/>
+	</EVENT>
+    <!--Database Mirroring State Change-->
+    <EVENT>
+      <ID>167</ID>
+      <DESCRIPTION>Zeigt an, dass sich der Status einer gespiegelten Datenbank geändert hat.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Showplan XML For Query Compile-->
+    <EVENT>
+      <ID>168</ID>
+      <DESCRIPTION>Tritt auf, wenn SQL Server eine SQL-Anweisung kompiliert. Schließen Sie die Showplan XML For Query Compile-Ereignisklasse ein, um die Showplanoperatoren für SQL Server zu identifizieren.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Showplan All For Query Compile-->
+    <EVENT>
+      <ID>169</ID>
+      <DESCRIPTION>Tritt auf, wenn SQL Server eine SQL-Anweisung kompiliert. Schließen Sie die Showplan All for Query Compile-Ereignisklasse ein, um die Showplanoperatoren für SQL Server 2000 oder SQL Server 7.0 zu identifizieren. Diese Ereignisklasse gilt auch für SQL Server 2005 oder höher, wobei die eingeschlossenen Informationen eine Teilmenge der Informationen sind, die in "Showplan XML For Query Compile" verfügbar sind.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Server Scope GDR Event-->
+    <EVENT>
+      <ID>170</ID>
+      <DESCRIPTION>Tritt bei einem GDR-Ereignis für Berechtigungen im Serverbereich (z. B. CREATE LOGIN) auf.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Server Object GDR Event-->
+    <EVENT>
+      <ID>171</ID>
+      <DESCRIPTION>Tritt auf, wenn ein GDR-Ereignis für ein Schemaobjekt (z. B. eine Tabelle oder Funktion) auftritt.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Database Object GDR Event-->
+    <EVENT>
+      <ID>172</ID>
+      <DESCRIPTION>Tritt auf, wenn ein GDR-Ereignis für Datenbankobjekte (z. B. Assemblys oder Schemas) auftritt.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Server Operation Event-->
+    <EVENT>
+      <ID>173</ID>
+      <DESCRIPTION>Tritt auf, wenn im Server Überwachungsvorgänge (z. B. Einstellung, Ressourcen, externen Zugriff oder Autorisierung ändern) verwendet werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Server Alter Trace Event-->
+    <EVENT>
+      <ID>175</ID>
+      <DESCRIPTION>Tritt für alle Anweisungen auf, die hinsichtlich der ALTER TRACE-Berechtigung Überprüfungen durchführen. Zu diesen Anweisungen gehören diejenigen, mit denen eine Ablaufverfolgung erstellt oder konfiguriert oder ein Filter für eine Ablaufverfolgung festgelegt wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Server Object Management Event-->
+    <EVENT>
+      <ID>176</ID>
+      <DESCRIPTION>Tritt auf, wenn CREATE, ALTER oder DROP für Serverobjekte ausgeführt wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Server Principal Management Event-->
+    <EVENT>
+      <ID>177</ID>
+      <DESCRIPTION>Tritt auf, wenn CREATE, ALTER oder DROP für Serverprinzipale ausgeführt wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Database Operation Event-->
+    <EVENT>
+      <ID>178</ID>
+      <DESCRIPTION>Tritt auf, wenn verschiedene Vorgänge in einer Datenbank (z. B. CHECKPOINT oder SUBSCRIBE QUERY NOTIFICATIONS) auftreten.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Audit Database Object Access Event-->
+    <EVENT>
+      <ID>180</ID>
+      <DESCRIPTION>Tritt auf, wenn auf Datenbankobjekte (z. B. Schemas) zugegriffen wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--TM: Begin Tran starting-->
+    <EVENT>
+      <ID>181</ID>
+      <DESCRIPTION>Zeigt an, dass eine BEGIN TRANSACTION-Anforderung gestartet wird. Die Anforderung wurde vom Client über die Schnittstelle zur Transaktionsverwaltung gesendet.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--TM: Begin Tran completed-->
+    <EVENT>
+      <ID>182</ID>
+      <DESCRIPTION>Zeigt an, dass eine BEGIN TRANSACTION-Anforderung abgeschlossen wurde. Die Anforderung wurde vom Client über die Schnittstelle zur Transaktionsverwaltung gesendet.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--TM: Promote Tran starting-->
+    <EVENT>
+      <ID>183</ID>
+      <DESCRIPTION>Zeigt an, dass eine PROMOTE TRANSACTION-Anforderung gestartet wird. Die Anforderung wurde vom Client über die Schnittstelle zur Transaktionsverwaltung gesendet.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--TM: Promote Tran completed-->
+    <EVENT>
+      <ID>184</ID>
+      <DESCRIPTION>Zeigt an, dass eine PROMOTE TRANSACTION-Anforderung abgeschlossen wurde. Die Anforderung wurde vom Client über die Schnittstelle zur Transaktionsverwaltung gesendet.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--TM: Commit Tran starting-->
+    <EVENT>
+      <ID>185</ID>
+      <DESCRIPTION>Zeigt an, dass eine COMMIT TRANSACTION-Anforderung gestartet wird. Die Anforderung wurde vom Client über die Schnittstelle zur Transaktionsverwaltung gesendet.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--TM: Commit Tran completed-->
+    <EVENT>
+      <ID>186</ID>
+      <DESCRIPTION>Zeigt an, dass eine COMMIT TRANSACTION-Anforderung abgeschlossen wurde. Die Anforderung wurde vom Client über die Schnittstelle zur Transaktionsverwaltung gesendet.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--TM: Rollback Tran starting-->
+    <EVENT>
+      <ID>187</ID>
+      <DESCRIPTION>Zeigt an, dass eine ROLLBACK TRANSACTION-Anforderung gestartet wird. Die Anforderung wurde vom Client über die Schnittstelle zur Transaktionsverwaltung gesendet.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--TM: Rollback Tran completed-->
+    <EVENT>
+      <ID>188</ID>
+      <DESCRIPTION>Zeigt an, dass eine ROLLBACK TRANSACTION-Anforderung abgeschlossen wurde. Die Anforderung wurde vom Client über die Schnittstelle zur Transaktionsverwaltung gesendet.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Lock:Timeout (timeout > 0)-->
+    <EVENT>
+      <ID>189</ID>
+      <DESCRIPTION>Zeigt an, dass für die Anforderung einer Sperre für eine Ressource, z. B. eine Seite, ein Timeout aufgetreten ist, da eine andere Transaktion eine blockierende Sperre für die angeforderte Ressource aufrechterhält. Diese Ereignisklasse unterscheidet sich von der Lock:Timeout-Ereignisklasse nur dadurch, dass sie keine Ereignisse einschließt, deren Timeoutwert gleich "0" ist.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Progress Report: Online Index Operation-->
+    <EVENT>
+      <ID>190</ID>
+      <DESCRIPTION>Zeigt den Fortschritt einer Online-Index-Erstellung an. Üblicherweise ist das Erstellen eines Online-Indexes ein Vorgang, der lange dauert. Mit dieser Ereignisklasse kann der Fortschritt einer Online-Index-Erstellung bei deren Ausführung angezeigt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--TM: Save Tran starting-->
+    <EVENT>
+      <ID>191</ID>
+      <DESCRIPTION>Zeigt an, dass eine SAVE TRANSACTION-Anforderung gestartet wird. Die Anforderung wurde vom Client über die Schnittstelle zur Transaktionsverwaltung gesendet.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--TM: Save Tran completed-->
+    <EVENT>
+      <ID>192</ID>
+      <DESCRIPTION>Zeigt an, dass eine SAVE TRANSACTION-Anforderung abgeschlossen wurde. Die Anforderung wurde vom Client über die Schnittstelle zur Transaktionsverwaltung gesendet.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Background Job Error-->
+    <EVENT>
+      <ID>193</ID>
+      <DESCRIPTION>Tritt auf, wenn ein Hintergrundauftrag fehlerbedingt beendet wurde. Dieser Zustand erfordert möglicherweise ein Eingreifen des Systemadministrators.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--OLEDB Provider Information-->
+    <EVENT>
+      <ID>194</ID>
+      <DESCRIPTION>Tritt auf, wenn eine verteilte Abfrage ausgeführt wird und Informationen auflistet, die sich auf die Anbieterverbindung beziehen. Diese Ereignisklasse enthält alle Eigenschaften, die vom Remoteanbieter mithilfe verschiedener Eigenschaftsmengen aufgelistet werden, z. B. DBPROPSET_DATASOURCEINFO, SQLPROPSET_OPTHINTS, DBPROPSET_SQLSERVERDATASOURCEINFO (nur SQL Server), DBPROPSET_SQLSERVERDBINIT (nur SQL Server) sowie DBPROPSET_ROWSET und die IDBInfo-Schnittstelle.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Mount Tape-->
+    <EVENT>
+      <ID>195</ID>
+      <DESCRIPTION>Tritt auf, wenn eine Anforderung zum Einlegen eines Bands empfangen wird. Verwenden Sie diese Ereignisklasse immer dann, wenn Sie Anforderungen zum Einlegen eines Bands sowie deren Erfolg oder Misserfolg überwachen möchten.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--Assembly Load-->
+    <EVENT>
+      <ID>196</ID>
+      <DESCRIPTION>Tritt auf, wenn eine Anforderung zum Laden einer Assembly ausgeführt wird. Dies kann hilfreich sein für die Problembehandlung einer Abfrage, die CLR verwendet, bei der Problembehandlung eines langsamen Servers, der CLR-Abfragen ausführt, oder wenn ein Server überwacht wird, um Benutzer-, Datenbank- Erfolgs- oder sonstige Informationen zu Assemblyladevorgängen zu sammeln.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--XQuery Static Type-->
+    <EVENT>
+      <ID>198</ID>
+      <DESCRIPTION>Tritt auf, wenn SQL Server einen XQuery-Ausdruck ausführt. Diese Ereignisklasse stellt den statischen Typ des XQuery-Ausdrucks bereit. Im Fall der value()-Methode wird der statisch abgeleitete Typ angezeigt, nachdem der Ausdruck implizit unteilbar gemacht wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--QN: subscription-->
+    <EVENT>
+      <ID>199</ID>
+	  <DESCRIPTION>Identifiziert Aktivitäten bei der fortlaufenden Abonnementregistrierung und beim Auslösen von Abonnements.</DESCRIPTION>
+	  <BESTPRACTICE/>
+	</EVENT>
+    <!--QN: parameter table-->
+    <EVENT>
+      <ID>200</ID>
+      <DESCRIPTION>Ermöglicht das Nachverfolgen von Erstellungs- und Löschvorgängen für interne Parametertabellen. In diesen Tabellen werden Informationen zu aktiven Abonnements gespeichert.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--QN: template-->
+    <EVENT>
+      <ID>201</ID>
+	  <DESCRIPTION>Ermöglicht das Nachverfolgen von Situationen, in denen eine neue Abonnementanforderung zu einer bereits vorhandenen Klasse ("Match") oder einer neuen Klasse ("Create") gehört. Die dritte Ereignisunterklasse ("Drop") steht für Vorlagencleanups für Abfrageklassen ohne aktive Abonnements.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--QN: dynamics-->
+    <EVENT>
+      <ID>202</ID>
+	  <DESCRIPTION>Dient zum Nachverfolgen interner Aktivitäten von Abfragebenachrichtigungen.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+	<!--Bitmap Warning-->
+    <EVENT>
+      <ID>212</ID>
+	  <DESCRIPTION>Gibt an, dass die Bitmapfilterung in einer Abfrage deaktiviert wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+	<!--Database Suspect Data Page-->
+    <EVENT>
+      <ID>213</ID>
+	  <DESCRIPTION>Gibt an, dass eine Seite der suspect_pages-Tabelle in "msdb" hinzugefügt wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--CPU threshold exceeded-->
+    <EVENT>
+      <ID>214</ID>
+      <DESCRIPTION>Zeigt an, wann der Resource Governor eine Abfrage findet, die den CPU-Schwellenwert überschritten hat (REQUEST_MAX_CPU_TIME_SEC).</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--PreConnect:Starting-->
+    <EVENT>
+      <ID>215</ID>
+      <DESCRIPTION>Zeigt an, wann die Ausführung eines LOGON-Triggers oder einer Resource Governor-Klassifizierungsfunktion gestartet wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+    <!--PreConnect:Completed-->
+    <EVENT>
+      <ID>216</ID>
+      <DESCRIPTION>Zeigt an, wann die Ausführung eines LOGON-Triggers oder einer Resource Governor-Klassifizierungsfunktion beendet wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </EVENT>
+	<!--Plan Guide Successful-->
+	<EVENT>
+	  <ID>217</ID>
+	  <DESCRIPTION>Gibt an, dass SQL Server einen Ausführungsplan für eine Abfrage oder einen Batch mit einer Planhinweisliste generiert hat.</DESCRIPTION>
+	  <BESTPRACTICE/>
+	</EVENT>
+	<!--Plan Guide Unsuccessful-->
+	<EVENT>
+	  <ID>218</ID>
+	  <DESCRIPTION>Gibt an, dass SQL Server keinen Ausführungsplan für eine Abfrage oder einen Batch mit einer Planhinweisliste generieren konnte. SQL Server hat versucht, einen Ausführungsplan für diese Abfrage oder diesen Batch zu generieren, ohne die Planhinweisliste anzuwenden. Dieses Problem kann durch eine ungültige Planhinweisliste verursacht worden sein. Sie können die Planhinweisliste mit der Systemfunktion "sys.fn_validate_plan_guide" überprüfen.</DESCRIPTION>
+	  <BESTPRACTICE/>
+	</EVENT>
+	<!--Audit Fulltext-->
+	<EVENT>
+	  <ID>235</ID>
+	  <DESCRIPTION>Führt eine Nachverfolgung für Verbindungen zwischen dem SQL Server-Prozess und dem Volltextfilter-Daemonvorgang aus.</DESCRIPTION>
+	  <BESTPRACTICE/>
+	</EVENT>
+  </EVENTLIST>
+  <COLUMNLIST>
+    <!--TextData-->
+    <COLUMN>
+      <ID>1</ID>
+      <DESCRIPTION>Der Textwert, der von der Ereignisklasse abhängt, die in der Ablaufverfolgung aufgezeichnet wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--BinaryData-->
+    <COLUMN>
+      <ID>2</ID>
+      <DESCRIPTION>Binärwert, der von der Ereignisklasse abhängt, die in der Ablaufverfolgung aufgezeichnet wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--DatabaseID-->
+    <COLUMN>
+      <ID>3</ID>
+      <DESCRIPTION>Die ID der Datenbank, die durch die USE database-Anweisung angegeben wurde, bzw. die Standarddatenbank, wenn für eine angegebene Verbindung keine USE database-Anweisung ausgegeben wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--TransactionID-->
+    <COLUMN>
+      <ID>4</ID>
+      <DESCRIPTION>Die vom System zugewiesene ID der Transaktion.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--LineNumber-->
+    <COLUMN>
+      <ID>5</ID>
+      <DESCRIPTION>Zeigt die Nummer der Zeile an, die den Fehler enthält.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--NTUserName-->
+    <COLUMN>
+      <ID>6</ID>
+      <DESCRIPTION>Windows-Benutzername</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--NTDomainName-->
+    <COLUMN>
+      <ID>7</ID>
+      <DESCRIPTION>Windows-Domäne, zu der der Benutzer gehört.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--HostName-->
+    <COLUMN>
+      <ID>8</ID>
+      <DESCRIPTION>Der Name des Computers, auf dem der Client ausgeführt wird. Diese Datenspalte wird aufgefüllt, wenn der Hostname vom Client bereitgestellt wird. Der Hostname kann mithilfe der HOST_NAME-Funktion ermittelt werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--ClientProcessID-->
+    <COLUMN>
+      <ID>9</ID>
+      <DESCRIPTION>Die Prozess-ID der Anwendung, die SQL Server aufruft.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--ApplicationName-->
+    <COLUMN>
+      <ID>10</ID>
+      <DESCRIPTION>Der Name der Clientanwendung, die die Verbindung mit SQL Server hergestellt hat. Diese Spalte wird mit den von der Anwendung übergebenen Werten und nicht mit dem angezeigten Programmnamen aufgefüllt.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--LoginName-->
+    <COLUMN>
+      <ID>11</ID>
+      <DESCRIPTION>Der Anmeldename des Benutzers (Anmeldung der SQL Server-Sicherheit oder Windows-Anmeldeinformationen im DOMAIN\Username-Format).</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--SPID-->
+    <COLUMN>
+      <ID>12</ID>
+      <DESCRIPTION>Die Serverprozess-ID, die von SQL Server dem Prozess zugewiesen wurde, der dem Client zugeordnet ist.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--Duration-->
+    <COLUMN>
+      <ID>13</ID>
+      <DESCRIPTION>Die Zeit, die für das Ereignis benötigt wurde. Obwohl der Server die Dauer in Mikrosekunden misst, kann SQL Server Profiler den Wert in Millisekunden angeben, abhängig von der Einstellung im Dialogfeld "Optionen", das Sie über das Menü "Extras" öffnen.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--StartTime-->
+    <COLUMN>
+      <ID>14</ID>
+      <DESCRIPTION>Der Zeitpunkt, zu dem das Ereignis begonnen hat, falls verfügbar.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--EndTime-->
+    <COLUMN>
+      <ID>15</ID>
+      <DESCRIPTION>Der Zeitpunkt, zu dem das Ereignis beendet wurde. Diese Spalte wird für Startereignisklassen, wie z. B. "SQL:BatchStarting" oder "SP:Starting", nicht aufgefüllt.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--Reads-->
+    <COLUMN>
+      <ID>16</ID>
+      <DESCRIPTION>Die Anzahl von logischen Lesevorgängen auf dem Datenträger, die vom Server für dieses Ereignis ausgeführt wurden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--Writes-->
+    <COLUMN>
+      <ID>17</ID>
+      <DESCRIPTION>Die Anzahl von physischen Schreibvorgängen auf dem Datenträger, die vom Server für dieses Ereignis ausgeführt wurden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--CPU-->
+    <COLUMN>
+      <ID>18</ID>
+      <DESCRIPTION>CPU-Zeit (in Millisekunden), die vom Ereignis verwendet wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--Permissions-->
+    <COLUMN>
+      <ID>19</ID>
+      <DESCRIPTION>Der Wert für eine ganze Zahl, der den Typ der überprüften Berechtigungen darstellt.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--Severity-->
+    <COLUMN>
+      <ID>20</ID>
+      <DESCRIPTION>Schweregrad einer Ausnahme.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--EventSubClass-->
+    <COLUMN>
+      <ID>21</ID>
+      <DESCRIPTION>Der Typ der Ereignisunterklasse. Diese Datenspalte wird nicht für alle Ereignisklassen aufgefüllt.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--ObjectID-->
+    <COLUMN>
+      <ID>22</ID>
+      <DESCRIPTION>Die vom System zugewiesene ID des Objekts.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--Success-->
+    <COLUMN>
+      <ID>23</ID>
+      <DESCRIPTION>1 = Erfolg. 0 = Fehler (z. B. gibt der Wert "1" den Erfolg einer Berechtigungsüberprüfung und "0" einen Fehler bei dieser Überprüfung an).</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--IndexID-->
+    <COLUMN>
+      <ID>24</ID>
+      <DESCRIPTION>Die ID für den Index des Objekts, das vom Ereignis betroffen ist. Sie können die Index-ID für ein Objekt mithilfe der indid-Spalte der sysindexes-Systemtabelle ermitteln.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--IntegerData-->
+    <COLUMN>
+      <ID>25</ID>
+      <DESCRIPTION>Der Wert für eine ganze Zahl, der von der Ereignisklasse abhängt, die in der Ablaufverfolgung aufgezeichnet wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--ServerName-->
+    <COLUMN>
+      <ID>26</ID>
+      <DESCRIPTION>Der Name der SQL Server-Instanz, deren Ablauf verfolgt wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--EventClass-->
+    <COLUMN>
+      <ID>27</ID>
+      <DESCRIPTION>Ereignisklassenname</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--ObjectType-->
+    <COLUMN>
+      <ID>28</ID>
+      <DESCRIPTION>Der Wert, der den Typ des am Ereignis beteiligten Objekts darstellt. Dieser Wert entspricht der type-Spalte in "sysobjects".</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--NestLevel-->
+    <COLUMN>
+      <ID>29</ID>
+      <DESCRIPTION>Die ganze Zahl, die die von @@NESTLEVEL zurückgegebenen Daten darstellt.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--State-->
+    <COLUMN>
+      <ID>30</ID>
+      <DESCRIPTION>Das Äquivalent für einen Fehlerzustandscode.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--Error-->
+    <COLUMN>
+      <ID>31</ID>
+      <DESCRIPTION>Fehlernummer eines bestimmten Ereignisses. Häufig handelt es sich um die in "sysmessages" gespeicherte Fehlernummer.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--Mode-->
+    <COLUMN>
+      <ID>32</ID>
+      <DESCRIPTION>Die ganze Zahl, die von verschiedenen Ereignissen zur Beschreibung eines Status verwendet wird, der von einem Ereignis empfangen oder angefordert wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--Handle-->
+    <COLUMN>
+      <ID>33</ID>
+      <DESCRIPTION>Die ganze Zahl, die von ODBC, OLE DB oder der DB-Library zum Koordinieren der Ausführung mit dem Server verwendet wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--ObjectName-->
+    <COLUMN>
+      <ID>34</ID>
+      <DESCRIPTION>Der Name des Objekts, auf das verwiesen wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--DatabaseName-->
+    <COLUMN>
+      <ID>35</ID>
+      <DESCRIPTION>Name der Datenbank, in der die Anweisung des Benutzers ausgeführt wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--FileName-->
+    <COLUMN>
+      <ID>36</ID>
+      <DESCRIPTION>Der logische Name der Datei, die geändert wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--OwnerName-->
+    <COLUMN>
+      <ID>37</ID>
+      <DESCRIPTION>Der Datenbank-Benutzername des Objektbesitzers.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--RoleName-->
+    <COLUMN>
+      <ID>38</ID>
+      <DESCRIPTION>Der Name einer Anwendungsrolle, die aktiviert wird.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--TargetUserName-->
+    <COLUMN>
+      <ID>39</ID>
+      <DESCRIPTION>Bei Aktionen, die einen Datenbankbenutzer betreffen (z. B. das Erteilen von Berechtigungen für einen Benutzer), der Name dieses Benutzers.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--DBUserName-->
+    <COLUMN>
+      <ID>40</ID>
+      <DESCRIPTION>Der SQL Server-Benutzername des Clients.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--LoginSid-->
+    <COLUMN>
+      <ID>41</ID>
+      <DESCRIPTION>Die Sicherheits-ID (SID) des angemeldeten Benutzers. Diese Informationen sind in der syslogins-Tabelle der Masterdatenbank enthalten. Die SID ist für jede Anmeldung am Server eindeutig.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--TargetLoginName-->
+    <COLUMN>
+      <ID>42</ID>
+      <DESCRIPTION>Bei Aktionen, die eine Anmeldung betreffen (z. B. beim Hinzufügen einer neuen Anmeldung), der Anmeldename.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--TargetLoginSid-->
+    <COLUMN>
+      <ID>43</ID>
+      <DESCRIPTION>Bei Aktionen, die eine Anmeldung betreffen (z. B. beim Hinzufügen einer neuen Anmeldung), die Sicherheits-ID (SID) der Anmeldung.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--ColumnPermissions-->
+    <COLUMN>
+      <ID>44</ID>
+      <DESCRIPTION>Zeigt an, ob eine Spaltenberechtigung festgelegt wurde. Analysieren Sie den Anweisungstext, um genau zu bestimmen, welche Berechtigungen für welche Spalten angewendet wurden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--LinkedServerName-->
+    <COLUMN>
+      <ID>45</ID>
+      <DESCRIPTION>Der Name des Verbindungsservers.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--ProviderName-->
+    <COLUMN>
+      <ID>46</ID>
+      <DESCRIPTION>Der Name des OLE DB-Anbieters.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--MethodName-->
+    <COLUMN>
+      <ID>47</ID>
+      <DESCRIPTION>Der Name der OLE DB-Methode.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--RowCounts-->
+    <COLUMN>
+      <ID>48</ID>
+      <DESCRIPTION>Die Anzahl von Zeilen im Batch.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--RequestID-->
+    <COLUMN>
+      <ID>49</ID>
+      <DESCRIPTION>Die ID der Anforderung, die die Anweisung enthält.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--XactSequence-->
+    <COLUMN>
+      <ID>50</ID>
+      <DESCRIPTION>Ein Token zum Beschreiben der aktuellen Transaktion.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--EventSequence-->
+    <COLUMN>
+      <ID>51</ID>
+      <DESCRIPTION>Die Sequenz eines bestimmten Ereignisses innerhalb der Anforderung.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--BigintData1-->
+    <COLUMN>
+      <ID>52</ID>
+      <DESCRIPTION>Der bigint-Wert, der von der Ereignisklasse abhängt, die in der Ablaufverfolgung aufgezeichnet wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--BigintData2-->
+    <COLUMN>
+      <ID>53</ID>
+      <DESCRIPTION>Der bigint-Wert, der von der Ereignisklasse abhängt, die in der Ablaufverfolgung aufgezeichnet wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--GUID-->
+    <COLUMN>
+      <ID>54</ID>
+      <DESCRIPTION>Der GUID-Wert, der von der Ereignisklasse abhängt, die in der Ablaufverfolgung aufgezeichnet wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--IntegerData2-->
+    <COLUMN>
+      <ID>55</ID>
+      <DESCRIPTION>Der Wert für eine ganze Zahl, der von der Ereignisklasse abhängt, die in der Ablaufverfolgung aufgezeichnet wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--ObjectID2-->
+    <COLUMN>
+      <ID>56</ID>
+      <DESCRIPTION>Die ID des verwandten Objekts oder der verwandten Entität (sofern verfügbar).</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--Type-->
+    <COLUMN>
+      <ID>57</ID>
+      <DESCRIPTION>Der Wert für eine ganze Zahl, der von der Ereignisklasse abhängt, die in der Ablaufverfolgung aufgezeichnet wurde.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--OwnerID-->
+    <COLUMN>
+      <ID>58</ID>
+      <DESCRIPTION>Der Typ des Objekts, das Besitzer einer Sperre ist (für Sperrereignisse)</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--ParentName-->
+    <COLUMN>
+      <ID>59</ID>
+      <DESCRIPTION>Der Name des Schemas, in dem sich das Objekt befindet.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--IsSystem-->
+    <COLUMN>
+      <ID>60</ID>
+      <DESCRIPTION>Zeigt an, ob das Ereignis in einem Systemprozess oder einem Benutzerprozess aufgetreten ist. 1 = System, 0 = Benutzer.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--Offset-->
+    <COLUMN>
+      <ID>61</ID>
+      <DESCRIPTION>Der Startoffset der Anweisung in der gespeicherten Prozedur oder im Batch.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--SourceDatabaseID-->
+    <COLUMN>
+      <ID>62</ID>
+      <DESCRIPTION>Die ID der Datenbank, in der die Quelle des Objekts vorhanden ist.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--SqlHandle-->
+    <COLUMN>
+      <ID>63</ID>
+      <DESCRIPTION>Der 64-Bit-Hashwert auf Basis des Texts einer Ad-hoc-Abfrage oder die Datenbank- und Objekt-ID eines SQL-Objekts. Dieser Wert kann an "sys.dm_exec_sql_text()" übergeben werden, um den zugeordneten Text oder das zugeordnete Objekt abzurufen.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--SessionLoginName-->
+    <COLUMN>
+      <ID>64</ID>
+      <DESCRIPTION>Der Anmeldename des Benutzers, der die Sitzung geöffnet hat. Wenn Sie beispielsweise "Login1" dazu verwenden, eine Verbindung mit SQL Server herzustellen, und eine Anweisung als "Login2" ausführen, zeigt "LoginSessionName" den Wert "Login1" an, wogegen "LoginName" den Wert "Login2" anzeigt. Diese Spalte zeigt sowohl den SQL Server- als auch den Windows-Anmeldenamen an.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--PlanHandle-->
+    <COLUMN>
+      <ID>65</ID>
+      <DESCRIPTION>Gibt die GUID für das Planhandle an. Diese GUID kann von der sys.dm_exec_query_plan-Funktion zum Abrufen des XML-Ausführungsplans verwendet werden.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+    <!--GroupID-->
+    <COLUMN>
+      <ID>66</ID>
+      <DESCRIPTION>Gibt die vom Resource Governor für die aktuelle Sitzung klassifizierte GroupID an.</DESCRIPTION>
+      <BESTPRACTICE/>
+    </COLUMN>
+  </COLUMNLIST>
+</EventColumnDescriptions>

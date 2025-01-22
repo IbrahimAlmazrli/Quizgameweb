@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<xs:schema id="EventColumnDescriptions" targetNamespace="http://tempuri.org/xmlfile.xsd" xmlns:mstns="http://tempuri.org/xmlfile.xsd" xmlns="http://tempuri.org/xmlfile.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="EventColumnDescriptions" msdata:IsDataSet="true" msdata:EnforceConstraints="False">
+		<xs:complexType>
+			<xs:choice maxOccurs="1">
+				<xs:element name="EVENTCATEGORYLIST">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="EVENTCATEGORY" minOccurs="1" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="NAME" type="xs:string" minOccurs="1" maxOccurs="1" />
+										<xs:element name="DESCRIPTION" type="xs:string" minOccurs="1" maxOccurs="1" />
+										<xs:element name="BESTPRACTICE" type="xs:string" minOccurs="0" maxOccurs="1" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="EVENTLIST">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="EVENT" minOccurs="1" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="ID" type="xs:string" minOccurs="1" maxOccurs="1" />
+										<xs:element name="DESCRIPTION" type="xs:string" minOccurs="1" maxOccurs="1" />
+										<xs:element name="BESTPRACTICE" type="xs:string" minOccurs="0" maxOccurs="1" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="COLUMNLIST">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="COLUMN" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="ID" type="xs:string" minOccurs="1" maxOccurs="1" />
+										<xs:element name="DESCRIPTION" type="xs:string" minOccurs="0" maxOccurs="1" />
+										<xs:element name="BESTPRACTICE" type="xs:string" minOccurs="0" maxOccurs="1" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

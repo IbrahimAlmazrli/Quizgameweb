@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<TRACEDEFINITION>
+	<_locDefinition>
+		<_locDefault _loc="locNone" />
+		<_locTag _loc="locData">DESCRIPTION</_locTag>
+	</_locDefinition>
+	<EVENTCATEGORYLIST>
+		<EVENTCATEGORY>
+			<NAME>Trace Special Events</NAME>
+			<TYPE>3</TYPE>
+			<DESCRIPTION>Collection of Trace Special Events</DESCRIPTION>
+			<EVENTLIST>
+				<EVENT>
+					<ID>65534</ID>
+					<NAME>Trace Start</NAME>
+					<DESCRIPTION>Collects all new connection events since the trace was started, such as when a client requests a connection to a server running an instance of SQL Server.</DESCRIPTION>
+					<EVENTCOLUMNLIST>
+						<EVENTCOLUMN>
+							<ID>14</ID>
+						</EVENTCOLUMN>
+					</EVENTCOLUMNLIST>
+				</EVENT>
+				<EVENT>
+					<ID>65533</ID>
+					<NAME>Trace Stop</NAME>
+					<DESCRIPTION>Inidicates stop of the trace.</DESCRIPTION>
+					<EVENTCOLUMNLIST>
+						<EVENTCOLUMN>
+							<ID>14</ID>
+						</EVENTCOLUMN>
+					</EVENTCOLUMNLIST>
+				</EVENT>
+				<EVENT>
+					<ID>65527</ID>
+					<NAME>Trace Rollover</NAME>
+					<DESCRIPTION>Indicates that a rollover occured and the file is part of a rollover file sequence.</DESCRIPTION>
+					<EVENTCOLUMNLIST>
+						<EVENTCOLUMN>
+							<ID>14</ID>
+						</EVENTCOLUMN>
+					</EVENTCOLUMNLIST>
+				</EVENT>
+				<EVENT>
+					<ID>65528</ID>
+					<NAME>Table Header</NAME>
+					<DESCRIPTION>Specaial Table Header Event.</DESCRIPTION>
+					<EVENTCOLUMNLIST>
+						<EVENTCOLUMN>
+							<ID>14</ID>
+						</EVENTCOLUMN>
+					</EVENTCOLUMNLIST>
+				</EVENT>
+				<EVENT>
+					<ID>65529</ID>
+					<NAME>Trace Pause</NAME>
+					<DESCRIPTION>Inidicates pause of the trace.</DESCRIPTION>
+					<EVENTCOLUMNLIST>
+						<EVENTCOLUMN>
+							<ID>14</ID>
+						</EVENTCOLUMN>
+					</EVENTCOLUMNLIST>
+				</EVENT>
+				<EVENT>
+					<ID>65532</ID>
+					<NAME>Trace Error</NAME>
+					<DESCRIPTION>Trace Error Event</DESCRIPTION>
+					<EVENTCOLUMNLIST>
+						<EVENTCOLUMN>
+							<ID>1</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>6</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>7</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>15</ID>
+						</EVENTCOLUMN>
+					</EVENTCOLUMNLIST>
+				</EVENT>
+				<EVENT>
+					<ID>65531</ID>
+					<NAME>Trace Skipped Records</NAME>
+					<DESCRIPTION>Trace Skipped Records Event</DESCRIPTION>
+					<EVENTCOLUMNLIST>
+						<EVENTCOLUMN>
+							<ID>1</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>6</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>7</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>15</ID>
+						</EVENTCOLUMN>
+					</EVENTCOLUMNLIST>
+				</EVENT>
+				<EVENT>
+					<ID>65530</ID>
+					<NAME>No Operation</NAME>
+					<DESCRIPTION>No Operation Event</DESCRIPTION>
+					<EVENTCOLUMNLIST>
+						<EVENTCOLUMN>
+							<ID>1</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>6</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>7</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>15</ID>
+						</EVENTCOLUMN>
+					</EVENTCOLUMNLIST>
+				</EVENT>
+			</EVENTLIST>
+		</EVENTCATEGORY>
+		<EVENTCATEGORY>
+			<NAME>Profiler Special Events</NAME>
+			<TYPE>3</TYPE>
+			<DESCRIPTION>Collection of Profiler Special Events</DESCRIPTION>
+			<EVENTLIST>
+				<EVENT>
+					<ID>64510</ID>
+					<NAME>Profiler Message Event</NAME>
+					<DESCRIPTION>Collects all new connection events since the trace was started, such as when a client requests a connection to a server running an instance of SQL Server.</DESCRIPTION>
+					<EVENTCOLUMNLIST>
+						<EVENTCOLUMN>
+							<ID>1</ID>
+						</EVENTCOLUMN>
+					</EVENTCOLUMNLIST>
+				</EVENT>
+				<EVENT>
+					<ID>64509</ID>
+					<NAME>File Rollover Event</NAME>
+					<DESCRIPTION>Indicates File Rollover operation</DESCRIPTION>
+					<EVENTCOLUMNLIST>
+						<EVENTCOLUMN>
+							<ID>1</ID>
+						</EVENTCOLUMN>
+					</EVENTCOLUMNLIST>
+				</EVENT>
+				<EVENT>
+					<ID>64508</ID>
+					<NAME>Profiler Repeated Data Holder Event</NAME>
+					<DESCRIPTION>Holds repeated data</DESCRIPTION>
+					<EVENTCOLUMNLIST>
+						<EVENTCOLUMN>
+							<ID>1</ID>
+						</EVENTCOLUMN>
+					</EVENTCOLUMNLIST>
+				</EVENT>
+			</EVENTLIST>
+		</EVENTCATEGORY>
+		<EVENTCATEGORY>
+			<NAME>Profiler Replay Special Events</NAME>
+			<TYPE>3</TYPE>
+			<DESCRIPTION>Collection of Profiler Replay Special Events</DESCRIPTION>
+			<EVENTLIST>
+				<EVENT>
+					<ID>63486</ID>
+					<NAME>Replay Internal Error</NAME>
+					<DESCRIPTION>Replay Internal Error </DESCRIPTION>
+					<EVENTCOLUMNLIST>
+						<EVENTCOLUMN>
+							<ID>1</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>2</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>6</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>7</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>14</ID>
+						</EVENTCOLUMN>
+					</EVENTCOLUMNLIST>
+				</EVENT>
+				<EVENT>
+					<ID>63485</ID>
+					<NAME>Replay Provider Error</NAME>
+					<DESCRIPTION>Replay Provider Error</DESCRIPTION>
+					<EVENTCOLUMNLIST>
+						<EVENTCOLUMN>
+							<ID>1</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>2</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>6</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>7</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>14</ID>
+						</EVENTCOLUMN>
+					</EVENTCOLUMNLIST>
+				</EVENT>
+				<EVENT>
+					<ID>63484</ID>
+					<NAME>Replay Result Set Event</NAME>
+					<DESCRIPTION>Replay Result Set Event</DESCRIPTION>
+					<EVENTCOLUMNLIST>
+						<EVENTCOLUMN>
+							<ID>1</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>2</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>6</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>7</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>14</ID>
+						</EVENTCOLUMN>
+					</EVENTCOLUMNLIST>
+				</EVENT>
+				<EVENT>
+					<ID>63483</ID>
+					<NAME>Replay Result Row Event</NAME>
+					<DESCRIPTION>Replay Result Row Event </DESCRIPTION>
+					<EVENTCOLUMNLIST>
+						<EVENTCOLUMN>
+							<ID>1</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>2</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>6</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>7</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>14</ID>
+						</EVENTCOLUMN>
+					</EVENTCOLUMNLIST>
+				</EVENT>
+				<EVENT>
+					<ID>63482</ID>
+					<NAME>Replay Statistics Event</NAME>
+					<DESCRIPTION>Replay Statistics Event </DESCRIPTION>
+					<EVENTCOLUMNLIST>
+						<EVENTCOLUMN>
+							<ID>1</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>2</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>6</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>7</ID>
+						</EVENTCOLUMN>
+					<EVENTCOLUMN>
+						<ID>14</ID>
+					</EVENTCOLUMN>
+				</EVENTCOLUMNLIST>
+			</EVENT>
+				<EVENT>
+					<ID>63481</ID>
+					<NAME>Replay Settings Event</NAME>
+					<DESCRIPTION>Replay Settings Event </DESCRIPTION>
+					<EVENTCOLUMNLIST>
+						<EVENTCOLUMN>
+							<ID>1</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>2</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>6</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>7</ID>
+						</EVENTCOLUMN>
+					<EVENTCOLUMN>
+						<ID>14</ID>
+					</EVENTCOLUMN>
+				</EVENTCOLUMNLIST>
+			</EVENT>
+				<EVENT>
+					<ID>63487</ID>
+					<NAME>Replay Performance</NAME>
+					<DESCRIPTION>Collects the time taken for the server</DESCRIPTION>
+					<EVENTCOLUMNLIST>
+						<EVENTCOLUMN>
+							<ID>1</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>3</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>12</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>35</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>65521</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>65520</ID>
+						</EVENTCOLUMN>
+						<EVENTCOLUMN>
+							<ID>65519</ID>
+						</EVENTCOLUMN>
+					</EVENTCOLUMNLIST>
+				</EVENT>
+		</EVENTLIST>
+           </EVENTCATEGORY>
+           
+  </EVENTCATEGORYLIST>
+  <COLUMNLIST>
+      <COLUMN>
+      <ID>65521</ID>
+      <TYPE>1</TYPE>
+      <NAME>SourceRow</NAME>
+      <DESCRIPTION>The original row number for the event executed</DESCRIPTION>
+      <FILTERABLE>true</FILTERABLE>
+      <REPEATABLE>false</REPEATABLE>
+      <REPEATEDBASE>false</REPEATEDBASE>
+    </COLUMN>
+    <COLUMN>
+      <ID>65520</ID>
+      <TYPE>1</TYPE>
+      <NAME>ExecutionTime</NAME>
+      <DESCRIPTION>Time taken for query execution excluding result fetching</DESCRIPTION>
+      <FILTERABLE>true</FILTERABLE>
+      <REPEATABLE>false</REPEATABLE>
+      <REPEATEDBASE>false</REPEATEDBASE>
+    </COLUMN>
+    <COLUMN>
+      <ID>65519</ID>
+      <TYPE>1</TYPE>
+      <NAME>ExecutionAndFetchTime</NAME>
+      <DESCRIPTION>Time taken for query execution including result fetching</DESCRIPTION>
+      <FILTERABLE>true</FILTERABLE>
+      <REPEATABLE>false</REPEATABLE>
+      <REPEATEDBASE>false</REPEATEDBASE>
+    </COLUMN>
+    <COLUMN>
+      <ID>100</ID>
+      <TYPE>2</TYPE>
+      <NAME>ReplaySequence</NAME>
+      <DESCRIPTION>The sequence of replayable event generated in DReplay preprocess.</DESCRIPTION>
+      <FILTERABLE>false</FILTERABLE>
+      <REPEATABLE>false</REPEATABLE>
+      <REPEATEDBASE>false</REPEATEDBASE>
+    </COLUMN>
+    <COLUMN>
+      <ID>101</ID>
+      <TYPE>2</TYPE>
+      <NAME>ThinkTime</NAME>
+      <DESCRIPTION>Amount of time taken from the last event completion in same session.</DESCRIPTION>
+      <FILTERABLE>false</FILTERABLE>
+      <REPEATABLE>false</REPEATABLE>
+      <REPEATEDBASE>false</REPEATEDBASE>
+    </COLUMN>
+    <COLUMN>
+      <ID>102</ID>
+      <TYPE>2</TYPE>
+      <NAME>EndSequence</NAME>
+      <DESCRIPTION>The sequence of completed event.</DESCRIPTION>
+      <FILTERABLE>false</FILTERABLE>
+      <REPEATABLE>false</REPEATABLE>
+      <REPEATEDBASE>false</REPEATEDBASE>
+    </COLUMN>
+    <COLUMN>
+      <ID>103</ID>
+      <TYPE>2</TYPE>
+      <NAME>AttentionTimeout</NAME>
+      <DESCRIPTION>Amount of time of attention.</DESCRIPTION>
+      <FILTERABLE>false</FILTERABLE>
+      <REPEATABLE>false</REPEATABLE>
+      <REPEATEDBASE>false</REPEATEDBASE>
+    </COLUMN>
+    <COLUMN>
+      <ID>104</ID>
+      <TYPE>1</TYPE>
+      <NAME>ConnectionID</NAME>
+      <DESCRIPTION>Connection ID assigned in preprocessing.</DESCRIPTION>
+      <FILTERABLE>true</FILTERABLE>
+      <REPEATABLE>false</REPEATABLE>
+      <REPEATEDBASE>true</REPEATEDBASE>
+    </COLUMN>
+    <COLUMN>
+      <ID>110</ID>
+      <TYPE>1</TYPE>
+      <NAME>ReplaySPID</NAME>
+      <DESCRIPTION>Server Process ID assigned by SQL Server to the process associated with replay client.</DESCRIPTION>
+      <FILTERABLE>true</FILTERABLE>
+      <REPEATABLE>false</REPEATABLE>
+      <REPEATEDBASE>true</REPEATEDBASE>
+    </COLUMN>
+    <COLUMN>
+      <ID>111</ID>
+      <TYPE>8</TYPE>
+      <NAME>ReplayHostName</NAME>
+      <DESCRIPTION>Name of the computer on which the client is running during replay.</DESCRIPTION>
+      <FILTERABLE>true</FILTERABLE>
+      <REPEATABLE>true</REPEATABLE>
+      <REPEATEDBASE>false</REPEATEDBASE>
+    </COLUMN>
+    <COLUMN>
+      <ID>112</ID>
+      <TYPE>6</TYPE>
+      <NAME>SubmitTime</NAME>
+      <DESCRIPTION>Time at which the event submitted.</DESCRIPTION>
+      <FILTERABLE>true</FILTERABLE>
+      <REPEATABLE>false</REPEATABLE>
+      <REPEATEDBASE>false</REPEATEDBASE>
+    </COLUMN>
+	</COLUMNLIST>
+</TRACEDEFINITION>

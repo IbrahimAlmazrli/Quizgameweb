@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EventColumnDescriptions xmlns="http://tempuri.org/xmlfile.xsd">
+    <_locDefinition>
+    	<_locDefault _loc="locNone"/> 
+    	<_locTag _loc="locData">DESCRIPTION</_locTag> 
+        <_locTag _loc="locData">BESTPRACTICE</_locTag> 
+    </_locDefinition>
+    <EVENTCATEGORIESLIST>
+        <EVENTCATEGORY>
+            <NAME>Execution</NAME>
+            <DESCRIPTION>Auflistung der Paketausführungs-Ereignisklassen.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENTCATEGORY>
+     </EVENTCATEGORIESLIST>
+    <EVENTLIST>
+        <EVENT>
+            <ID>1</ID>
+            <DESCRIPTION>Sammelt alle PreExecute-Ereignisse seit Beginn der Ablaufverfolgung, wie z. B. Ereignisse, die vor der Ausführung von Tasks generiert werden, usw.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>2</ID>
+            <DESCRIPTION>Sammelt alle PostExecute-Ereignisse seit Beginn der Ablaufverfolgung, wie z. B. Ereignisse, die vor der Ausführung von Tasks generiert werden, usw.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>3</ID>
+            <DESCRIPTION>Sammelt alle PreValidate-Ereignisse seit Beginn der Ablaufverfolgung, wie z. B. Ereignisse, die vor der Ausführung von Tasks generiert werden, usw.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>4</ID>
+            <DESCRIPTION>Sammelt alle PostValidate-Ereignisse seit Beginn der Ablaufverfolgung, wie z. B. Ereignisse, die vor der Ausführung von Tasks generiert werden, usw.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>5</ID>
+            <DESCRIPTION>Sammelt alle Warning-Ereignisse seit Beginn der Ablaufverfolgung, wie z. B. Ereignisse, die vor der Ausführung von Tasks generiert werden, usw.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>6</ID>
+            <DESCRIPTION>Sammelt alle Error-Ereignisse seit Beginn der Ablaufverfolgung, wie z. B. Ereignisse, die vor der Ausführung von Tasks generiert werden, usw.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>7</ID>
+            <DESCRIPTION>Sammelt alle TaskFailed-Ereignisse seit Beginn der Ablaufverfolgung, wie z. B. Ereignisse, die vor der Ausführung von Tasks generiert werden, usw.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>8</ID>
+            <DESCRIPTION>Sammelt alle Progress-Ereignisse seit Beginn der Ablaufverfolgung, wie z. B. Ereignisse, die vor der Ausführung von Tasks generiert werden, usw.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>9</ID>
+            <DESCRIPTION>Sammelt alle QueryCancel-Ereignisse seit Beginn der Ablaufverfolgung, wie z. B. Ereignisse, die vor der Ausführung von Tasks generiert werden, usw.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>10</ID>
+            <DESCRIPTION>Sammelt alle ExecStatusChanged-Ereignisse seit Beginn der Ablaufverfolgung, wie z. B. Ereignisse, die vor der Ausführung von Tasks generiert werden, usw.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>11</ID>
+            <DESCRIPTION>Sammelt alle VariableValueChanged-Ereignisse seit Beginn der Ablaufverfolgung, wie z. B. Ereignisse, die vor der Ausführung von Tasks generiert werden, usw.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>12</ID>
+            <DESCRIPTION>Sammelt alle CustomEvent-Ereignisse seit Beginn der Ablaufverfolgung, wie z. B. Ereignisse, die vor der Ausführung von Tasks generiert werden, usw.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+        <EVENT>
+            <ID>13</ID>
+            <DESCRIPTION>Sammelt alle User-Ereignisse seit Beginn der Ablaufverfolgung, wie z. B. Ereignisse, die vor der Ausführung von Tasks generiert werden, usw.</DESCRIPTION>
+            <BESTPRACTICE>
+            </BESTPRACTICE>
+        </EVENT>
+    </EVENTLIST>
+    <COLUMNLIST>
+		<COLUMN>
+			<ID>1</ID>
+			<DESCRIPTION>Klasse dieses Ereignisses</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>
+		<COLUMN>
+			<ID>26</ID>
+			<DESCRIPTION>Computer, der dieses Ereignis generiert hat</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>
+		<COLUMN>
+			<ID>50</ID>
+			<DESCRIPTION>Vom Benutzer angegebener Ereignisname</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>
+		<COLUMN>
+			<ID>51</ID>
+			<DESCRIPTION>Identität des Benutzers, der dieses Ereignis verursacht hat</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>
+		<COLUMN>
+			<ID>52</ID>
+			<DESCRIPTION>Name der Quelle dieses Ereignisses</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>		
+		<COLUMN>
+			<ID>53</ID>
+			<DESCRIPTION>GUID (Globally Unique Identifier) der Quelle dieses Ereignisses</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>		
+		<COLUMN>
+			<ID>54</ID>
+			<DESCRIPTION>GUID (Globally Unique Identifier) einer bestimmten Paketausführung</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>		
+		<COLUMN>
+			<ID>55</ID>
+			<DESCRIPTION>Startzeit dieses Ereignisses</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>		
+		<COLUMN>
+			<ID>56</ID>
+			<DESCRIPTION>Beendigungszeit dieses Ereignisses</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>		
+		<COLUMN>
+			<ID>57</ID>
+			<DESCRIPTION>Zugeordneter Datencode für dieses Ereignis</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>		
+		<COLUMN>
+			<ID>58</ID>
+			<DESCRIPTION>Zugeordnete Datenbytes für dieses Ereignis</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>		
+		<COLUMN>
+			<ID>59</ID>
+			<DESCRIPTION>Zugeordnete Meldung für dieses Ereignis</DESCRIPTION>
+			<BESTPRACTICE>
+			</BESTPRACTICE>
+		</COLUMN>		
+    </COLUMNLIST>
+</EventColumnDescriptions>

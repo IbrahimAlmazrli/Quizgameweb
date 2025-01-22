@@ -1,0 +1,25 @@
+<event_sessions xmlns="http://schemas.microsoft.com/sqlserver/2008/07/extendedeventconfig">
+  <event_session name="ssas_default_tracking" maxMemory="4" eventRetentionMode="allowSingleEventLoss" trackCausality="true" dispatchLatency="1" maxEventSize="4" memoryPartitionMode="none">
+    <templateCategory>
+      <!-- _locID_text="templateCategory" _locComment = "" -->Beispielnachverfolgung</templateCategory>
+    <templateName>
+      <!-- _locID_text = "templateName" _locComment = "" -->Standardnachverfolgung</templateName>
+    <templateDescription>
+      <!-- _locID_text = "templateDescription" _locComment = "" -->Diese Vorlage ist die "Standardablaufverfolgung", die für SSAS-Ereignissitzungen verfügbar ist. Verwenden Sie sie, um Standardereignistypen nachzuverfolgen.</templateDescription>
+    <event package="AS" name="DiscoverBegin"/>
+    <event package="AS" name="DiscoverEnd"/>
+    <event package="AS" name="QueryBegin"/>
+    <event package="AS" name="QueryEnd"/>
+    <event package="AS" name="CommandBegin"/>
+    <event package="AS" name="CommandEnd"/>
+    <event package="AS" name="LockAcquired">
+        <action package="Package0" name="callstack"></action>
+    </event>
+    <event package="AS" name="LockReleased">
+        <action package="Package0" name="callstack"></action>
+    </event>
+    <event package="AS" name="LockWaiting">
+        <action package="Package0" name="callstack"></action>
+    </event>
+  </event_session>
+</event_sessions>

@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MDXFunctions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/MDXFunctions">
+  <_locDefinition>
+    <_locDefault _loc="locNone"/>
+    <_locTag _loc="locData">Category</_locTag>
+    <_locTag _loc="locData">Description</_locTag>
+  </_locDefinition>
+  <Function>
+    <Name>ADDCALCULATEDMEMBERS</Name>
+    <Category>Set</Category>
+    <Description>Gibt eine Menge zurück, die durch das Hinzufügen berechneter Elemente zu einer angegebenen Menge generiert wurde.</Description>
+    <Template>ADDCALCULATEDMEMBERS( «Set» )</Template>
+  </Function>
+  <Function>
+    <Name>AGGREGATE</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt einen berechneten Wert mithilfe der passenden Aggregatfunktion zurück, basierend auf dem Aggregationstyp des Elements.</Description>
+    <Template>AGGREGATE( «Set»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>ALLMEMBERS</Name>
+    <Category>Menge</Category>
+    <Description>Gibt eine Menge zurück, die alle Elemente der Ebene enthält, einschließlich berechneter Elemente.</Description>
+    <Template>«Level».ALLMEMBERS</Template>
+  </Function>
+  <Function>
+    <Name>ALLMEMBERS</Name>
+    <Category>Menge</Category>
+    <Description>Gibt eine Menge zurück, die alle Elemente der Hierarchie enthält, einschließlich berechneter Elemente.</Description>
+    <Template>«Hierarchy».ALLMEMBERS</Template>
+  </Function>
+  <Function>
+    <Name>ANCESTOR</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt den Vorgänger eines Elements in einer bestimmten Ebene zurück.</Description>
+    <Template>ANCESTOR( «Member», «Level» )</Template>
+  </Function>
+  <Function>
+    <Name>ANCESTOR</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt den Vorgänger eines Elements zurück, der sich in einem bestimmten Abstand in der Hierarchie befindet.</Description>
+    <Template>ANCESTOR( «Member», «Distance» )</Template>
+  </Function>
+  <Function>
+    <Name>ANCESTORS</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt eine Menge aller Vorgänger eines Elements in einer bestimmten Entfernung oberhalb des Elements in der Hierarchie zurück.</Description>
+    <Template>ANCESTORS( «Member», «Distance» )</Template>
+  </Function>
+  <Function>
+    <Name>ANCESTORS</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt eine Menge aller Vorgänger eines Elements auf einer angegebenen Ebene zurück.</Description>
+    <Template>ANCESTORS( «Member», «Level» )</Template>
+  </Function>
+  <Function>
+    <Name>ASCENDANTS</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt die Menge der Vorgänger des Elements zurück.</Description>
+    <Template>ASCENDANTS( «Member» )</Template>
+  </Function>
+  <Function>
+    <Name>AVG</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt den Durchschnittswert eines numerischen Ausdrucks zurück, der für eine Menge ausgewertet wurde.</Description>
+    <Template>AVG( «Set»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>AXIS</Name>
+    <Category>Metadaten</Category>
+    <Description>Gibt eine in einer Achse definierte Menge zurück.</Description>
+    <Template>AXIS( «Numeric Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>BOTTOMNCOUNT</Name>
+    <Category>Menge</Category>
+    <Description>Gibt eine angegebene Anzahl von Elementen vom unteren Ende einer Menge zurück; optional wird die Menge zuvor sortiert.</Description>
+    <Template>BOTTOMNCOUNT( «Set», «Count»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>BOTTOMPERCENT</Name>
+    <Category>Menge</Category>
+    <Description>Sortiert eine Menge und gibt die angegebene Anzahl von untersten Elementen zurück, deren kumulativer Gesamtwert mindestens einem angegebenen Prozentsatz entspricht.</Description>
+    <Template>BOTTOMPERCENT( «Set», «Percentage», «Numeric Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>BOTTOMSUM</Name>
+    <Category>Menge</Category>
+    <Description>Sortiert eine Menge und gibt die angegebene Anzahl von untersten Elementen zurück, deren kumulativer Gesamtwert mindestens einem angegebenen Wert entspricht.</Description>
+    <Template>BOTTOMSUM( «Set», «Value», «Numeric Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>CALCULATIONCURRENTPASS</Name>
+    <Category>Sonstige</Category>
+    <Description>Gibt den aktuellen Berechnungsdurchlauf eines Cubes für den angegebenen Abfragekontext zurück.</Description>
+    <Template>CALCULATIONCURRENTPASS</Template>
+  </Function>
+  <Function>
+    <Name>CALCULATIONPASSVALUE</Name>
+    <Category>Sonstige</Category>
+    <Description>Gibt den Wert eines numerischen MDX-Ausdrucks zurück, der für den angegebenen Berechnungsdurchlauf eines Cubes ausgewertet wurde.</Description>
+    <Template>CALCULATIONPASSVALUE( «Numeric Expression», «Pass Value»[[, «Access Flag»], ALL] )</Template>
+  </Function>
+  <Function>
+    <Name>CHILDREN</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt die untergeordneten Elemente eines Elements zurück.</Description>
+    <Template>«Member».CHILDREN</Template>
+  </Function>
+  <Function>
+    <Name>CLOSINGPERIOD</Name>
+    <Category>Zeit</Category>
+    <Description>Gibt das letzte gleichgeordnete Element unter den nachfolgenden Werten eines Elements auf einer angegebenen Ebene zurück.</Description>
+    <Template>CLOSINGPERIOD( [«Level»[, «Member»] ] )</Template>
+  </Function>
+  <Function>
+    <Name>COALESCEEMPTY</Name>
+    <Category>Statistisch</Category>
+    <Description>Fügt einen leeren Zellenwert mit einer Zahl zusammen.</Description>
+    <Template>COALESCEEMPTY( «Numeric Expression»[, «Numeric Expression»...] )</Template>
+  </Function>
+  <Function>
+    <Name>CORRELATION</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt die Korrelation zweier Reihen zurück, die für eine Menge ausgewertet wurden.</Description>
+    <Template>CORRELATION( «Set», «Numeric Expression»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>DIMENSIONS.COUNT</Name>
+    <Category>Metadaten</Category>
+    <Description>Zählt die Hierarchien im Cube.</Description>
+    <Template>DIMENSIONS.COUNT</Template>
+  </Function>
+  <Function>
+    <Name>COUNT</Name>
+    <Category>Metadaten</Category>
+    <Description>Zählt die Elemente im Tupel.</Description>
+    <Template>«Tuple».COUNT</Template>
+  </Function>
+  <Function>
+    <Name>COUNT</Name>
+    <Category>Statistisch</Category>
+    <Description>Zählt die Tupel in der Menge.</Description>
+    <Template>«Set».COUNT</Template>
+  </Function>
+  <Function>
+    <Name>LEVELS.COUNT</Name>
+    <Category>Metadaten</Category>
+    <Description>Zählt die Ebenen in der Hierarchie.</Description>
+    <Template>«Hierarchy».LEVELS.COUNT</Template>
+  </Function>
+  <Function>
+    <Name>COUNT</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt die Anzahl von Tupeln in einer Menge zurück, optional einschließlich oder ausschließlich leerer Tupel.</Description>
+    <Template>COUNT( «Set»[, EXCLUDEEMPTY | INCLUDEEMPTY] )</Template>
+  </Function>
+  <Function>
+    <Name>COUSIN</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt das untergeordnete Element mit derselben relativen Position unter einem übergeordneten Element wie das angegebene untergeordnete Element zurück.</Description>
+    <Template>COUSIN( «Member1», «Member2» )</Template>
+  </Function>
+  <Function>
+    <Name>COVARIANCE</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt die Kovarianz zweier Reihen zurück, die für eine Menge mithilfe der unausgewogenen Auffüllungsformel ausgewertet wurden.</Description>
+    <Template>COVARIANCE( «Set», «Numeric Expression»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>COVARIANCEN</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt die Kovarianz zweier Reihen zurück, die für eine Menge mithilfe der nicht unausgewogenen Auffüllungsformel ausgewertet wurden.</Description>
+    <Template>COVARIANCEN( «Set», «Numeric Expression»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>CROSSJOIN</Name>
+    <Category>Menge</Category>
+    <Description>Gibt das Kreuzprodukt zweier Mengen zurück.</Description>
+    <Template>CROSSJOIN( «Set1», «Set2» )</Template>
+  </Function>
+  <Function>
+    <Name>CURRENT</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt das aktuelle Tupel aus einer Menge während einer Iteration zurück.</Description>
+    <Template>«Set».CURRENT</Template>
+  </Function>
+  <Function>
+    <Name>CURRENTMEMBER</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt das aktuelle Element einer Hierarchie zurück.</Description>
+    <Template>«Hierarchy».CURRENTMEMBER</Template>
+  </Function>
+  <Function>
+    <Name>CURRENTORDINAL</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt die aktuelle Ordnungszahl aus einer Menge während einer Iteration zurück.</Description>
+    <Template>«Set».CURRENTORDINAL</Template>
+  </Function>
+  <Function>
+    <Name>CUSTOMDATA</Name>
+    <Category>Sonstige</Category>
+    <Description>Gibt den Wert der CustomData-Eigenschaft zurück.</Description>
+    <Template>CUSTOMDATA</Template>
+  </Function>
+  <Function>
+    <Name>DATAMEMBER</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt das systemgenerierte Datenelement zurück, dem ein inneres Knotenelement zugeordnet ist.</Description>
+    <Template>«Member».DATAMEMBER</Template>
+  </Function>
+  <Function>
+    <Name>DEFAULTMEMBER</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt das Standardelement einer Hierarchie zurück.</Description>
+    <Template>«Hierarchy».DEFAULTMEMBER</Template>
+  </Function>
+  <Function>
+    <Name>DESCENDANTS</Name>
+    <Category>Menge</Category>
+    <Description>Gibt die Menge der nachfolgenden Werte eines Elements auf einer angegebenen Ebene zurück. Optional können nachfolgende Werte in anderen Ebenen ein- oder ausgeschlossen werden.</Description>
+    <Template>DESCENDANTS( «Member»[, «Level»[, «Desc_flags»]] )</Template>
+  </Function>
+  <Function>
+    <Name>DESCENDANTS</Name>
+    <Category>Menge</Category>
+    <Description>Gibt die Menge der nachfolgenden Werte eines Elements in einer bestimmten Entfernung in der Hierarchie zurück. Optional können nachfolgende Werte in anderen Ebenen ein- oder ausgeschlossen werden.</Description>
+    <Template>DESCENDANTS( «Member»,«Distance»[, «Desc_flags»] )</Template>
+  </Function>
+  <Function>
+    <Name>DISTINCT</Name>
+    <Category>Menge</Category>
+    <Description>Gibt eine Menge zurück, indem doppelte Tupel aus einer angegebenen Menge entfernt werden.</Description>
+    <Template>DISTINCT( «Set» )</Template>
+  </Function>
+  <Function>
+    <Name>DISTINCTCOUNT</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt die Anzahl von unterschiedlichen Tupeln in einer Menge zurück.</Description>
+    <Template>DISTINCTCOUNT( «Set» )</Template>
+  </Function>
+  <Function>
+    <Name>DRILLDOWNLEVEL</Name>
+    <Category>UI</Category>
+    <Description>Führt einen Drilldown für die Elemente einer Menge eine Ebene unter der niedrigsten in der Menge dargestellten Ebene oder bis zu einer Ebene unter einer optionalen Ebene eines in der Menge dargestellten Elements aus.</Description>
+    <Template>DRILLDOWNLEVEL( «Set»[, «Level» ] )</Template>
+  </Function>
+  <Function>
+    <Name>DRILLDOWNLEVEL</Name>
+    <Category>UI</Category>
+    <Description>Führt einen Drilldown für die Elemente einer Menge eine Ebene unter der niedrigsten in der Menge dargestellten Ebene oder bis zu einer Ebene unter einer Dimension, die optional durch den nullbasierten Index eines in der Menge dargestellten Elements ausgewählt wurde.</Description>
+    <Template>DRILLDOWNLEVEL( «Set»[, , «Index»] )</Template>
+  </Function>
+  <Function>
+    <Name>DRILLDOWNLEVELBOTTOM</Name>
+    <Category>UI</Category>
+    <Description>Führt einen Drilldown für eine angegebene Anzahl von unteren Elementen einer Menge auf einer angegebenen Ebene bis zur nächsttieferen Ebene aus.</Description>
+    <Template>DRILLDOWNLEVELBOTTOM( «Set», «Count»[, [«Level»][, «Numeric Expression»] ] )</Template>
+  </Function>
+  <Function>
+    <Name>DRILLDOWNLEVELTOP</Name>
+    <Category>UI</Category>
+    <Description>Führt einen Drilldown für eine angegebene Anzahl von oberen Elementen einer Menge auf einer angegebenen Ebene bis zur nächsttieferen Ebene aus.</Description>
+    <Template>DRILLDOWNLEVELTOP( «Set», «Count»[, [«Level»][, «Numeric Expression»] ] )</Template>
+  </Function>
+  <Function>
+    <Name>DRILLDOWNMEMBER</Name>
+    <Category>UI</Category>
+    <Description>Führt einen Drilldown für die Elemente einer angegebenen Menge aus, die in einer zweiten angegebenen Menge vorhanden sind.</Description>
+    <Template>DRILLDOWNMEMBER( «Set1», «Set2»[, RECURSIVE] )</Template>
+  </Function>
+  <Function>
+    <Name>DRILLDOWNMEMBERBOTTOM</Name>
+    <Category>UI</Category>
+    <Description>Führt einen Drilldown für die Elemente einer angegebenen Menge aus, die in einer zweiten angegebenen Menge vorhanden sind, wobei das Resultset auf eine angegebene Anzahl von untersten Elementen beschränkt wird.</Description>
+    <Template>DRILLDOWNMEMBERBOTTOM( «Set1», «Set2», «Count»[, [«Numeric Expression»] [, RECURSIVE] ] )</Template>
+  </Function>
+  <Function>
+    <Name>DRILLDOWNMEMBERTOP</Name>
+    <Category>UI</Category>
+    <Description>Führt einen Drilldown für die Elemente einer angegebenen Menge aus, die in einer zweiten angegebenen Menge vorhanden sind, wobei das Resultset auf eine angegebene Anzahl von obersten Elementen beschränkt wird.</Description>
+    <Template>DRILLDOWNMEMBERTOP( «Set1», «Set2», «Count»[, [«Numeric Expression»] [, RECURSIVE] ] )</Template>
+  </Function>
+  <Function>
+    <Name>DRILLUPLEVEL</Name>
+    <Category>UI</Category>
+    <Description>Führt einen Drillup für die Elemente einer Menge aus, die sich unterhalb einer angegebenen Ebene befinden.</Description>
+    <Template>DRILLUPLEVEL( «Set»[, «Level»] )</Template>
+  </Function>
+  <Function>
+    <Name>DRILLUPMEMBER</Name>
+    <Category>UI</Category>
+    <Description>Führt einen Drillup für die Elemente einer angegebenen Menge aus, die in einer zweiten angegebenen Menge vorhanden sind.</Description>
+    <Template>DRILLUPMEMBER( «Set1», «Set2» )</Template>
+  </Function>
+  <Function>
+    <Name>EXCEPT</Name>
+    <Category>Menge</Category>
+    <Description>Ermittelt die Differenz zwischen zwei Mengen. Optional werden doppelte Werte beibehalten.</Description>
+    <Template>EXCEPT( «Set1», «Set2»[, ALL] )</Template>
+  </Function>
+  <Function>
+    <Name>EXISTING</Name>
+    <Category>Menge</Category>
+    <Description/>
+    <Template>EXISTING</Template>
+  </Function>
+  <Function>
+    <Name>EXISTS</Name>
+    <Category>Menge</Category>
+    <Description/>
+    <Template>EXISTS( «Set1», «Set2» )</Template>
+  </Function>
+  <Function>
+    <Name>EXTRACT</Name>
+    <Category>Menge</Category>
+    <Description>Gibt eine Tupelmenge aus extrahierten Dimensionselementen zurück.</Description>
+    <Template>EXTRACT( «Set», «Dimension»[, «Dimension»...] )</Template>
+  </Function>
+  <Function>
+    <Name>FILTER</Name>
+    <Category>Menge</Category>
+    <Description>Filtert eine Menge basierend auf einer Suchbedingung und gibt die sich ergebende Menge zurück.</Description>
+    <Template>FILTER( «Set», «Search Condition» )</Template>
+  </Function>
+  <Function>
+    <Name>FIRSTCHILD</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt das erste untergeordnete Element eines angegebenen Elements zurück.</Description>
+    <Template>«Member».FIRSTCHILD</Template>
+  </Function>
+  <Function>
+    <Name>FIRSTSIBLING</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt das erste untergeordnete Element für das übergeordnete Element eines angegebenen Elements zurück.</Description>
+    <Template>«Member».FIRSTSIBLING</Template>
+  </Function>
+  <Function>
+    <Name>GENERATE</Name>
+    <Category>Menge</Category>
+    <Description>Wendet eine Menge auf jedes Element einer anderen Menge an und vereinigt die sich ergebenden Mengen.</Description>
+    <Template>GENERATE( «Set1», «Set2»[, ALL] )</Template>
+  </Function>
+  <Function>
+    <Name>GENERATE</Name>
+    <Category>Zeichenfolge</Category>
+    <Description>Gibt eine verkettete Zeichenfolge zurück, die durch Auswerten eines Zeichenfolgenausdrucks für eine Menge erstellt wurde.</Description>
+    <Template>GENERATE( «Set», «String Expression»[, «Delimiter»] )</Template>
+  </Function>
+  <Function>
+    <Name>HEAD</Name>
+    <Category>Menge</Category>
+    <Description>Gibt die ersten Elemente einer Menge gemäß der angegebenen Anzahl zurück.</Description>
+    <Template>HEAD( «Set»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>HIERARCHIZE</Name>
+    <Category>Menge</Category>
+    <Description>Ordnet die Elemente einer angegebenen Menge in einer Hierarchie in der natürlichen Reihenfolge oder optional in der natürlichen Postorderreihenfolge an.</Description>
+    <Template>HIERARCHIZE( «Set»[, POST] )</Template>
+  </Function>
+  <Function>
+    <Name>HIERARCHY</Name>
+    <Category>Metadaten</Category>
+    <Description>Gibt die Hierarchie einer angegebenen Ebene zurück.</Description>
+    <Template>«Level».HIERARCHY</Template>
+  </Function>
+  <Function>
+    <Name>HIERARCHY</Name>
+    <Category>Metadaten</Category>
+    <Description>Gibt die Hierarchie einer angegebenen Dimension zurück.</Description>
+    <Template>«Member».HIERARCHY</Template>
+  </Function>
+  <Function>
+    <Name>IIF</Name>
+    <Category>Wert</Category>
+    <Description>Gibt einen der Werte nach einem logischen Test zurück.</Description>
+    <Template>IIF( «Logical Expression», «object»,  «object» )</Template>
+  </Function>
+  <Function>
+    <Name>INTERSECT</Name>
+    <Category>Menge</Category>
+    <Description>Gibt die Schnittmenge zweier Mengen zurück. Optional werden doppelte Werte beibehalten.</Description>
+    <Template>INTERSECT( «Set1», «Set2»[, ALL] )</Template>
+  </Function>
+  <Function>
+    <Name>IS</Name>
+    <Category>Wert</Category>
+    <Description>Gibt TRUE zurück, wenn zwei verglichene Objekte gleichwertig sind; andernfalls wird FALSE zurückgegeben.</Description>
+    <Template>IS</Template>
+  </Function>
+  <Function>
+    <Name>ISANCESTOR</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt TRUE zurück, wenn ein angegebenes Element ein Vorgänger eines anderen angegebenen Elements ist; andernfalls wird FALSE zurückgegeben.</Description>
+    <Template>ISANCESTOR( «Member1»,«Member2» )</Template>
+  </Function>
+  <Function>
+    <Name>ISEMPTY</Name>
+    <Category>Wert</Category>
+    <Description>Gibt TRUE zurück, wenn der ausgewertete Ausdruck der leere Zellenwert ist; andernfalls wird FALSE zurückgegeben.</Description>
+    <Template>ISEMPTY( «Value Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>ISGENERATION</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt TRUE zurück, wenn sich ein angegebenes Element in einer angegebenen Generation befindet; andernfalls wird FALSE zurückgegeben.</Description>
+    <Template>ISGENERATION( «Member»,«Numeric Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>ISLEAF</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt TRUE zurück, wenn ein angegebenes Element ein Blattelement ist; andernfalls wird FALSE zurückgegeben.</Description>
+    <Template>ISLEAF( «Member» )</Template>
+  </Function>
+  <Function>
+    <Name>ISSIBLING</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt TRUE zurück, wenn ein angegebenes Element ein gleichgeordnetes Element eines anderen angegebenen Elements ist; andernfalls wird FALSE zurückgegeben.</Description>
+    <Template>ISSIBLING( «Member1»,«Member2» )</Template>
+  </Function>
+  <Function>
+    <Name>ITEM</Name>
+    <Category>Sonstige</Category>
+    <Description>Gibt ein Element aus einem angegebenen Tupel zurück.</Description>
+    <Template>«Tuple».ITEM( «Numeric Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>ITEM</Name>
+    <Category>Sonstige</Category>
+    <Description>Gibt ein Tupel aus einer angegebenen Menge zurück.</Description>
+    <Template>«Set».ITEM( «String Expression»[, «String Expression»...] | «Index» )</Template>
+  </Function>
+  <Function>
+    <Name>KPICURRENTTIMEMEMBER</Name>
+    <Category>KPI</Category>
+    <Description>Gibt das aktuelle Zeitelement des KPI zurück.</Description>
+    <Template>KPICURRENTTIMEMEMBER( «String Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>KPIGOAL</Name>
+    <Category>KPI</Category>
+    <Description>Gibt das Ziel des KPI zurück.</Description>
+    <Template>KPIGOAL( «String Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>KPISTATUS</Name>
+    <Category>KPI</Category>
+    <Description>Gibt das Measure mit normalisiertem Status zwischen -1 und 1 des KPI zurück. </Description>
+    <Template>KPISTATUS( «String Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>KPITREND</Name>
+    <Category>KPI</Category>
+    <Description>Gibt das Measure mit normalisiertem Trend zwischen -1 und 1 des KPI zurück.</Description>
+    <Template>KPITREND( «String Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>KPIVALUE</Name>
+    <Category>KPI</Category>
+    <Description>Gibt das Measure mit normalisiertem Wert zwischen -1 und 1 des KPI zurück.</Description>
+    <Template>KPIVALUE( «String Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>KPIWEIGHT</Name>
+    <Category>KPI</Category>
+    <Description>Gibt das Measure mit der Gewichtung des KPI zurück.</Description>
+    <Template>KPIWEIGHT( «String Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>LAG</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt das Element zurück, das sich eine angegebene Anzahl von Positionen vor einem angegebenen Element innerhalb der Dimension des Elements befindet.</Description>
+    <Template>«Member».LAG( «Numeric Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>LASTCHILD</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt das letzte untergeordnete Element eines angegebenen Elements zurück.</Description>
+    <Template>«Member».LASTCHILD</Template>
+  </Function>
+  <Function>
+    <Name>LASTPERIODS</Name>
+    <Category>Zeit</Category>
+    <Description>Gibt eine Menge von Elementen vor einem angegebenen Element und einschließlich dieses Elements zurück.</Description>
+    <Template>LASTPERIODS( «Index»[, «Member»] )</Template>
+  </Function>
+  <Function>
+    <Name>LASTSIBLING</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt das letzte untergeordnete Element des übergeordneten Elements eines angegebenen Elements zurück.</Description>
+    <Template>«Member».LASTSIBLING</Template>
+  </Function>
+  <Function>
+    <Name>LEAD</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt das Element zurück, das sich eine angegebene Anzahl von Positionen nach einem angegebenen Element innerhalb der Dimension des Elements befindet.</Description>
+    <Template>«Member».LEAD( «Numeric Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>LEVEL</Name>
+    <Category>Metadaten</Category>
+    <Description>Gibt die Ebene eines Elements zurück.</Description>
+    <Template>«Member».LEVEL</Template>
+  </Function>
+  <Function>
+    <Name>LEVELS</Name>
+    <Category>Metadaten</Category>
+    <Description>Gibt die Ebene zurück, deren nullbasierte Position in einer Dimension durch einen numerischen Ausdruck angegeben wird.</Description>
+    <Template>«Hierarchy».LEVELS( «Numeric Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>LINKMEMBER</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt das Element zurück, das gleichwertig mit einem angegebenen Element in einer angegebenen Hierarchie ist.</Description>
+    <Template>LINKMEMBER( «Member&gt;, «Hierarchy» )</Template>
+  </Function>
+  <Function>
+    <Name>LINREGINTERCEPT</Name>
+    <Category>Statistisch</Category>
+    <Description>Berechnet die lineare Regression einer Menge und gibt den Wert von b in der Regressionsgleichung y = ax + b zurück.</Description>
+    <Template>LINREGINTERCEPT( «Set», «Numeric Expression»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>LINREGPOINT</Name>
+    <Category>Statistisch</Category>
+    <Description>Berechnet die lineare Regression einer Menge und gibt den Wert von y in der Regressionsgleichung y = ax + b zurück.</Description>
+    <Template>LINREGPOINT( «Numeric Expression», «Set», «Numeric Expression»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>LINREGR2</Name>
+    <Category>Statistisch</Category>
+    <Description>Berechnet die lineare Regression einer Menge und gibt R² (den Bestimmungskoeffizienten) zurück.</Description>
+    <Template>LINREGR2( «Set», «Numeric Expression»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>LINREGSLOPE</Name>
+    <Category>Statistisch</Category>
+    <Description>Berechnet die lineare Regression einer Menge und gibt den Wert von a in der Regressionsgleichung y = ax + b zurück.</Description>
+    <Template>LINREGSLOPE( «Set», «Numeric Expression»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>LINREGVARIANCE</Name>
+    <Category>Statistisch</Category>
+    <Description>Berechnet die lineare Regression einer Menge und gibt die Varianz zurück, die der Regressionsgleichung y = ax + b zugeordnet ist.</Description>
+    <Template>LINREGVARIANCE( «Set», «Numeric Expression»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>LOOKUPCUBE</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt den Wert eines MDX-Ausdrucks zurück, der für einen anderen angegebenen Cube in derselben Datenbank ausgewertet wurde.</Description>
+    <Template>LOOKUPCUBE( «Cube Name», «Numeric Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>MAX</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt den Maximalwert eines numerischen Ausdrucks zurück, der für eine Menge ausgewertet wurde.</Description>
+    <Template>MAX( «Set»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>MEASUREGROUPMEASURES</Name>
+    <Category>Menge</Category>
+    <Description>Gibt die Menge der Measures in der Measuregruppe zurück.</Description>
+    <Template>MEASUREGROUPMEASURES( «String Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>MEDIAN</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt den Median eines numerischen Ausdrucks zurück, der für eine Menge ausgewertet wurde.</Description>
+    <Template>MEDIAN( «Set»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>MEMBERS</Name>
+    <Category>Menge</Category>
+    <Description>Gibt die Menge aller Elemente in einer angegebenen Hierarchie zurück.</Description>
+    <Template>«Hierarchy».MEMBERS</Template>
+  </Function>
+  <Function>
+    <Name>MEMBERS</Name>
+    <Category>Menge</Category>
+    <Description>Gibt die Menge aller Elemente auf einer angegebenen Ebene in einer Dimension zurück.</Description>
+    <Template>«Level».MEMBERS</Template>
+  </Function>
+  <Function>
+    <Name>MEMBERTOSTR</Name>
+    <Category>Zeichenfolge</Category>
+    <Description>Gibt eine Zeichenfolge im MDX-Format (Multidimensional Expressions) aus einem Element zurück.</Description>
+    <Template>MEMBERTOSTR( «Member» )</Template>
+  </Function>
+  <Function>
+    <Name>MEMBERVALUE</Name>
+    <Category>Wert</Category>
+    <Description>Gibt den Wert eines Elements mit dem Originaldatentyp zurück.</Description>
+    <Template>«Member».MEMBERVALUE</Template>
+  </Function>
+  <Function>
+    <Name>MIN</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt den Minimalwert eines numerischen Ausdrucks zurück, der für eine Menge ausgewertet wurde.</Description>
+    <Template>MIN( «Set»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>MTD</Name>
+    <Category>Zeit</Category>
+    <Description>Gibt eine Menge von Elementen aus der Monatsebene in einer Zeitdimension zurück, angefangen mit dem ersten Zeitraum und endend mit einem angegebenen Element.</Description>
+    <Template>MTD( [«Member»] )</Template>
+  </Function>
+  <Function>
+    <Name>NAME</Name>
+    <Category>Metadaten</Category>
+    <Description>Gibt den Namen eines angegebenen Elements zurück.</Description>
+    <Template>«Member».NAME</Template>
+  </Function>
+  <Function>
+    <Name>NAME</Name>
+    <Category>Metadaten</Category>
+    <Description>Gibt den Namen einer angegebenen Hierarchie zurück.</Description>
+    <Template>«Hierarchy».NAME</Template>
+  </Function>
+  <Function>
+    <Name>NAME</Name>
+    <Category>Metadaten</Category>
+    <Description>Gibt den Namen einer angegebenen Ebene zurück.</Description>
+    <Template>«Level».NAME( Level )</Template>
+  </Function>
+  <Function>
+    <Name>NAMETOSET</Name>
+    <Category>Zeichenfolge</Category>
+    <Description>Gibt eine Menge mit einem einzelnen Element basierend auf einem Zeichenfolgenausdruck zurück, der einen Elementnamen enthält.</Description>
+    <Template>NAMETOSET( «Member Name» )</Template>
+  </Function>
+  <Function>
+    <Name>NEXTMEMBER</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt das nächste Element in der Ebene zurück, die ein angegebenes Element enthält.</Description>
+    <Template>«Member».NEXTMEMBER</Template>
+  </Function>
+  <Function>
+    <Name>NONEMPTY</Name>
+    <Category>Menge</Category>
+    <Description>Gibt die Teilmenge der ersten Menge mit entfernten leeren Tupeln basierend auf dem Kreuzprodukt mit einer zweiten Menge zurück.</Description>
+    <Template>NONEMPTY( «Set1», «Set2» )</Template>
+  </Function>
+  <Function>
+    <Name>NONEMPTYCROSSJOIN</Name>
+    <Category>Menge</Category>
+    <Description>Gibt das Kreuzprodukt zweier oder mehrerer Mengen als eine Menge zurück, wobei leere Elemente ausgeschlossen werden.</Description>
+    <Template>NONEMPTYCROSSJOIN( «Set1», «Set2»[, «Set3»...][, «Crossjoin Count»] )</Template>
+  </Function>
+  <Function>
+    <Name>OPENINGPERIOD</Name>
+    <Category>Zeit</Category>
+    <Description>Gibt das erste gleichgeordnete Element unter den nachfolgenden Werten einer angegebenen Ebene optional bei einem angegebenen Element zurück.</Description>
+    <Template>OPENINGPERIOD( [«Level»[, «Member»] ] )</Template>
+  </Function>
+  <Function>
+    <Name>ORDER</Name>
+    <Category>Menge</Category>
+    <Description>Ordnet die Elemente einer angegebenen Menge an, wobei die Hierarchie optional beibehalten oder durchbrochen wird.</Description>
+    <Template>ORDER( «Set», {«String Expression» | «Numeric Expression»}[, ASC | DESC | BASC | BDESC] )</Template>
+  </Function>
+  <Function>
+    <Name>ORDINAL</Name>
+    <Category>Metadaten</Category>
+    <Description>Gibt den nullbasierten Ordnungswert zurück, der einer angegebenen Ebene zugeordnet ist.</Description>
+    <Template>«Level».ORDINAL</Template>
+  </Function>
+  <Function>
+    <Name>PARALLELPERIOD</Name>
+    <Category>Zeit</Category>
+    <Description>Gibt ein Element aus einem früheren Zeitraum in derselben relativen Position wie ein angegebenes Element zurück.</Description>
+    <Template>PARALLELPERIOD( [«Level»[, «Numeric Expression»[, «Member»] ] ] )</Template>
+  </Function>
+  <Function>
+    <Name>PARENT</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt das übergeordnete Element eines angegebenen Elements zurück.</Description>
+    <Template>«Member».PARENT</Template>
+  </Function>
+  <Function>
+    <Name>PERIODSTODATE</Name>
+    <Category>Zeit</Category>
+    <Description>Gibt eine Menge von Elementen (Zeiträume) einer angegebenen Ebene zurück, beginnend mit dem ersten Element und endend mit einem angegebenen Element.</Description>
+    <Template>PERIODSTODATE( [«Level»[, «Member»] ] )</Template>
+  </Function>
+  <Function>
+    <Name>PREDICT</Name>
+    <Category>Sonstige</Category>
+    <Description>Gibt den Wert eines numerischen Ausdrucks zurück, der für ein Data Mining-Modell ausgewertet wurde.</Description>
+    <Template>PREDICT( «Mining Model Name», «Numeric Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>PREVMEMBER</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt das vorherige Element in der Ebene zurück, die ein angegebenes Element enthält.</Description>
+    <Template>«Member».PREVMEMBER</Template>
+  </Function>
+  <Function>
+    <Name>PROPERTIES</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt eine Zeichenfolge zurück, die den Wert der angegebenen Elementeigenschaft enthält.</Description>
+    <Template>«Member».PROPERTIES( «String Expression»[, TYPED] )</Template>
+  </Function>
+  <Function>
+    <Name>QTD</Name>
+    <Category>Zeit</Category>
+    <Description>Gibt eine Menge von Elementen aus der Quartalsebene in einer Zeitdimension zurück, angefangen mit dem ersten Zeitraum und endend mit einem angegebenen Element.</Description>
+    <Template>QTD( [«Member»] )</Template>
+  </Function>
+  <Function>
+    <Name>RANK</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt den einsbasierten Rang eines angegebenen Tupels in einer angegebenen Menge zurück.</Description>
+    <Template>RANK( «Tuple», «Set» )</Template>
+  </Function>
+  <Function>
+    <Name>ROLLUPCHILDREN</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt einen Wert zurück, der durch Rollup der Werte der untergeordneten Elemente eines angegebenen Elements mithilfe des angegebenen unären Operators generiert wurde.</Description>
+    <Template>ROLLUPCHILDREN( «Member», «String Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>SETTOARRAY</Name>
+    <Category>Sonstige</Category>
+    <Description>Konvertiert mindestens eine Menge in ein Array zur Verwendung in einer benutzerdefinierten Funktion.</Description>
+    <Template>SETTOARRAY( «Set»[, «Set»...][, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>SETTOSTR</Name>
+    <Category>Zeichenfolge</Category>
+    <Description>Erstellt eine Zeichenfolge im MDX-Format aus einer Menge.</Description>
+    <Template>SETTOSTR( «Set» )</Template>
+  </Function>
+  <Function>
+    <Name>SIBLINGS</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt die Menge der gleichgeordneten Elemente eines angegebenen Elements, einschließlich dieses Elements, zurück.</Description>
+    <Template>«Member».SIBLINGS</Template>
+  </Function>
+  <Function>
+    <Name>STDDEV</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt die Standardabweichung eines numerischen Ausdrucks zurück, der für eine Menge mithilfe einer nicht unausgewogenen Auffüllung ausgewertet wurde. (Alias für 'Stdev'.)</Description>
+    <Template>STDDEV( «Set»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>STDDEVP</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt die Standardabweichung eines numerischen Ausdrucks zurück, der für eine Menge mithilfe einer unausgewogenen Auffüllung ausgewertet wurde. (Alias für 'StdevP'.)</Description>
+    <Template>STDDEVP( «Set»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>STDEVP</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt die Standardabweichung eines numerischen Ausdrucks zurück, der für eine Menge mithilfe einer nicht unausgewogenen Auffüllung ausgewertet wurde.</Description>
+    <Template>STDEVP( «Set»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>STDEVP</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt die Standardabweichung eines numerischen Ausdrucks zurück, der für eine Menge mithilfe einer unausgewogenen Auffüllung ausgewertet wurde.</Description>
+    <Template>STDEVP( «Set»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>STRIPCALCULATEDMEMBERS</Name>
+    <Category>Menge</Category>
+    <Description>Gibt eine Menge zurück, die durch das Entfernen berechneter Elemente aus einer angegebenen Menge generiert wurde.</Description>
+    <Template>STRIPCALCULATEDMEMBERS( «Set» )</Template>
+  </Function>
+  <Function>
+    <Name>STRTOMEMBER</Name>
+    <Category>Zeichenfolge</Category>
+    <Description>Gibt ein Element aus einem Zeichenfolgenausdruck im MDX-Format zurück.</Description>
+    <Template>STRTOMEMBER( «String Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>STRTOSET</Name>
+    <Category>Zeichenfolge</Category>
+    <Description>Erstellt eine Menge aus einem angegebenen Zeichenfolgenausdruck im MDX-Format.</Description>
+    <Template>STRTOSET( «String Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>STRTOTUPLE</Name>
+    <Category>Zeichenfolge</Category>
+    <Description>Erstellt ein Tupel aus einem angegebenen Zeichenfolgenausdruck im MDX-Format.</Description>
+    <Template>STRTOTUPLE( «String Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>STRTOVALUE</Name>
+    <Category>Zeichenfolge</Category>
+    <Description>Gibt einen Wert aus einem Zeichenfolgenausdruck zurück.</Description>
+    <Template>STRTOVALUE( «String Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>SUBSET</Name>
+    <Category>Menge</Category>
+    <Description>Gibt eine Teilmenge von Elementen aus einer angegebenen Menge zurück.</Description>
+    <Template>SUBSET( «Set», «Start»[, «Count»] )</Template>
+  </Function>
+  <Function>
+    <Name>SUM</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt die Summe eines numerischen Ausdrucks zurück, der für eine angegebene Menge ausgewertet wurde.</Description>
+    <Template>SUM( «Set»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>TAIL</Name>
+    <Category>Menge</Category>
+    <Description>Gibt eine Teilmenge von Elementen vom Ende einer angegebenen Menge zurück.</Description>
+    <Template>TAIL( «Set»[, «Count»] )</Template>
+  </Function>
+  <Function>
+    <Name>TOGGLEDRILLSTATE</Name>
+    <Category>UI</Category>
+    <Description>Schaltet den Drillstatus von Elementen ein/aus.</Description>
+    <Template>TOGGLEDRILLSTATE( «Set1», «Set2»[, RECURSIVE] )</Template>
+  </Function>
+  <Function>
+    <Name>TOPCOUNT</Name>
+    <Category>Menge</Category>
+    <Description>Gibt eine angegebene Anzahl von Elementen aus den obersten Elementen einer angegebenen Menge zurück. Optional wird die Menge zuvor sortiert.</Description>
+    <Template>TOPCOUNT( «Set», «Count»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>TOPPERCENT</Name>
+    <Category>Menge</Category>
+    <Description>Sortiert eine Menge und gibt die obersten Elemente zurück, deren kumulativer Gesamtwert mindestens einem angegebenen Prozentsatz entspricht.</Description>
+    <Template>TOPPERCENT( «Set», «Percentage», «Numeric Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>TOPSUM</Name>
+    <Category>Menge</Category>
+    <Description>Sortiert eine Menge und gibt die obersten Elemente zurück, deren kumulativer Gesamtwert mindestens einem angegebenen Wert entspricht.</Description>
+    <Template>TOPSUM( «Set», «Value», «Numeric Expression» )</Template>
+  </Function>
+  <Function>
+    <Name>TUPLETOSTR</Name>
+    <Category>Zeichenfolge</Category>
+    <Description>Gibt eine Zeichenfolge im MDX-Format aus einem angegebenen Tupel zurück.</Description>
+    <Template>TUPLETOSTR( «Tuple» )</Template>
+  </Function>
+  <Function>
+    <Name>UNION</Name>
+    <Category>Menge</Category>
+    <Description>Gibt eine Menge zurück, die durch Vereinigung zweier Mengen generiert wurde. Optional werden doppelte Elemente beibehalten.</Description>
+    <Template>UNION( «Set1», «Set2»[, ALL] )</Template>
+  </Function>
+  <Function>
+    <Name>UNIQUENAME</Name>
+    <Category>Metadaten</Category>
+    <Description>Gibt den eindeutigen Namen einer angegebenen Hierarchie zurück.</Description>
+    <Template>«Hierarchy».UNIQUENAME</Template>
+  </Function>
+  <Function>
+    <Name>UNIQUENAME</Name>
+    <Category>Metadaten</Category>
+    <Description>Gibt den eindeutigen Namen eines angegebenen Elements zurück.</Description>
+    <Template>«Member».UNIQUENAME</Template>
+  </Function>
+  <Function>
+    <Name>UNIQUENAME</Name>
+    <Category>Metadaten</Category>
+    <Description>Gibt den eindeutigen Namen einer angegebenen Ebene zurück.</Description>
+    <Template>«Level».UNIQUENAME</Template>
+  </Function>
+  <Function>
+    <Name>UNKNOWNMEMBER</Name>
+    <Category>Navigation</Category>
+    <Description>Gibt den Domänennamen und den Benutzernamen der aktuellen Verbindung zurück.</Description>
+    <Template>UNKNOWNMEMBER</Template>
+  </Function>
+  <Function>
+    <Name>UNORDER</Name>
+    <Category>Menge</Category>
+    <Description>Gibt eine Menge ungeordnet zurück.</Description>
+    <Template>UNORDER( «Set» )</Template>
+  </Function>
+  <Function>
+    <Name>VALIDMEASURE</Name>
+    <Category>Wert</Category>
+    <Description>Gibt einen mit der Granularität der Measuregruppe berechneten Wert ohne nicht verbundene Dimensionen und/oder Attribute zurück.</Description>
+    <Template>VALIDMEASURE( «Tuple» )</Template>
+  </Function>
+  <Function>
+    <Name>VALUE</Name>
+    <Category>Wert</Category>
+    <Description>Gibt den Wert eines angegebenen Elements zurück.</Description>
+    <Template>«Tuple».VALUE</Template>
+  </Function>
+  <Function>
+    <Name>VAR</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt die Varianz eines numerischen Ausdrucks zurück, der für eine Menge mithilfe einer nicht unausgewogenen Auffüllung ausgewertet wurde.</Description>
+    <Template>VAR( «Set»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>VARIANCE</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt die Varianz eines numerischen Ausdrucks zurück, der für eine Menge mithilfe einer nicht unausgewogenen Auffüllung ausgewertet wurde. (Alias für die Var-Funktion.)</Description>
+    <Template>VARIANCE( «Set»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>VARIANCEP</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt die Varianz eines numerischen Ausdrucks zurück, der für eine Menge mithilfe einer unausgewogenen Auffüllung ausgewertet wurde. (Alias für die VarP-Funktion.)</Description>
+    <Template>VARIANCEP( «Set»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>VARP</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt die Varianz eines numerischen Ausdrucks zurück, der für eine Menge mithilfe einer unausgewogenen Auffüllung ausgewertet wurde.</Description>
+    <Template>VARP( «Set»[, «Numeric Expression»] )</Template>
+  </Function>
+  <Function>
+    <Name>VISUALTOTALS</Name>
+    <Category>Statistisch</Category>
+    <Description>Gibt eine Menge zurück, die durch dynamische Gesamtwertbildung von untergeordneten Elementen einer angegebenen Menge generiert wurde. Optional wird ein Muster für den Namen des übergeordneten Elements im Resultset verwendet.</Description>
+    <Template>VISUALTOTALS( «Set», «Pattern» )</Template>
+  </Function>
+  <Function>
+    <Name>WTD</Name>
+    <Category>Zeit</Category>
+    <Description>Gibt eine Menge von Elementen aus der Wochenebene in einer Zeitdimension zurück, beginnend mit dem ersten Zeitraum und endend mit einem angegebenen Element.</Description>
+    <Template>WTD( [«Member»] )</Template>
+  </Function>
+  <Function>
+    <Name>YTD</Name>
+    <Category>Zeit</Category>
+    <Description>Gibt eine Menge von Elementen aus der Jahresebene in einer Zeitdimension zurück, beginnend mit dem ersten Zeitraum und endend mit einem angegebenen Element.</Description>
+    <Template>YTD( [«Member»] )</Template>
+  </Function>
+</MDXFunctions>
